@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ветаптека Главная</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Include the compiled Ratchet JS -->
+    <!--<script src="js/ratchet.js"></script>-->
+    <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <!-- touchSwipe library -->
+        <!--<script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>-->
+        
+        <!-- Slider Javascript file -->
+        <!--<script src="js/jquery.slideandswipe.min.js"></script>-->
+    <!--<script>-->
+            <!--$(document).ready(function() {-->
+                <!--$('.nav').slideAndSwipe();-->
+            <!--});-->
+        <!--</script>-->
+  </head>
+  <body>
+  <nav class="nav" id="nav">
+      <ul class="table-view">
+          <li class="table-view-cell media">
+              <a href="index.html">
+                  <span class="petrov-i cades"></span>
+                  <div class="media-body">
+                      Главная
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a>
+                  <span class="petrov-i pill"></span>
+                  <div class="media-body">
+                      Лекарства
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a>
+                  <span class="petrov-i house"></span>
+                  <div class="media-body">
+                      Аксессуары
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a>
+                  <span class="petrov-i drop"></span>
+                  <div class="media-body">
+                      Гигиена
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a>
+                  <span class="petrov-i tennis"></span>
+                  <div class="media-body">
+                      Игрушки
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a>
+                  <span class="petrov-i wallet"></span>
+                  <div class="media-body">
+                      Доставка и оплата
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a>
+                  <span class="petrov-i newspaper"></span>
+                  <div class="media-body">
+                      Условия приобретения
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a href="contacts.html">
+                  <span class="petrov-i phone"></span>
+                  <div class="media-body">
+                      Контакты
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a href="lk.html">
+                  <span class="petrov-i users"></span>
+                  <div class="media-body">
+                      Личный кабинет
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a href="lk.html">
+                  <span class="petrov-i tv"></span>
+                  <div class="media-body">
+                      Полная версия сайта
+                  </div>
+              </a>
+          </li>
+          <li class="table-view-cell media">
+              <a href="lk.html">
+                  <span class="petrov-i cart"></span>
+                  <div class="media-body">
+                      Корзина
+                      <span class="badge">1</span>
+                  </div>
+              </a>
+          </li>
+      </ul>
+  </nav>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <a class="icon icon-bars pull-left ssm-open-nav" id="navButton"></a>
+      <a class="icon fa fa-shopping-cart pull-right"></a>
+      <div class="title">Дежурная ветеринарная аптека</div>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <div class="phones clearfix">
+          <a href="" class="phone">
+            <span class="fa fa-phone"></span>
+            <div class="phone-title">Ветаптека</div>
+            <div class="phone-itself">+7 (495) 555-55-55</div>
+          </a><a href="" class="phone">
+          <span class="fa fa-phone"></span>
+          <div class="phone-title">Ветклиника</div>
+          <div class="phone-itself">+7 (495) 555-55-55</div>
+        </a>
+        </div>
+        <div class="search">
+          <form action="" class="content-padded search-form">
+
+            <div class="search-wrap">
+              <input type="search" placeholder="Найти лекарства для животных">
+              <button class="btn btn-search" type="submit"><span class="icon icon-search"></span></button>
+            </div>
+            <div class="search-example">Например, <span>наполнитель Катсан</span></div>
+
+          </form>
+      </div>
+      <hr />
+      <ul class="content-padded breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li>Контакты</li>
+      </ul>
+
+      <div class="content-padded contacts">
+      <p>
+        Звоните и приезжайте, мы всегда рады помочь! <b>По всем вопросам обращайтесь:</b> <a href="mailto:info@vetapteka1.ru">info@vetapteka1.ru</a>
+      </p>
+       <p>
+         <b>Наш адрес:</b>
+         <br />
+         127521, Москва, ул. Октябрьская, д. 89.
+       </p>
+        <p>
+          <b>Дежурная ветеринарная аптека:</b>
+          <br />
+          <a href="tel:+7 495 410-43-27">+7 495 410-43-27</a>,
+          <br />
+          <a href="tel:+7 495 981-57-67">+7 495 981-57-67</a>.
+        </p>
+        <p>
+          <b>Оптовый отдел:</b>
+          <br />
+          <a href="tel:+7 495 410-43-27">+7 495 410-43-27</a>,
+          <br />
+          <a href="tel:+7 495 410-43-27">+7 495 410-43-27</a>,
+          <br />
+          <a href="tel:+7 495 981-57-67">+7 495 981-57-67</a>.
+        </p>
+        <p>
+          <b>Лечебно-профилактический кабинет:</b>
+          <br />
+          <a href="tel:+7 495 981-57-67">+7 495 981-57-67</a>.
+        </p>
+        <p>
+          <b>Телефоны ветеринарных киосков:</b>
+          <br />
+          Южный округ (Советская УВЛ):
+          <br />
+          <a href="tel:+7 495 981-57-67">+7 495 981-57-67</a>.
+        </p>
+        <p>
+          Юго-Западный округ (Бутовская УВЛ):
+          <br />
+          <a href="tel:+7 495 981-57-67">+7 495 981-57-67</a>.
+        </p>
+        <p>
+          Северо-Западный округ:
+          <br />
+          <a href="tel:+7 495 981-57-67">+7 495 981-57-67</a>.
+        </p>
+        <div id="map" class="map"></div>
+        <p><b>Есть вопрос? Задайте его нам!</b></p>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя*" />
+          <input type="text" placeholder="Телефон*" />
+          <textarea rows="5" placeholder="Ваш вопрос*"></textarea>
+          <input type="button" value="Отправить" class="btn btn-block btn-primary">
+        </form>
+      </div><!-- / contacts -->
+
+      <hr />
+      <footer class="page-footer content-padded">
+      Уточнить наличие товара и узнать другую информацию:
+      <div class="footer-phones"><a href="">+7 495 612–32–32</a> / <a href="">+7 495 612–32–32</a></div>
+
+      ©2014–2015 <strong>Дежурная Ветеринарная аптека.</strong><br/>
+      Все права защищены. Лицензия ПИ 77-5870 от 30.11.2000 г.
+      </footer>
+    </div>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

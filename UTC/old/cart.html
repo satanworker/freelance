@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>utc cart</title>
+
+    <!-- Bootstrap -->
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic&subset=latin,cyrillic-ext"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/app2.css" rel="stylesheet">
+    <link href="css/category.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <!--<link href="css/jquery-ui.structure.css" rel="stylesheet">-->
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row top">
+        <div class="container">
+            <div class="top-block">
+                <div class="col-md-6">
+                    <a href="#" alt="">Как заказать</a>
+                    <a href="#" alt="">Оплата</a>
+                    <a href="#" alt="">Доставка</a>
+                    <a href="#" alt="">Контакты</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" alt="">Войти</a>
+                    <a href="#" alt="">Регистрация</a>
+                </div>
+            </div>
+            <!-- top navi -->
+        </div>
+    </div>
+    <div class="row header">
+        <div class="container">
+            <div class="info-block">
+                <div class="col-md-5 logotype">
+                    <a href="#"><img src="images/logotype.png" width="397" height="65" title=""/></a>
+                </div>
+                <div class="col-md-3 phones">
+                    <a href="tel:88003222223">8 800<span>322 22 23</span></a>
+                    <a href="#">Заказать обратный звонок</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="cart-panel">
+                        <div class="left">
+                            <span class="badge active">4</span>
+                        </div>
+                        <div class="right">
+                            <span>88 540</span>
+                            <a href="#" class="btn btn-transparent">оформить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- info block -->
+        </div>
+    </div>
+    <!-- header -->
+
+    <div class="row helper-block">
+        <div class="container">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-info">каталог товаров</a>
+            </div>
+            <div class="col-md-8">
+                <form class="global-form">
+                    <fieldset></fieldset>
+                    <input type="text" name="" placeholder="Введите слово для поиска среди 12.000 товаров">
+                    <button class="btn btn-info">Найти</button>
+                    <a href="#">Расширенный поиск</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row breadcrumb-block">
+        <div class="container">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Домашний текстиль</a></li>
+                    <li class="active">Салфетки</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="row content cart">
+        <div class="container">
+            <div class="col-md-12">
+                <table>
+                    <tr>
+                        <th>Товар</th>
+                        <th>&nbsp;</th>
+                        <th class="th-number" width="110px">Количество</th>
+                        <th class="th-price">Цена</th>
+                        <th class="th-total">Стоимость</th>
+
+                    </tr>
+                    <tr>
+                        <td><img src="images/test-item.jpg" width="149" height="96"></td>
+                        <td class="description">
+                            <a href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</a>
+                            <span>Артикул: АА 2703823</span>
+                            <ul>
+                                <li>Размер: евро <a href="#">изменить</a></li>
+                                <li>Ткань: сатин</li>
+                                <li>Цвет: синий <a href="#">изменить</a></li>
+                            </ul>
+                            <p class="success">Есть в наличии</p>
+                            <p class="failure">Есть в наличии</p>
+                            <p class="error">Есть в наличии</p>
+                        </td>
+                        <td valign="top">
+                            <input type="number" min="0" class="number numb-value"/>
+                        </td>
+                        <td class="price" valign="top">15 480</td>
+                        <td class="total-price" valign="top">
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="price-extend delete"><i>Удалить</i></a>
+                                <a href="#" class="price-extend"><i>В сравнение</i></a>
+                                <a href="#" class="price-extend"><i>В закладки</i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/test-item.jpg" width="149" height="96"></td>
+                        <td class="description">
+                            <a href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</a>
+                            <span>Артикул: АА 2703823</span>
+                            <ul>
+                                <li>Размер: евро <a href="#">изменить</a></li>
+                                <li>Ткань: сатин</li>
+                                <li>Цвет: синий <a href="#">изменить</a></li>
+                            </ul>
+                            <p class="success">Есть в наличии</p>
+                            <p class="failure">Есть в наличии</p>
+                            <p class="error">Есть в наличии</p>
+                        </td>
+                        <td valign="top">
+                            <input type="number" min="0" class="number numb-value"/>
+                        </td>
+                        <td class="price" valign="top">15 480</td>
+                        <td class="total-price" valign="top">
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="price-extend delete"><i>Удалить</i></a>
+                                <a href="#" class="price-extend"><i>В сравнение</i></a>
+                                <a href="#" class="price-extend"><i>В закладки</i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/test-item.jpg" width="149" height="96"></td>
+                        <td class="description">
+                            <a href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</a>
+                            <span>Артикул: АА 2703823</span>
+                            <ul>
+                                <li>Размер: евро <a href="#">изменить</a></li>
+                                <li>Ткань: сатин</li>
+                                <li>Цвет: синий <a href="#">изменить</a></li>
+                            </ul>
+                            <p class="success">Есть в наличии</p>
+                            <p class="failure">Есть в наличии</p>
+                            <p class="error">Есть в наличии</p>
+                        </td>
+                        <td valign="top">
+                            <input type="number" min="0" class="number numb-value"/>
+                        </td>
+                        <td class="price" valign="top">15 480</td>
+                        <td class="total-price" valign="top">
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="price-extend delete"><i>Удалить</i></a>
+                                <a href="#" class="price-extend"><i>В сравнение</i></a>
+                                <a href="#" class="price-extend"><i>В закладки</i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="cart-controls">
+                        <td colspan="2"><a href="#">Добавить товары по артикулу</a></td>
+                        <td colspan="3">
+                            <a href="#"><span>Промо-код на скидку</span></a>
+                            <a href="#"><span>Как получить скидку?</span></a>
+
+                            <p class="Total"><strong>Итого:</strong>&nbsp;80 500</p>
+
+                            <p><strong>Стоимость заказа, без учета доставки:</strong>&nbsp;80 500</p>
+                            <a href="#" class="btn btn-info">оформить заказ</a>
+                            <input type="text" id="phone" placeholder="Заказать по телефону"/>
+                        </td>
+                    </tr>
+                </table>
+
+                <form>
+                    <fieldset class="normal">
+                        <legend>Авторизация</legend>
+                        <div class="left">
+                            <span class="pseudo-title">Войти с учетной записью</span>
+                            <div class="form-group">
+                                <input type="text" placeholder="Логин">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Пароль">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn-flat" value="войти">
+                                <a href="#">Забыли пароль?</a>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <span class="pseudo-title">Войти как пользователь</span>
+                            <a href="#" class="vk">vk</a>
+                            <a href="#" class="fb">fb</a>
+                            <a href="#" class="tw">tw</a>
+                            <a href="#" class="go">go</a>
+                        </div>
+
+                        <div class="buy-type">
+                            <div><a href="#" class="btn btn-info">зарегестрироваться</a><p>Получайте бонусы, экономте деньги и время при следующих покупках<br/> Регистрация займет не более 2-х минут</p></div>
+                            <div><a href="#" class="btn btn-gray">Купить без регистрации</a><p>При следующей покупке необходимо заполнять контктные данные и адрес доставки<br/>Незарегистрированные пользователи не могу пользоваться бонусами и накопительными скидками</p></div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="sel">
+                        <legend>Контактные данные</legend>
+                        <div style="width: 392px">
+                            <span>Укажите контактные данные человека, который будет получать заказ</span>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Имя и фамилия">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="E-mail">
+                                <i>Для получения уведомлений о статусе заказа</i>
+                            </div>
+                            <div class="form-group hint">
+                                <input type="text" placeholder="Телефон">
+                                <p>Мы позвоним вам, чтобы еще подтвердить ваш заказ Будьте на связи! Мы не сможем доставить заказ, если он не подтвержден</p>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Примечание"></textarea>
+                            </div>
+
+                            <a href="#" class="btn-flat">Продолжить</a>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="empty">
+                        <div style="width: 460px">
+                            <legend>Способ получения заказа и адрес доставки</legend>
+                            <span class="pseudo-title">Выберите способ получения заказа</span>
+                            <div class="link-controls">
+                                <a href="#" class="sel"><span>Курьерьская доставка</span></a>
+                                <a href="#"><span>Заберу сам</span></a>
+                                <a href="#"><span>Почтовая доставка</span></a>
+                            </div>
+                            <legend class="sub">Адрес доставки</legend>
+                            <div class="form-group-address form-group">
+                                <input type="text" class="city" placeholder="Город">
+                                <input type="text" class="index" placeholder="Индекс">
+                                <input type="text" class="street" placeholder="Улица">
+                                <input type="text" class="house" placeholder="Дом">
+                                <input type="text" class="appartaments" placeholder="Квартира">
+                                <input type="text" class="corp" placeholder="Корпус">
+                                <input type="text" class="stro" placeholder="Строение">
+                                <input type="text" class="floor" placeholder="Этаж">
+                                <textarea placeholder="Здесь можно указать код домофона или любую другую информацию, которая будет полезна для курьерской службы"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!---->
+                    <fieldset class="empty">
+                        <div style="width: 708px">
+                            <legend>Способ получения заказа и адрес доставки</legend>
+                            <span class="pseudo-title">Выберите способ получения заказа</span>
+                            <div class="link-controls">
+                                <a href="#" class=""><span>Курьерьская доставка</span></a>
+                                <a href="#" class="sel"><span>Заберу сам</span></a>
+                                <a href="#"><span>Почтовая доставка</span></a>
+                            </div>
+                            <legend class="sub">Пункты самовывоза</legend>
+                            <div class="map-area">
+                                <a href="#" class="address act"><span>г. Москва, ул. Марии Расковой, 27</span></a>
+                                <div class="media">
+                                    <span class="media-left">
+                                        <img src="images/map.jpg">
+                                    </span>
+                                    <div class="media-body">
+                                        <ul>
+                                            <li>Время работы: с <a href="#">09:00 до 20:00</a></li>
+                                            <li>Телефон: <a href="#">+7 (495) 333-33-33</a></li>
+                                            <li>Варианты оплаты: <a href="#">Наличными, безналичными</a></li>
+                                            <li>Ориентировочный срок доставки: <a href="#">27 марта 2015 г.</a></li>
+                                        </ul>
+                                        <a href="#" class="btn btn-info">Выбрать</a>
+                                    </div>
+                                    <a href="#" class="hider">Свернуть</a>
+                                </div>
+                                <a href="#" class="address"><span>г. Москва, ул. Марии Расковой, 17</span></a>
+                                <a href="#" class="address"><span>г. Москва, ул. Марии Расковой, 57</span></a>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                    <!---->
+                    <fieldset>
+                        <legend>Дата и стоимость доставки</legend>
+                        <div class="form-group">
+                            <span class="pseudo-title">Выберите дату доставки</span>
+                            <select name="" id="">
+                                <option value="">Четверг 11.12.2014</option>
+                            </select>
+                            <i>По умолчанию, установлена ближайшая возможная дата доставки</i>
+                        </div>
+                        <div class="form-group">
+                            <span class="pseudo-title">Выберите время доставки</span>
+                            <select name="" id="">
+                                <option value="">09:00 - 13:00</option>
+                            </select>
+                        </div>
+
+                        <p class="preview-price"><strong>Стоимость доставки:</strong> 2000 рублей</p>
+                        <a href="#" class="btn btn-info">Продолжить</a>
+                    </fieldset>
+
+                    <fieldset class="sel final">
+                        <legend>Подтверждение</legend>
+                        <ul>
+                            <li>Получатель: Татьяна Свиридова</li>
+                            <li>Контактный телефон: +7 (945) 777-77-77</li>
+                            <li>E-mail: tati@mail.ru</li>
+                            <li>Способ получения: Курьером</li>
+                            <li>Адрес доставки: г. Москва, ул. Марии Расковой, 27 (доставка курьером)</li>
+                        </ul>
+                        <a href="#" class="btn btn-info">Подтверждаю</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="row footer">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="images/logotype-footer.png" width="220" height="115">
+            </div>
+            <div class="col-md-8">
+                <div class="left-side">
+                    <div class="contacts">
+                        <a href="#">8 800<span>322 22 33</span></a>
+                        <a href="mailto:info@uts.ru">info@uts.ru</a>
+                    </div>
+                    <div class="social">
+                        <div class="socialfacebook">
+                            <a href="#" alt="vk"></a>
+                        </div>
+                        <div class="socialtwitter">
+                            <a href="#" title="fb"></a>
+                        </div>
+                        <div class="socialvkontakte">
+                            <a href="#" title="tv"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="heading">О компании</li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">О компании</a></li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Помощь</li>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Обратная связь</li>
+                        <li><a href="#">Зарабатывайте с нами</a></li>
+                        <li><a href="#">Продавайте Ваши товары</a></li>
+                        <li><a href="#">Зарабатывайте на партнерской программе</a></li>
+                        <li><a href="#">Размещайте рекламу</a></li>
+                        <li><a href="#">Открывайте пункты выдачи заказов</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-block">
+    <div class="container">
+        <div class="left-side">
+            <span class="to-top"></span>
+            <a href="#">Обратная связь</a>
+        </div>
+        <div class="widgets">
+            <div class="compare">
+                <p>В сравнение</p>
+                <span class="badge">0</span>
+            </div>
+            <div class="bookmarks">
+                <p>Закладки</p>
+                <span class="badge">2</span>
+            </div>
+            <div class="cart">
+                <p>Корзина</p>
+                <span class="badge">0</span>
+                <i>88 540</i>
+                <a href="#" class="btn btn-transparent">оформить</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/carousel.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $(function () {
+        $("#slider").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function(event, ui) {
+                $("#amount .left").text(ui.values[0]);
+                $("#amount .right").text(ui.values[1]);
+            }
+        });
+        $("#amount .left").text($("#slider").slider("values", 0));
+        $("#amount .right").text($("#slider").slider("values", 1));
+    });
+</script>
+</body>
+</html>

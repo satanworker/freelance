@@ -1,0 +1,19 @@
+{
+  "name": "freelance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satanworker/freelance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satanworker/freelance/issues"
+  },
+  "homepage": "https://github.com/satanworker/freelance#readme"
+}

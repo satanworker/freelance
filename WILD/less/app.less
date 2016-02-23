@@ -1,0 +1,209 @@
+@import 'fonts.less';
+//vars
+@dark_blue: #50516F;
+@light_blue: #AE95B1;
+@font-size: 16px;
+@red_awesome: #DD5158;
+@proxima: 'Proxima Nova', Arial;
+@pfhand: 'PF Handbook', Arial;
+
+.hover_none {
+  &:hover, &:visited {
+    text-decoration: none;
+  }
+}
+.st0{
+  fill:#50516F;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.st1{fill:#FFFFFF;}
+
+.container-fluid {
+  background: @light_blue;
+  font-size: @font-size;
+}
+.container {
+  max-width: 960px;
+}
+.row {
+  &.header {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    padding: 13px 0;
+    .left {
+      padding-left: 70px;
+    }
+    div {
+      padding: 0;
+    }
+    .header_title {
+      font-size: @font-size + 2px;
+      margin: 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .logo {
+      width: 79px;
+      display: inline-block;
+      text-align: center;
+      line-height: 10px;
+      position: absolute;
+      left: 0;
+      top: -8px;
+      &:hover {
+        .st0 {
+          fill: #DD5158;
+        }
+      }
+      .hover_none;
+    }
+    //logo
+    .header_title {
+      font-family: @proxima;
+      font-size: @font-size + 2px;
+      color: @dark_blue;
+      margin-top: 8px;
+      margin-left: 26px;
+    }
+    .right {
+      text-align: right;
+    }
+    .callback {
+      display: inline-block;
+      height: 35px;
+      line-height: 35px;
+      width: 192px;
+      text-align: center;
+      font-family: @pfhand;
+      font-weight: 900;
+      background: @dark_blue;
+      color: #fff;
+      letter-spacing: 0.16em;
+      font-size: 14px;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .number {
+      margin-left: 30px;
+      font-family: @pfhand;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: @dark_blue;
+      font-size: 18px;
+      span {
+        color: @light_blue;
+      }
+    }
+  }
+  //header
+  &.first {
+    height: 920px;
+    background: url(../images/first_back.png) no-repeat center;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    text-align: center;
+    .first_h1 {
+      font-size: 32px;
+      font-family: @proxima;
+      font-weight: 500;
+      display: inline-block;
+      color: #FFFFFF;
+      background: @red_awesome;
+      letter-spacing: 0.12em;
+      height: 66px;
+      line-height: 66px;
+      padding: 0 33px;
+      margin-top: 61px;
+    }
+    .wild_first {
+      width: 696px;
+      margin: 16px auto 0 auto;
+      background: url(../images/first_wild.png) no-repeat;
+      padding-bottom: 110px;
+      background-size: 100%;
+      .top {
+        font-size: 240px;
+        line-height: 195px;
+        font-family: @pfhand;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 0.115em;
+        display: inline-block;
+        margin-top: 62px;
+        margin-bottom: 0;
+      }
+      .middle {
+        font-family: @pfhand;
+        font-weight: 500;
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+      }
+      .bottom {
+        font-family: @proxima;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 0.4em;
+        margin-top: 100px;
+      }
+    }
+  }
+  //first
+  &.portfolio {
+    background: #fff;
+    div {
+      padding: 0;
+    }
+    .top.clearfix {
+      padding: 35px 0;
+      .title_block {
+        .title {
+          font-family: @pfhand;
+          font-weight: 400;
+          letter-spacing: 0.12em;
+          font-size: 32px;
+          color: @dark_blue;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        a {
+          font-family: @proxima;
+          font-size: 15px;
+          color: @light_blue;
+          .hover_none;
+          border-bottom: 2px solid;
+          &:hover {
+            border-bottom: 2px solid transparent;
+          }
+        }
+      }
+      .des_left, .des_right {
+        .top {
+          margin: 0;
+          font-family: @pfhand;
+          font-weight: 100;
+          font-size: 32px;
+          letter-spacing: 0.12em;
+          color: @dark_blue;
+        }
+        .bottom {
+          font-family: @proxima;
+          font-size: 15px;
+          font-weight: 500;
+          color: @light_blue
+        }
+      }
+    }
+  }
+}

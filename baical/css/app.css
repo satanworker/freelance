@@ -1,0 +1,1091 @@
+/*!
+ * jQuery UI CSS Framework 1.11.4
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+  display: none;
+}
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+  clear: both;
+}
+.ui-helper-clearfix {
+  min-height: 0;
+  /* support: IE7 */
+}
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* support: IE8 */
+}
+.ui-front {
+  z-index: 100;
+}
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+  cursor: default !important;
+}
+/* Icons
+----------------------------------*/
+/* states and images */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 45%;
+}
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+/* RTL support */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+input {
+  outline: none;
+}
+@font-face {
+  font-family: "Rex Bold";
+  src: url(../font/RexBold.otf);
+}
+.row {
+  min-width: 960px;
+}
+.ui-datepicker {
+  background: #FFFFFF;
+  border: 1px solid #3fc2e7;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.ui-datepicker .ui-datepicker-next {
+  background: #3fc2e7 url(../images/left_arrow.png) no-repeat center;
+  border-radius: 5px;
+  background-size: 11px 15px;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev {
+  background: #3fc2e7 url(../images/right_arrow.png) no-repeat center;
+  border-radius: 5px;
+  background-size: 11px 15px;
+  cursor: pointer;
+}
+.ui-datepicker table.ui-datepicker-calendar td {
+  text-align: center;
+}
+.ui-datepicker table.ui-datepicker-calendar td a {
+  text-align: center;
+  color: #3fc2e7;
+}
+.ui-datepicker table.ui-datepicker-calendar td a:hover,
+.ui-datepicker table.ui-datepicker-calendar td a .ui-state-active {
+  background: #3fc2e7;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+.error {
+  border-color: red !important;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+h2.blue {
+  font-family: "Rex Bold", Arial;
+  font-weight: normal;
+  font-size: 42px;
+  color: #3fc2e7;
+}
+.container {
+  width: 960px;
+}
+.row.header {
+  padding-top: 15px;
+}
+.row.header .left {
+  padding-left: 0;
+  padding-top: 15px;
+}
+.row.header .left .big-blue {
+  font-family: "Rex Bold", Arial;
+  font-size: 48px;
+  color: #3fc2e7;
+  margin: 0;
+  line-height: 1em;
+}
+.row.header .left .gray-small {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  margin: 0;
+  font-size: 15px;
+  color: #828586;
+  text-shadow: 0 1px 1px #fff;
+}
+.row.header .center {
+  text-align: right;
+  font-family: Roboto, Arial;
+}
+.row.header .center .button {
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #3fc2e7;
+  font-size: 14px;
+  padding: 7px 25px;
+  border: 1px solid #3fc2e7;
+  border-radius: 34px;
+  float: right;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.row.header .center .blob {
+  display: inline-block;
+}
+.row.header .center .blue-small {
+  color: #3fc2e7;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  line-height: 1em;
+}
+.row.header .center .number {
+  font-family: Roboto, Arial;
+  color: #505253;
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 0;
+  text-align: left;
+}
+.row.first {
+  background: url(../images/back_first.png) no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.row.first img.first_flower {
+  position: absolute;
+}
+.row.first img.first_leaf {
+  position: absolute;
+  right: 0;
+}
+.row.first .col-xs-12.text {
+  padding-top: 22px;
+}
+.row.first .col-xs-12.text h2 {
+  font-family: "Rex Bold", Arial;
+  color: #FFFFFF;
+  font-weight: normal;
+  margin: 0;
+  line-height: 96px;
+}
+.row.first .col-xs-12.text h2.small {
+  font-size: 42px;
+  text-shadow: 2px 2px 0 #27b1d8;
+}
+.row.first .col-xs-12.text h2.big {
+  font-size: 80px;
+  text-shadow: 2px 2px 0 #27b1d8;
+}
+.row.first .col-xs-12.text .background {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.row.first .col-xs-12.text .background span {
+  display: inline-block;
+  background: rgba(181, 150, 229, 0.55);
+  padding: 0 19px;
+  margin-bottom: 6px;
+}
+.row.first .col-xs-12.form {
+  padding-bottom: 13px;
+}
+.row.first .col-xs-12.form form {
+  text-align: center;
+  margin: 40px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 20px;
+  width: 820px;
+  height: 291px;
+  background: url(../images/form_back.png) no-repeat;
+}
+.row.first .col-xs-12.form form .date_kipper {
+  display: inline-block;
+  position: relative;
+}
+.row.first .col-xs-12.form form .date_kipper:after {
+  content: '';
+  width: 24px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  right: 9px;
+  top: 46%;
+  background: url(../images/arrow.png) no-repeat;
+}
+.row.first .col-xs-12.form form .date,
+.row.first .col-xs-12.form form .text {
+  margin: 0 5px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #3fc2e7;
+  outline: none;
+  border-radius: 34px;
+  padding-left: 50px;
+  padding-right: 20px;
+  background: url(../images/calendar.png) no-repeat;
+  background-position: 17px 50%;
+  width: 220px;
+}
+.row.first .col-xs-12.form form .date::-webkit-input-placeholder,
+.row.first .col-xs-12.form form .text::-webkit-input-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.row.first .col-xs-12.form form .date:-moz-placeholder,
+.row.first .col-xs-12.form form .text:-moz-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.row.first .col-xs-12.form form .date:-ms-input-placeholder,
+.row.first .col-xs-12.form form .text:-ms-input-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.row.first .col-xs-12.form form .text {
+  background: url(../images/text.png) no-repeat;
+  background-position: 17px 50%;
+}
+.row.first .col-xs-12.form form .button-purple {
+  border: none;
+  background: linear-gradient(to bottom, #ed8dfb, #d766e7);
+  color: #fff;
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 2px 2px 0 #a754b5;
+  border-bottom: 2px solid #a24cb0;
+  font-size: 18px;
+  padding: 8px 24px;
+  border-radius: 34px;
+  margin-top: 20px;
+}
+.row.first .col-xs-12.form form h2 {
+  color: #3fc2e7;
+  font-family: "Rex Bold", Arial;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.row.all-stuff {
+  background: url(../images/second.png) no-repeat;
+  padding-bottom: 7px;
+  background-size: cover;
+  position: relative;
+}
+.row.all-stuff img.branch_second,
+.row.all-stuff img.leaf_second,
+.row.all-stuff img.flower_second {
+  position: absolute;
+}
+.row.all-stuff img.leaf_second {
+  right: 0;
+  top: -67px;
+}
+.row.all-stuff img.branch_second {
+  left: 0;
+  top: -180px;
+}
+.row.all-stuff img.flower_second {
+  right: 0;
+  bottom: -120px;
+}
+.row.all-stuff h2 {
+  color: #3fc2e7;
+  font-family: "Rex Bold", Arial;
+  font-size: 42px;
+}
+.row.all-stuff .blob {
+  background: url(../images/all_stuff.png) no-repeat;
+  padding: 27px 20px 69px 20px;
+  width: 728px;
+  float: right;
+  margin-top: 16px;
+}
+.row.all-stuff .blob .col-xs-6 {
+  padding: 5px 0;
+}
+.row.all-stuff .blob .col-xs-6 img {
+  float: left;
+  margin-right: 20px;
+}
+.row.all-stuff .blob .col-xs-6 p.top {
+  color: #3fc2e7;
+  font-family: "Rex Bold", Arial;
+  font-size: 18px;
+  line-height: 100%;
+  margin: 21px 0 0 0;
+}
+.row.all-stuff .blob .col-xs-6 p.bottom {
+  color: #828586;
+  font-family: "Roboto", Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+.row.tabs h2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.row.tabs a.button {
+  border: none;
+  background: linear-gradient(to bottom, #ed8dfb, #d766e7);
+  color: #fff;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: 2px 2px 0 #a754b5;
+  border-bottom: 2px solid #a24cb0;
+  font-size: 18px;
+  padding: 8px 24px;
+  border-radius: 34px;
+  margin: 0 5px;
+}
+.row.tabs a.button.active {
+  border: 1px solid #d766e7;
+  background: none;
+  color: #d766e7;
+  text-shadow: none;
+}
+.row.tabs .col-xs-12.top {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.row.tabs .tab {
+  display: none;
+}
+.row.tabs .tab.active {
+  display: block;
+}
+.row.tabs .tab .col-xs-7 {
+  padding: 0 20px 0 0;
+}
+.row.tabs .tab .col-xs-7 .carousel-control.left {
+  background: url(../images/right_arrow.png) no-repeat center;
+  opacity: 1;
+}
+.row.tabs .tab .col-xs-7 .carousel-control.right {
+  background: url(../images/left_arrow.png) no-repeat center;
+  opacity: 1;
+}
+.row.tabs .tab .col-xs-7 .item .blob {
+  overflow: hidden;
+  position: relative;
+}
+.row.tabs .tab .col-xs-7 .item .blob:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 102%;
+  height: 12px;
+  left: -2px;
+  bottom: 0;
+  background: url(../images/big_tabs.png) no-repeat;
+  background-size: cover;
+}
+.row.tabs .tab .col-xs-7 img {
+  max-width: 100%;
+}
+.row.tabs .tab .col-xs-5 {
+  background: #a9cd59;
+  position: relative;
+  text-align: center;
+  padding: 27px 30px 20px 30px;
+  overflow: hidden;
+  min-height: 320px;
+}
+.row.tabs .tab .col-xs-5 p.title {
+  font-family: "Rex Bold", Arial;
+  color: #FFFFFF;
+  font-size: 32px;
+  margin: 0;
+  line-height: 100%;
+}
+.row.tabs .tab .col-xs-5 p.normal {
+  color: #627834;
+  font-size: 14px;
+  font-family: Roboto, Arial;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  line-height: 21px;
+}
+.row.tabs .tab .col-xs-5:after {
+  content: '';
+  width: 102%;
+  height: 12px;
+  background: url(../images/after_green.png) no-repeat;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  bottom: 0;
+  left: -2px;
+}
+.row.tabs .tab .col-xs-12 {
+  padding: 24px 0 0 0;
+}
+.row.tabs .tab .col-xs-12 .carousel-control.left {
+  background: url(../images/right_arrow.png) no-repeat center;
+  opacity: 1;
+  background-size: 26px 63px;
+  width: 47px;
+  left: 10px;
+}
+.row.tabs .tab .col-xs-12 .carousel-control.right {
+  background: url(../images/left_arrow.png) no-repeat center;
+  opacity: 1;
+  background-size: 26px 63px;
+  width: 47px;
+  right: 10px;
+}
+.row.tabs .tab .col-xs-12 img {
+  width: 215px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 3px #d1d1d1;
+}
+.row.tabs .tab .col-xs-12 .col-xs-3 {
+  padding: 5px;
+}
+.row.why {
+  padding-bottom: 60px;
+  background: url(../images/bracnh_third.png) no-repeat;
+  overflow: hidden;
+}
+.row.why .col-xs-12.first {
+  padding: 60px 0 0 0;
+}
+.row.why .col-xs-12.first h2 {
+  margin: 0;
+  line-height: 100%;
+}
+.row.why .col-xs-12.first h2 + p {
+  font-family: Roboto, Arial;
+  font-size: 24px;
+  font-weight: 300;
+  color: #828586;
+  margin: 11px 0 0 0;
+}
+.row.why .col-xs-12.left {
+  padding: 100px 0;
+  position: relative;
+}
+.row.why .col-xs-12.left .absolute-img {
+  position: absolute;
+  right: 0;
+  top: -22px;
+}
+.row.why .col-xs-12.left p {
+  font-family: Roboto, Arial;
+  display: inline-block;
+  width: 355px;
+  text-align: right;
+  font-weight: 300;
+}
+.row.why .col-xs-12.left p b {
+  font-weight: 500;
+}
+.row.why .col-xs-12.left.annoying .absolute-img {
+  right: -69px;
+}
+.row.why .col-xs-12.right {
+  padding: 100px 0;
+  position: relative;
+}
+.row.why .col-xs-12.right .absolute-img {
+  position: absolute;
+  left: 0;
+  top: -22px;
+}
+.row.why .col-xs-12.right p {
+  font-family: Roboto, Arial;
+  display: inline-block;
+  width: 355px;
+  font-weight: 300;
+  float: right;
+}
+.row.why .col-xs-12.right p b {
+  font-weight: 500;
+}
+.row.comfort {
+  background: url(../images/comfort_bg.png) no-repeat;
+  padding-top: 102px;
+  background-size: cover;
+}
+.row.comfort h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  line-height: 100%;
+}
+.row.comfort h2 + p {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  line-height: 100%;
+}
+.row.comfort .col-xs-3 {
+  text-align: center;
+  padding-top: 50px;
+}
+.row.comfort .col-xs-3 .bordered {
+  width: 108px;
+  height: 108px;
+  border-radius: 100%;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 27px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+}
+.row.comfort .col-xs-3 .bordered p.big {
+  font-family: "Rex Bold", Arial;
+  font-size: 39px;
+  color: #fff;
+  margin: 0;
+  line-height: 100%;
+}
+.row.comfort .col-xs-3 .bordered p.big span {
+  font-size: 24px;
+}
+.row.comfort .col-xs-3 .bordered p.small {
+  font-family: "Rex Bold", Arial;
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  line-height: 100%;
+}
+.row.comfort .col-xs-3 p.normal {
+  font-family: Roboto, Arial;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.row.comfort .col-xs-12.form form {
+  text-align: center;
+  margin: 40px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 54px;
+  width: 820px;
+  height: 291px;
+  background: url(../images/form_back.png) no-repeat;
+}
+.row.comfort .col-xs-12.form form .date_kipper {
+  display: inline-block;
+  position: relative;
+}
+.row.comfort .col-xs-12.form form .date_kipper:after {
+  content: '';
+  width: 24px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  right: 9px;
+  top: 46%;
+  background: url(../images/arrow.png) no-repeat;
+}
+.row.comfort .col-xs-12.form form .date,
+.row.comfort .col-xs-12.form form .text {
+  margin: 0 5px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #3fc2e7;
+  outline: none;
+  border-radius: 34px;
+  padding-left: 50px;
+  padding-right: 20px;
+  background: url(../images/calendar.png) no-repeat;
+  background-position: 17px 50%;
+  width: 220px;
+}
+.row.comfort .col-xs-12.form form .date::-webkit-input-placeholder,
+.row.comfort .col-xs-12.form form .text::-webkit-input-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.row.comfort .col-xs-12.form form .date:-moz-placeholder,
+.row.comfort .col-xs-12.form form .text:-moz-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.row.comfort .col-xs-12.form form .date:-ms-input-placeholder,
+.row.comfort .col-xs-12.form form .text:-ms-input-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.row.comfort .col-xs-12.form form .text {
+  background: url(../images/text.png) no-repeat;
+  background-position: 17px 50%;
+}
+.row.comfort .col-xs-12.form form .button-purple {
+  border: none;
+  background: linear-gradient(to bottom, #ed8dfb, #d766e7);
+  color: #fff;
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 2px 2px 0 #a754b5;
+  border-bottom: 2px solid #a24cb0;
+  font-size: 18px;
+  padding: 8px 24px;
+  border-radius: 34px;
+  margin-top: 20px;
+}
+.row.comfort .col-xs-12.form form h2 {
+  color: #3fc2e7;
+  font-family: "Rex Bold", Arial;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.row.review {
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background: url(../images/leaf_review.png) no-repeat;
+  background-position: 100% 50%;
+}
+.row.review .col-xs-4 {
+  padding-bottom: 30px;
+}
+.row.review .col-xs-4 p.blue {
+  font-family: "Rex Bold", Arial;
+  color: #3fc2e7;
+  font-size: 18px;
+  margin: 0;
+}
+.row.review .col-xs-4 p.normal {
+  font-family: "Roboto", Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828586;
+}
+.row.map {
+  background: lightcyan;
+  position: relative;
+}
+.row.map .map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+.row.map .item {
+  padding: 20px 0;
+}
+.row.map .blob {
+  width: 410px;
+  background: #FFFFFF;
+  float: right;
+  padding-top: 25px;
+  position: relative;
+  z-index: 12;
+}
+.row.map a {
+  color: #3fc2e7;
+}
+.row.map h2 {
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+}
+.row.map p.blue {
+  font-family: "Rex Bold", Arial;
+  font-size: 18px;
+  color: #3fc2e7;
+  margin: 0;
+}
+.row.map p.normal {
+  font-family: "Roboto", Arial;
+  font-weight: 400;
+  color: #828586;
+  margin: 0;
+  line-height: 21px;
+}
+.row.map .col-xs-9 p.blue {
+  position: relative;
+}
+.row.map .col-xs-9 p.blue:after {
+  content: '';
+  width: 51px;
+  height: 1px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  background: #3fc2e7;
+}
+.row.map .col-xs-9.home p.blue:after {
+  width: 181px;
+}
+.row.map .col-xs-9.car p.blue:after {
+  width: 143px;
+}
+.row.footer {
+  background: linear-gradient(to bottom, #666869, #505253);
+  padding-top: 0;
+}
+.row.footer p.gray-small,
+.row.footer p.number {
+  color: #FFFFFF !important;
+}
+.row.footer > .blob {
+  background: url(../images/flower_footer.png) no-repeat;
+  background-position: 0 1px;
+  padding-top: 15px;
+}
+.container-fluid {
+  position: relative;
+}
+.popup {
+  width: 326px;
+  position: fixed;
+  z-index: 32;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -webkit-calc(50% - 185px);
+  top: calc(50% - 185px);
+  padding: 40px 20px;
+  background: #f4fcfe;
+  display: none;
+}
+.popup .cross {
+  position: absolute;
+  right: -53px;
+  top: -57px;
+}
+.popup h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+}
+.popup p {
+  font-family: "Roboto", Arial;
+  font-weight: 400;
+  color: #828586;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.popup .button-purple {
+  border: none;
+  background: linear-gradient(to bottom, #ed8dfb, #d766e7);
+  color: #fff;
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 2px 2px 0 #a754b5;
+  border-bottom: 2px solid #a24cb0;
+  font-size: 18px;
+  padding: 8px 24px;
+  border-radius: 34px;
+  margin-top: 20px;
+}
+.popup .text {
+  margin: 6px auto;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #3fc2e7;
+  outline: none;
+  display: block;
+  border-radius: 34px;
+  width: 223px;
+  text-align: center;
+}
+.popup .text::-webkit-input-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.popup .text:-moz-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.popup .text:-ms-input-placeholder {
+  font-family: "Roboto", Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: #828586;
+}
+.popup + .background {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 31;
+  opacity: 0.7;
+}
+.popup.active {
+  display: block;
+}
+.popup.active + .background {
+  display: block;
+}
+@media (min-width: 600px) and (max-width: 1300px) {
+  .row.first {
+    overflow: hidden;
+  }
+  .row.first img.first_flower {
+    left: -80px;
+  }
+  .row.all-stuff img.branch_second {
+    top: 0;
+    left: -94px;
+    overflow: hidden;
+  }
+}

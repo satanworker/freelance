@@ -1,0 +1,617 @@
+*{margin:0;
+padding:0;}
+
+input,
+textarea {
+    outline:none;}
+
+
+#wrapper{padding:0;
+margin:0 auto;
+min-width:1310px;
+}
+
+
+#header{min-width:1250px;
+position:relative;
+height:100px;
+background-color:rgba(255,255,255,0.6);
+width:100%;
+z-index:100;
+max-width:1800px;
+margin:0 auto -100px auto;}
+
+#gypso{
+position:relative;
+left:4%;
+top:-70px;}
+
+#forma2{
+margin:0 auto;
+width:392px;}
+
+#contactstab{height:100px;
+margin:0 auto;}
+
+#space{width:20%;}
+
+.contacts{margin-left:15px;
+font-size:1.4em;
+  font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+
+ #button{position:relative;
+top:30px;
+width:234px;
+height:43px;
+background-image:url(img/button.png);
+margin:0 auto;
+}
+
+#button:hover{
+background-image:url(img/buttonh.png);}
+
+.show_popup{display:block;
+cursor:pointer;
+width:234px;
+height:43px;
+font-size:0;
+}
+
+/*The end of header*/
+
+#screen1{height:728px;
+background-image:url(img/bck_up.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:100%;
+max-width:1800px;
+margin:0 auto;
+position:relative;
+min-width:1310px;
+}
+
+			/*style for ginger block*/
+#ginger{
+position:relative;
+width:425px;
+height:270px;
+background-image:url(img/ginger.png);
+padding-left:50px;
+margin:0 auto;
+top:265px;
+left:25%;
+}
+
+.inn1{width:338px;
+height:52px;
+border-radius: 10px;
+padding-left:50px;
+position:relative;
+top:30px;
+font-size:1.4em;
+color:#d3c9c0;
+background-repeat:no-repeat;
+background-image:url(img/form.png);
+border:2px solid #d3c9c0;
+background-position: left center;
+border-radius:10px;
+background-position:1% 50%;
+margin-bottom:10px;
+  font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+ 
+
+.inn2{width:338px;
+height:52px;
+background-image:url(img/form1.png);
+background-size:48px;
+padding-left:50px;
+position:relative;
+top:30px;
+font-size:1.4em;
+background-repeat:no-repeat;
+color :#d3c9c0;
+border:2px solid #d3c9c0;
+background-position:left center;
+border-radius:10px;
+margin-bottom:10px;
+  font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+ 
+ .rt2{
+width:234px;
+height:43px;
+border:0;
+background-image:url(img/button.png);
+position:relative;
+top:20px;
+font-size:0;
+background-repeat:no-repeat;
+background-color:#407047;
+}
+.rt2:hover{cursor:pointer;
+background-image:url(img/buttonh.png);}
+
+/*the end of style for ginger block*/
+
+#works1{width:518px;
+height:76px;
+position:relative;
+margin:15px auto 0 auto;
+background-color:rgba(255,255,255,0.7);
+right:24.5%;}
+
+#works1 > p{font-size:1.7em;
+margin-left:10px;
+ font-family: 'Open Sans';   font-style: italic;   font-weight: 700;
+}
+
+#knauf{position:relative;
+top:-90px;
+left:90%;}
+
+#works {
+width:480px;
+height:140px;
+position:relative;
+background-color:rgba(226,44,15,0.8);
+padding-top:10px;
+padding-left:20px;
+margin:0 auto;
+right:25%;
+}
+
+#works > p{color:#ffffff;
+font-size:3em;
+text-align:left;
+margin-top:3px;
+margin-left:10px;
+ font-family: 'Open Sans';
+  font-style:italic;
+  font-weight: 700;}
+  
+  
+  /*the end of style for the first screen*/
+  
+#screen2 > table{
+				width:100%;
+    				margin-top:-60px;
+				margin-bottom:40px;}
+#txt{
+				text-align:center;
+				font-size:28px;
+				font-family: 'Open Sans'; font-style: normal; font-weight: 300;
+				 width:20px;
+				 }  
+   #screen2{height:700px;
+			position:relative;
+			text-align:center;
+			margin-top:60px;
+			margin-bottom:20px;
+			}
+			
+#screen2 > h1{color:#e63c18;
+margin-bottom:50px;
+  font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+ 
+ /*the end of 2nd sreen*/
+ 
+ /*the begining of the general form*/
+			
+				#form1{	background-image:url(img/grass.jpg);
+						height:310px;
+						width:100%;
+						position:relative;
+						min-width:1250px;
+						padding:0;
+						margin-bottom:0px;
+					}
+						
+						#countdown{
+									top:140px;
+									width:500px;
+									height:100px;
+									/*border:4px solid #ffcc00;*/
+									position:absolute;
+									margin-top:30px;
+									left:60%;
+									margin-left:-46px;}
+									
+										#note{font-size:0;}
+									
+							.in1{width:338px;
+								height:52px;
+								border-radius: 10px;
+								padding-left:50px;
+								position:relative;
+								top:30px;
+								left:60%;
+								font-size:1.4em;
+								color:#d3c9c0;
+								background-repeat:no-repeat;
+								background-image:url(img/form.png);
+								border:2px solid #d3c9c0;
+								background-position:left center;
+								border-radius:10px;
+								z-index:1000;
+								background-position:1% 50%;
+								   font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+								 
+								.in2{width:338px;
+									height:52px;
+									background-image:url(img/form1.png);
+									background-size:48px;
+									padding-left:50px;
+									position:relative;
+									left:60%;
+									top:30px;
+									font-size:1.4em;
+									background-repeat:no-repeat;
+									color :#d3c9c0;
+									border:2px solid #d3c9c0;
+									background-position:left center;
+									border-radius:10px;
+									margin-top:10px;
+									margin-bottom:10px;
+									   font-family: 'Open Sans'; font-style: normal; font-weight: 300;
+									 z-index:999;}
+									 
+									 .bt1{
+										width:234px;
+										height:43px;
+										border:0;
+										background-image:url(img/button.png);
+										position:relative;
+										left:64%;
+										top:116px;
+										font-size:0;
+										background-repeat:no-repeat;
+										background-color:#407047;
+										z-index:1000;
+										}
+										
+										.bt1:hover{cursor:pointer;
+										background-image:url(img/buttonh.png);}
+										
+										/*summer action -30*/
+										
+										#sumaction{position:relative;
+											top:-140px;
+											text-align:center;
+											margin-left:-400px;
+											}
+
+
+
+											/*the beginning of screen how we works*/
+											
+												#screen3 > table {/* border:2px solid #666; */
+				width:100%;
+    				margin-top:50px;
+				margin-bottom:60px;}
+
+										
+										#screen3{position:relative;
+										text-align:center;
+										margin-top:-110px;
+										margin-bottom:60px;}
+										
+										#screen3 img{vertical-align:top;}
+										
+										#screen3 > img {margin-top:50px;
+														margin-bottom:30px;}
+														
+									#in{width:720px;
+								margin:40px auto 70px auto;
+								text-align:left;
+								}
+								
+									.arrow{
+								margin-top:60px;
+								margin-left:40px;
+								margin-right:40px;}		
+												
+									
+											
+											#screen3 > h1{  font-family: 'Open Sans'; font-style: normal; font-weight: 300;
+											margin-top:-20px;
+											margin-bottom:20px;
+											color:rgba(226,44,15,0.8);}
+											
+											/*the end of how we works*/
+											
+												/*the begining of the div all moscow*/
+
+		#screen4{width:100%;
+/*height:216%*/;
+height:500px;
+background:url(img/bck.jpg)no-repeat;
+background-position:center;
+background-size:100%;
+margin-top:0px;
+position:relative;}
+
+	#ll{position:relative;
+	top:200px;
+	left:60px;}
+	
+#allbutton{margin-left:180px;
+		width:234px;
+		height:43px;
+		background-image:url(img/button.png);
+		margin-top:10px;
+		position:relative;
+		top:200px;
+}
+
+#allbutton:hover{
+background-image:url(img/buttonh.png);}
+
+/*the end of screen all moscow*/
+										
+/*the beginning of screen why we are best*/
+
+#screen5{padding-bottom:60px;
+margin-top:20px;}
+
+	.tablehr {/* border:2px solid #666; */
+				width:100%;
+    				margin-top:50px;
+				margin-bottom:40px;}
+				
+			
+				#screen5 > p {vertical-align:top;
+								margin-top:-20px;
+								position:relative;}
+				
+					#best{
+							margin:0 auto;
+							   font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+							 
+							 .bold{font-size:1.8em;}
+
+								td{font-size:1.3em;}
+								
+								#reas{text-align:center;
+								border:2px solid #666;
+									/*	margin-bottom:20px;*/
+										font-size:2.2em;
+										color:rgb(226,44,15);
+										 font-family: 'Open Sans'; font-style: normal; font-weight: 300;}			
+	 
+										 /*telka*/
+										 #telka{margin-top:-10px;
+										 }
+										 
+										#telkaimg{height:192px;
+										width:200px;
+										position:relative;
+										z-index:2;
+										margin-left:-800px;
+										
+										}
+								
+											
+											
+										#texture{width:100%;
+											height:160px;
+										background-image:url(img/texture.jpg);
+										background-repeat:repeat;
+										position:absolute;
+										top:10px;
+										z-index:0;
+										padding-top:20px;
+													}
+											
+											
+											#container{width:100%;
+											height:200px;
+											z-index:2;
+											position:relative;
+											text-align:center;
+											}
+											
+											
+											#red{position:relative;
+												text-align:center;
+											font-size:2em;
+											color: rgb(226,44,15);
+											   font-family: 'Open Sans'; font-style: normal; font-weight: 300;
+											 }
+											 
+											 
+											 #blue{font-size:0.7em;
+													color:#55bfab;
+													font-family: 'Open Sans';
+													  font-style:italic;
+													  font-weight: 700;}
+													  
+													  #button1{position:relative;
+																width:234px;
+																height:43px;
+																background-image:url(img/button.png);
+																top:-65px;
+																margin: 0 auto;
+																z-index:1000;
+																}
+
+																#button1:hover{
+																background-image:url(img/buttonh.png);}
+
+				
+				/*our works*/
+
+		#screen6 > table {/* border:2px solid #666; */
+				width:100%;
+				margin-top:4px;
+				margin-bottom:40px;}
+.walll{position:relative;
+width:85%;
+height:600px;
+margin:0 auto;
+
+}	/*common block for an img and text*/
+				
+.wall{
+margin:0 auto 40px auto;
+display:block;
+position:relative;
+top:38px;
+left:-2px;
+z-index:1;
+border-radius:3px;
+width:100%;
+height:90%;
+}	/*class for an imgs*/	
+
+
+/*block for a text in image*/
+.answer{width:38%;
+height:20%;
+position:absolute;
+top:50%;
+left:8%;
+z-index:4;
+background-color:rgba(255,255,255,0.6);
+border-radius:4px;
+padding:1%;
+vertical-align:middle;}	
+
+.answer > p{  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  text-align:center;
+  font-size:1.7em;
+  }
+  #span1{font-family: 'Open Sans';
+ font-style:normal;
+  font-weight:300;
+color:rgb(226,44,15);}
+
+  
+  
+  /*the beginning of the feedbacks*/
+  		
+				#feedbacks{height:500px;
+				margin-top:30px;
+				font-family: 'Open Sans'; font-style: normal; font-weight: 300;}
+				
+			
+				#feedbacks > table {/* border:2px solid #666; */
+				width:100%;
+				margin-top:40px;}
+				
+				.txt{
+				text-align:center;
+				font-size:28px;
+				font-family: 'Open Sans'; font-style: normal; font-weight: 300;
+				 width:210px;
+				 }
+				td > hr{
+				border:none;
+    background-color:#ed1c24; /* Цвет линии */
+    color: #ff0000; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */;}
+  
+
+.chat{width:70%;
+border:2px solid #e0e0e0;
+margin:100px auto 0px auto;
+background-color:#ebebeb;
+position:relative;
+padding-top:20px;
+padding-left:20px;
+padding-bottom:20px;
+border-radius:4px;
+}
+
+.chat > p{font-size:1.4em;}
+
+.corner{position:absolute;
+right:100%;
+top:30%;
+margin-right:-1px;}
+
+.user{
+/*border:2px solid #666;*/
+position:absolute;
+right:100%;
+margin-right:50px;
+font-size:1.2em;
+text-align:center;
+top:-10px;
+
+}
+
+/*styles for the fixedbackground*/
+#fixedbck{
+width:100%;
+height:100%;
+display:block;
+position:fixed;
+top:0;
+z-index:-1;
+background-image:url(img/texture.jpg);
+opacity:0.25;
+}
+
+/*styles for popup*/
+#popup {
+	width: 475px;
+height:230px;
+	background-image:url(img/grass.jpg);
+	/*important*/position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 3px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5), inset 0 0 60px rgba(0, 0, 0, 0.2);
+	color: #565656;
+	z-index:10000;
+	display:none;
+}
+
+#overlay {
+    background: #000;
+    position: fixed;
+	top: 0;
+    left: 0;
+    height: 100%;
+	width: 100%;
+    opacity: 0.5;/*полупрозрачный*/
+    z-index: 9999;
+	display:none;
+}
+
+#close_popup {
+	width: 14px;
+	height: 16px;
+	background: url(img/close.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+/* for button in popup*/
+.btt1{
+width:234px;
+left:74px;
+top:30px;
+height:43px;
+border:0;
+background-image:url(img/button.png);
+position:relative;
+font-size:0;
+background-repeat:no-repeat;
+background-color:#407047;
+}
+.btt1:hover{cursor:pointer;
+background-image:url(img/buttonh.png);}
+/*addings*/
+
+#spiced{width:100%;
+text-align:center;
+height:50px;
+background-color:#fff;
+position:relative;
+top:100px;
+padding-top:20px;
+}
+.txt.f1{font-size:1.8em;}

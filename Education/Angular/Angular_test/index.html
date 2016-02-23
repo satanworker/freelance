@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>shaping up with Angular</title>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid" ng-app="gemStore">
+<div class="row" ng-controller="storeController as store">
+        <div class="container">
+            <div class="alert alert-success" ng-repeat="gem in store.products">
+            <p>{{gem.name}}</p>
+                <p></p>
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active" data-target="description"><a href="#">Description</a></li>
+                    <li role="presentation" data-target="stars"><a href="#">Stars</a></li>
+                    <li role="presentation" data-target="review"><a href="#">Reviews</a></li>
+                </ul>
+                <p></p>
+             <p ng-repeat="des in gem.textValues">
+                 {{des.description}}
+             </p>
+            </div>
+        </div><!-- / container -->
+    </div>
+    <div class="div" ng-controller="clickCtrl as click">
+        <p ng-click="setMaster($event, this)" data-some="some">dfsdfsdfsdfsdfsdfsdfdsf</p>
+    </div>
+</div><!-- / container fluid-->
+</body><!--/store-->
+</html>

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  src: url(../font/HelveticaNeueCyr-Medium.otf);
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  src: url(../font/HelveticaNeueCyr-Bold.otf);
+}
+html,
+body {
+  margin: 0;
+}
+.keyframe_0 0% {
+  width: 3px;
+}
+.keyframe_0 100% {
+  width: 415px;
+}
+@keyframes androidRotate {
+  0% {
+    width: 3px;
+  }
+  100% {
+    width: 415px;
+  }
+}
+@-webkit-keyframes androidRotate {
+  0% {
+    width: 3px;
+  }
+  100% {
+    width: 415px;
+  }
+}
+@-ms-keyframes androidRotate {
+  0% {
+    width: 3px;
+  }
+  100% {
+    width: 415px;
+  }
+}
+@-moz-keyframes androidRotate {
+  0% {
+    width: 3px;
+  }
+  100% {
+    width: 415px;
+  }
+}
+.container-fluid {
+  background: url(../images/back.png) no-repeat;
+  width: 480px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+.container-fluid h1 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-left: 82px;
+  margin: 0;
+}
+.container-fluid h1 span {
+  font-weight: 400;
+}
+.container-fluid .middle {
+  padding-top: 215px;
+  padding-left: 140px;
+}
+.container-fluid .middle p {
+  color: #ededed;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+.container-fluid .middle p.top {
+  margin-bottom: 20px;
+}
+.container-fluid .bar_block .bold {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 52px;
+  padding-left: 52px;
+  padding-bottom: 10px;
+}
+.container-fluid .bar_block .bar {
+  width: 434px;
+  height: 88px;
+  background: url(../images/bar_common.png);
+  margin-left: 28px;
+  position: relative;
+}
+.container-fluid .bar_block .bar:after {
+  content: '';
+  width: 0;
+  height: 62px;
+  display: block;
+  background: url(../images/bar_fill.png) no-repeat;
+  margin-top: 11px;
+  margin-left: 8px;
+  position: absolute;
+}
+.container-fluid .button {
+  display: block;
+  width: 208px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e1e1d;
+  background: url(../images/button.png) no-repeat;
+  margin-top: 16px;
+  text-align: center;
+  padding-top: 23px;
+  margin-left: 141px;
+  padding-bottom: 20px;
+}
+.container-fluid.animated .bar:after {
+  -webkit-animation: androidRotate 2.6s forwards;
+  -o-animation: androidRotate 2.6s forwards;
+  animation: androidRotate 2.6s forwards;
+}

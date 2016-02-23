@@ -1,0 +1,351 @@
+/* needs */
+
+.TextWraps,
+.ButtonWraps,
+.FileWraps,
+.RadioWraps,
+.CheckboxWraps,
+.TextareaWraps {
+    display: inline-block;
+    vertical-align: top;
+    position: static;
+    z-index: 100;
+}
+
+.TextWrap,
+.ButtonWrap,
+.FileWrap,
+.RadioWrap,
+.CheckboxWrap,
+.TextareaWrap,
+.SelectWrap {
+    position: relative;
+    vertical-align: middle;
+}
+
+.TextWrap input,
+.ButtonWrap input,
+.FileWrap input,
+.RadioWrap input,
+.CheckboxWrap input,
+.TextareaWrap textarea {
+    outline: none;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+/*  Text */
+
+.TextWraps {
+    position: relative;
+    cursor: text;
+    display: block;
+}
+
+.TextWrap {
+    display: inline-block;
+}
+
+.TextPlace { 						/* placeholder */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    cursor: text;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    z-index: 101;
+    white-space: nowrap;
+}
+
+.TextFocus .TextPlace,
+.TextFilled .TextPlace {
+    display: none;
+}
+
+.TextWrap input {
+    width: 100%;
+}
+
+/* Button */
+
+.ButtonTitle {
+    display: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+}
+
+/* File */
+
+.FileWrap {
+    overflow: hidden;
+}
+
+.FileWrap .FileState {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.FileWrap input.FileField {
+    font-size: 250px;
+//font-size: 15px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: 0;
+    top: -200%;
+    z-index: 101;
+    cursor: pointer;
+}
+
+/* Radio\Checkbox */
+
+.RadioWraps,
+.CheckboxWraps {
+    width: 15px;
+    height: 15px;
+    position: static;
+}
+
+.RadioWrap,
+.CheckboxWrap {
+    position: relative;
+}
+
+.RadioWrap .RadioState,
+.CheckboxWrap .CheckboxState {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 101;
+}
+
+.RadioWrap input,
+.CheckboxWrap input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    z-index: 102;
+    margin: 0;
+    padding: 0;
+}
+
+/* Textarea */
+
+.TextareaWrap {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    padding: 5px;
+    padding-right: 0;
+}
+
+.TextareaWrap textarea {
+    pading: 0;
+    margin: 0;
+    border: 0;
+    background: none;
+}
+
+.TextareaPlace { 						/* placeholder */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    cursor: text;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    z-index: 101;
+    white-space: nowrap;
+}
+
+.TextareaFocus .TextareaPlace,
+.TextareaFilled .TextareaPlace {
+    display: none;
+}
+
+.TextareaWrapInner {
+    position: relative;
+}
+
+/* ScrollBox  */
+
+.scrBox {
+    position: relative;
+    display: block;
+    padding-right: 15px;
+}
+
+.TextareaWrap .scrBox {
+    padding: 0;
+    overflow: hidden;
+}
+
+.scrBox .scrBoxIn {
+    display: block;
+    overflow: hidden;
+}
+
+.scrBox.withScroll textarea.scrBoxIn,
+.scrBox textarea.scrBoxIn {
+    overflow: auto;
+    margin-right: -17px;
+    max-height: 10000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+.TextareaWrapInner {
+    padding-right: 17px;
+}
+
+.scrBoxBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 15px;
+}
+
+.scrBoxBScr {
+    min-height: 25px;
+    position: absolute;
+    width: 5px;
+    left: -2px;
+    background: #222;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.scrBoxBArea {
+    display: block;
+    position: relative;
+    width: 1px;
+    background: #222;
+    margin-left: 7px;
+}
+
+.scrBoxUp,
+.scrBoxDown {
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Select */
+
+.SelectWraps {
+    display: block;
+    position: relative;
+}
+
+.SelectWrap {
+    display: inline-block;
+    position: relative;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+.SelectState {
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+
+.SelectArrow {
+    border: 5px solid #eee;
+    border-top: 5px solid #999;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    height: 0;
+    overflow: hidden;
+
+    display: none;
+}
+
+.SelectOpen .SelectArrow {
+    border: 5px solid #eee;
+    border-bottom: 5px solid #999;
+    top: 2px;
+}
+
+.SelectList {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: 100%;
+    display: none;
+    background: #eee;
+    border: 1px solid #999;
+    z-index: 106;
+}
+
+.SelectList2 {
+    display: block;
+    padding: 5px;
+}
+
+.SelectPlace {
+    display: none;
+}
+
+.SelectListstIn {
+    max-height: 200px;
+}
+
+.SelectOpen {
+    z-index: 105;
+}
+
+.SelectOpen .SelectList {
+    /*display: block;*/
+}
+
+.SelectOptGroupe,
+.SelectOption {
+    display: block;
+    cursor: default;
+}
+
+.SelectOptGroupeTitle {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    margin: 7px 0;
+}
+
+.SelectStateelOption {
+    background: #ccc;
+}
+
+.SelectOptionHover {
+    background: #ddd;
+}
+
+/* \needs */

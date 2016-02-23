@@ -1,0 +1,194 @@
+﻿@import "../bootstrap/bootstrap.less";
+@import "QuestionnaireVariables.less";
+@import "QuestionnaireMixins.less";
+
+#header-2 h2 {
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+
+.text-inline {
+	position: relative;
+	display: inline-block;
+	padding-left: 20px;
+	margin-bottom: 0;
+	vertical-align: middle;
+
+	input[type="text"] {
+		width: auto;
+	}
+}
+
+.help-block {
+	.help-block;
+	color: #336EB2;
+	margin: 0 0 0 5px;
+	font-size: ceil((@font-size-base * 0.8));
+}
+
+.frm-part {
+	.frm-part-header {
+	}
+}
+
+.frm-group {
+	margin-bottom: 10px;
+
+	.frm-group-header {
+		line-height: inherit;
+		margin-bottom: 10px;
+	}
+
+	.frm-group-fields {
+		padding-left: 10px;
+	}
+}
+
+.frm-field {
+	margin-bottom: 1.5%;
+	position: relative;
+
+	label {
+		font-weight: normal;
+		margin: 0;
+
+		& + .help-block {
+			margin-top: 3px;
+
+			& + input {
+				margin-top: 5px;
+			}
+		}
+
+		& + input[type=text] {
+			margin-top: 5px;
+		}
+	}
+
+	&.frm-error {
+		margin-left: -@left-strip-margin;
+		padding-left: @left-strip-padding;
+		border-left: @left-strip-size solid @state-danger-mark;
+		.frm-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+	}
+
+	.frm-comment {
+		color: @brand-danger;
+		margin-top: 5px;
+	}
+}
+
+.frm-list-mark {
+	display: list-item;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.frm-field.frm-group-field {
+	margin-bottom: 1%;
+}
+
+.frm-yesno {
+	.text-right;
+}
+
+.field-validation-error {
+	display: block;
+	color: @state-danger-text;
+}
+
+.frm-printable {
+	color: black;
+	border: 1px solid silver;
+	padding: 5px;
+}
+
+#accept {
+	font-style: italic;
+	padding: 0 20px;
+	margin-top: @line-height-computed;
+	margin-bottom: @line-height-computed;
+	border-left: 5px solid @brand-warning;
+}
+
+#submit {
+	margin-top: @line-height-computed;
+	.text-center;
+}
+
+#print {
+	margin-top: @line-height-computed;
+	.text-center;
+}
+
+#errors {
+	padding: 0 20px;
+	margin-top: 20px;
+	border-left: 5px solid @state-danger-mark;
+
+	&.validation-summary-errors {
+		display: block;
+	}
+
+	&.validation-summary-valid {
+		display: none;
+	}
+}
+
+#footnotes {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid rgb(211, 211, 211);
+	background: rgb(250, 250, 250);
+}
+
+#signature {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	.text-center;
+
+	table {
+		width: 100%;
+
+		td.center-cell {
+			padding: 0 30px;
+			width: 25%;
+		}
+
+		td.last-cell {
+			width: 25%;
+		}
+
+		.center-row td {
+			padding-top: 15px;
+		}
+
+		.last-row td {
+			padding-top: 80px;
+			.text-left;
+		}
+	}
+}
+.col-sm-12, .col-sm-10 {
+  &.padding {
+	padding-bottom: 15px;
+  }
+}
+.help-block.padding {
+  padding-bottom: 5px;
+}
+.form-control.padding {
+  margin-bottom: 10px;
+}
+span.padding {
+  padding-bottom: 5px;
+}
+@media print {
+	#print {
+		display: none;
+	}
+
+	.help-block {
+		display: none;
+	}
+}

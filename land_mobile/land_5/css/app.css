@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  src: url(../font/HelveticaNeueCyr-Medium.otf);
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  src: url(../font/HelveticaNeueCyr-Bold.otf);
+}
+html,
+body {
+  margin: 0;
+}
+.keyframe_0 0% {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.keyframe_0 100% {
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+@keyframes androidRotate {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-webkit-keyframes androidRotate {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-ms-keyframes androidRotate {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+@-moz-keyframes androidRotate {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+.container-fluid {
+  background: url(../images/back.png) no-repeat;
+  width: 480px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 52px 40px 52px;
+}
+.container-fluid h1 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #575757;
+}
+.container-fluid .top {
+  padding-top: 28px;
+}
+.container-fluid .top .left {
+  float: left;
+}
+.container-fluid .top .right {
+  font-size: 44px;
+  font-weight: 700;
+  color: #000000;
+  float: right;
+  padding-top: 4px;
+}
+.container-fluid .top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container-fluid .middle {
+  padding-top: 233px;
+  text-align: center;
+  position: relative;
+}
+.container-fluid .line {
+  position: absolute;
+  top: 186px;
+  left: 181px;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+  background: url(../images/line.png) no-repeat;
+  height: 258px;
+  width: 13px;
+}
+.container-fluid .android {
+  margin-top: 35px;
+  margin-right: 99px;
+  position: relative;
+  z-index: 1;
+}
+.container-fluid .bottom {
+  padding-top: 135px;
+}
+.container-fluid .bottom:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container-fluid .bottom .optimize {
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  height: 69px;
+  line-height: 73px;
+  display: inline-block;
+  background: url("../images/optimize.gif") no-repeat;
+  width: 216px;
+  text-align: center;
+  padding-left: 11px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+}
+.container-fluid .bottom .cancel {
+  font-weight: 400;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+  background: url(../images/cancel.png) no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+  float: right;
+  height: 69px;
+  line-height: 73px;
+  text-align: center;
+  width: 114px;
+}
+.container-fluid.animated .line {
+  -webkit-animation: androidRotate 1.5s forwards;
+  -o-animation: androidRotate 1.5s forwards;
+  animation: androidRotate 1.5s forwards;
+}

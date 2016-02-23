@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Android Антивирус</title>
+    <meta name="viewport" content="width=480" scale="1">
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container-fluid">
+      <h1>Android <span>Антивирус</span></h1>
+        <div class="middle">
+            <p class="top">
+                Последнее сканирование:
+                <br />
+                2015.11.05  14:35
+            </p>
+            <p class="bottom">
+                Сканировано 128 приложений
+                менее чем минуту назад.
+                Вредоносные и шпионские
+                приложения не найдены.
+            </p>
+        </div>
+      <div class="bar_block">
+        <p class="bold">Выполнено: <span id="updateable">100%</span></p>
+          <div class="bar"></div>
+      </div><!-- / bar block -->
+      <a href="#" class="button">Сканировать</a>
+  </div><!-- / container fluid -->
+    <script type="text/javascript">
+        var loopTimeout = function(i, max, interval, func) {
+            if (i > max) {
+                return;
+            }
+
+            // Call the function
+            func(i);
+
+            i++;
+
+            // "loop"
+            setTimeout(function () {
+                loopTimeout(i, max, interval, func);
+            }, interval);
+        };
+        window.onload = function() {
+            loopTimeout(0,100,20, function(i){
+                document.getElementById('updateable').textContent = i + '%';
+            });
+            document.getElementsByClassName('container-fluid')[0].className += ' animated';
+        };
+    </script>
+</body>
+</html>

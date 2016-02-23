@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 500;
+  src: url(../font/ProximaNovaRegular.ttf);
+}
+@font-face {
+  font-family: "PF Handbook";
+  font-weight: 500;
+  src: url(../font/pfhandbookpro-regular.ttf);
+}
+@font-face {
+  font-family: "PF Handbook";
+  font-weight: 400;
+  src: url(../font/pfhandbookpro-medium.ttf);
+}
+@font-face {
+  font-family: "PF Handbook";
+  font-weight: 100;
+  src: url(../font/pfhandbookpro-thin.ttf);
+}
+@font-face {
+  font-family: "PF Handbook";
+  font-weight: 900;
+  src: url(../font/pfhandbookpro-black.ttf);
+}
+.hover_none:hover,
+.hover_none:visited {
+  text-decoration: none;
+}
+.st0 {
+  fill: #50516F;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.st1 {
+  fill: #FFFFFF;
+}
+.container-fluid {
+  background: #AE95B1;
+  font-size: 16px;
+}
+.container {
+  max-width: 960px;
+}
+.row.header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  padding: 13px 0;
+}
+.row.header .left {
+  padding-left: 70px;
+}
+.row.header div {
+  padding: 0;
+}
+.row.header .header_title {
+  font-size: 18px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.row.header .logo {
+  width: 79px;
+  display: inline-block;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+.row.header .logo:hover .st0 {
+  fill: #DD5158;
+}
+.row.header .logo:hover,
+.row.header .logo:visited {
+  text-decoration: none;
+}
+.row.header .header_title {
+  font-family: 'Proxima Nova', Arial;
+  font-size: 18px;
+  color: #50516F;
+  margin-top: 8px;
+  margin-left: 26px;
+}
+.row.header .right {
+  text-align: right;
+}
+.row.header .callback {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  width: 192px;
+  text-align: center;
+  font-family: 'PF Handbook', Arial;
+  font-weight: 900;
+  background: #50516F;
+  color: #fff;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.row.header .callback:hover {
+  text-decoration: none;
+}
+.row.header .number {
+  margin-left: 30px;
+  font-family: 'PF Handbook', Arial;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: #50516F;
+  font-size: 18px;
+}
+.row.header .number span {
+  color: #AE95B1;
+}
+.row.first {
+  height: 920px;
+  background: url(../images/first_back.png) no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+.row.first .first_h1 {
+  font-size: 32px;
+  font-family: 'Proxima Nova', Arial;
+  font-weight: 500;
+  display: inline-block;
+  color: #FFFFFF;
+  background: #DD5158;
+  letter-spacing: 0.12em;
+  height: 66px;
+  line-height: 66px;
+  padding: 0 33px;
+  margin-top: 61px;
+}
+.row.first .wild_first {
+  width: 696px;
+  margin: 16px auto 0 auto;
+  background: url(../images/first_wild.png) no-repeat;
+  padding-bottom: 110px;
+  background-size: 100%;
+}
+.row.first .wild_first .top {
+  font-size: 240px;
+  line-height: 195px;
+  font-family: 'PF Handbook', Arial;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.115em;
+  display: inline-block;
+  margin-top: 62px;
+  margin-bottom: 0;
+}
+.row.first .wild_first .middle {
+  font-family: 'PF Handbook', Arial;
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+.row.first .wild_first .bottom {
+  font-family: 'Proxima Nova', Arial;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.4em;
+  margin-top: 100px;
+}
+.row.portfolio {
+  background: #fff;
+}
+.row.portfolio div {
+  padding: 0;
+}
+.row.portfolio .top.clearfix {
+  padding: 35px 0;
+}
+.row.portfolio .top.clearfix .title_block .title {
+  font-family: 'PF Handbook', Arial;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  font-size: 32px;
+  color: #50516F;
+  text-transform: uppercase;
+  margin: 0;
+}
+.row.portfolio .top.clearfix .title_block a {
+  font-family: 'Proxima Nova', Arial;
+  font-size: 15px;
+  color: #AE95B1;
+  border-bottom: 2px solid;
+}
+.row.portfolio .top.clearfix .title_block a:hover,
+.row.portfolio .top.clearfix .title_block a:visited {
+  text-decoration: none;
+}
+.row.portfolio .top.clearfix .title_block a:hover {
+  border-bottom: 2px solid transparent;
+}
+.row.portfolio .top.clearfix .des_left .top,
+.row.portfolio .top.clearfix .des_right .top {
+  margin: 0;
+  font-family: 'PF Handbook', Arial;
+  font-weight: 100;
+  font-size: 32px;
+  letter-spacing: 0.12em;
+  color: #50516F;
+}
+.row.portfolio .top.clearfix .des_left .bottom,
+.row.portfolio .top.clearfix .des_right .bottom {
+  font-family: 'Proxima Nova', Arial;
+  font-size: 15px;
+  font-weight: 500;
+  color: #AE95B1;
+}

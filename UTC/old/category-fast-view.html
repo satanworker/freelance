@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>utc category</title>
+
+    <!-- Bootstrap -->
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic&subset=latin,cyrillic-ext"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/app2.css" rel="stylesheet">
+    <link href="css/category.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <!--<link href="css/jquery-ui.structure.css" rel="stylesheet">-->
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="container-fluid">
+    <div class="row top">
+        <div class="container">
+            <div class="top-block">
+                <div class="col-md-6">
+                    <a href="#" alt="">Как заказать</a>
+                    <a href="#" alt="">Оплата</a>
+                    <a href="#" alt="">Доставка</a>
+                    <a href="#" alt="">Контакты</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" alt="">Войти</a>
+                    <a href="#" alt="">Регистрация</a>
+                </div>
+            </div>
+            <!-- top navi -->
+        </div>
+    </div>
+    <div class="row header">
+        <div class="container">
+            <div class="info-block">
+                <div class="col-md-5 logotype">
+                    <a href="#"><img src="images/logotype.png" width="397" height="65" title=""/></a>
+                </div>
+                <div class="col-md-3 phones">
+                    <a href="tel:88003222223">8 800<span>322 22 23</span></a>
+                    <a href="#">Заказать обратный звонок</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="cart-panel">
+                        <div class="left">
+                            <span class="badge active">4</span>
+                        </div>
+                        <div class="right">
+                            <span>88 540</span>
+                            <a href="#" class="btn btn-transparent">оформить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- info block -->
+        </div>
+    </div>
+    <!-- header -->
+
+    <div class="row helper-block">
+        <div class="container">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-info">каталог товаров</a>
+            </div>
+            <div class="col-md-8">
+                <form class="global-form">
+                    <fieldset></fieldset>
+                    <input type="text" name="" placeholder="Введите слово для поиска среди 12.000 товаров">
+                    <button class="btn btn-info">Найти</button>
+                    <a href="#">Расширенный поиск</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row breadcrumb-block">
+        <div class="container">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Домашний текстиль</a></li>
+                    <li class="active">Салфетки</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="row content two-columns">
+        <div class="container">
+            <div class="col-md-4 left-column">
+                <h3>Название категории</h3>
+                <form>
+                    <fieldset>
+                        <legend>цена</legend>
+                        <div>
+                            <div id="amount">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </div>
+                            <div id="slider"></div>
+                        </div>
+                        <div class="price-range">
+                            <a href="#"><span>0 - 1500рублей</span></a>
+                            <a href="#"><span>1500 - 3000 <i>рублей</i></span></a>
+                            <a href="#"><span>3000 - 4500 <i>рублей</i></span></a>
+                            <a href="#"><span>4500 - 7000 <i>рублей</i></span></a>
+                            <a href="#"><span>7000 - 9500 <i>рублей</i></span></a>
+                        </div>
+                        <div class="controls">
+                            <a href="#">Применить</a>
+                            <a href="#"><span>сбросить фильтр</span></a>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Бренд</legend>
+                        <div class="brand">
+                            <label><input type="checkbox"/>Kingsilk</label>
+                            <label class="checked">
+                                <input type="checkbox"/>cleo
+                                <div class="hint">
+                                    <span>выбрано товаров&nbsp;<i>65</i></span>
+                                    <a href="#">показать</a>
+                                </div>
+                            </label>
+                            <label><input type="checkbox"/>tac</label>
+                            <label><input type="checkbox"/>хлопковый рай</label>
+                            <label><input type="checkbox"/>sailid</label>
+                        </div>
+                        <div class="controls lonely">
+                            <a href="#">Применить</a>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="controls main">
+                            <a href="#" class="btn btn-info">Применить</a>
+                            <a href="#"><span>сбросить фильтр</span></a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-md-8 right-column">
+                <div class="category-list">
+                    <a href="#">Лидеры продаж</a>
+                    <a href="#">Новинки</a>
+                    <a href="#">Распродажа</a>
+                    <a href="#">Полутороспальное</a>
+                    <a href="#">Евро</a>
+                    <a href="#">Евромакси</a>
+                    <a href="#">Семейное</a>
+                    <a href="#">Полутороспальное</a>
+                    <a href="#">Евро</a>
+                    <a href="#">Евромакси</a>
+                    <a href="#">Семейное</a>
+                    <a href="#" class="show-all">показать все</a>
+                </div>
+
+                <div class="filter-constructor">
+                    <div class="filter monument">
+                        <span>Выбрано</span>
+                        <a href="#">сбросить фильтр</a>
+                    </div>
+
+                    <div class="filter brand">
+                        <span>Бренд</span>
+                        <a href="#"><i></i>cleo</a>
+                        <a href="#"><i></i>sailid</a>
+                        <a href="#"><i></i>kingsilk</a>
+                        <a href="#"><i></i>tac</a>
+                        <a href="#"><i></i>cleo</a>
+                        <a href="#"><i></i>sailid</a>
+                        <a href="#"><i></i>kingsilk</a>
+                        <a href="#"><i></i>tac</a><a href="#"><i></i>cleo</a>
+                        <a href="#"><i></i>sailid</a>
+                        <a href="#"><i></i>kingsilk</a>
+                        <a href="#"><i></i>tac</a><a href="#"><i></i>cleo</a>
+                        <a href="#"><i></i>sailid</a>
+                        <a href="#"><i></i>kingsilk</a>
+                        <a href="#"><i></i>tac</a><a href="#"><i></i>cleo</a>
+                        <a href="#"><i></i>sailid</a>
+                        <a href="#"><i></i>kingsilk</a>
+                        <a href="#"><i></i>tac</a>
+                    </div>
+
+                    <div class="filter material">
+                        <span>Ткань</span>
+                        <a href="#"><i></i>хлопок</a>
+                        <a href="#"><i></i>синтетика</a>
+                    </div>
+
+                    <div class="filter size">
+                        <span>Размер</span>
+                        <a href="#"><i></i>210<sup>*</sup>175</a>
+                        <a href="#"><i></i>210<sup>*</sup>110</a>
+                        <a href="#"><i></i>175<sup>*</sup>210</a>
+                    </div>
+                    <div class="controls">
+                        <div class="left">
+                            <span>Сортировать:</span>
+                            <a href="#">По популярности</a>
+                            <a href="#">По цене</a>
+                            <a href="#">По размеру скидки</a>
+                        </div>
+                        <div class="right">
+                            <span>Показывать</span>
+                            <a href="#">Картинками</a>
+                            <a href="#">Списком</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items grid-block custom-grid">
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item sel">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+                            <a href="#" class="btn btn-info fast-view">Быстрый просмотр</a>
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#"><span>Быстрый заказ</span></a>
+                                <a href="#"><span>В сравнение</span></a>
+                                <a href="#"><span>В закладки</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                            <img src="images/test-item.jpg" width="149" height="96">
+
+                            <div class="specs">
+                                <span>Размер: евро</span>
+                                <span>Ткань: сатин</span>
+                            </div>
+                            <div class="specs-extend">
+                                <table>
+
+                                    <tr>
+                                        <td>Размер:</td>
+                                        <td>евро</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ткань:</td>
+                                        <td>сатин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пододеяльник:</td>
+                                        <td>200*220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Простыня:</td>
+                                        <td>240*260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наволочка:</td>
+                                        <td>50*70 (2шт)<br/>
+                                            70*70 (2шт)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <span>15 840</span>
+                                <a href="#" class="btn btn-info btn-buy">Купить</a>
+                            </div>
+                            <div class="price-extend">
+                                <a href="#">Быстрый заказ</a>
+                                <a href="#">В сравнение</a>
+                                <a href="#">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items grid-block custom-grid custom-grid-list">
+                    <div class="item sel">
+                        <div class="inner">
+                            <div class="image-wrap">
+                                <img src="images/test-item.jpg" width="149" height="96">
+                            </div>
+                            <div class="tech-info">
+                                <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                                <div class="specs">
+                                    <span>Размер: евро</span>
+                                    <span>Ткань: сатин</span>
+                                </div>
+                                <div class="specs-extend">
+                                    <table>
+
+                                        <tr>
+                                            <td>Размер:</td>
+                                            <td>евро</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ткань:</td>
+                                            <td>сатин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пододеяльник:</td>
+                                            <td>200*220</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Простыня:</td>
+                                            <td>240*260</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="price-info">
+                                <div class="price">
+                                    <span>15 840</span>
+                                    <a href="#" class="btn btn-info btn-buy">Купить</a>
+
+                                    <a href="#" class="price-extend">Быстрый заказ</a>
+                                    <a href="#" class="price-extend">В сравнение</a>
+                                    <a href="#" class="price-extend">В закладки</a>
+                                </div>
+                                <!--<div class="price-extend">-->
+                                    <!---->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <div class="image-wrap"><img src="images/test-item.jpg" width="149" height="96"></div>
+                            <div class="tech-info">
+                                <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                                <div class="specs">
+                                    <span>Размер: евро</span>
+                                    <span>Ткань: сатин</span>
+                                </div>
+                                <div class="specs-extend">
+                                    <table>
+
+                                        <tr>
+                                            <td>Размер:</td>
+                                            <td>евро</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ткань:</td>
+                                            <td>сатин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пододеяльник:</td>
+                                            <td>200*220</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Простыня:</td>
+                                            <td>240*260</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="price-info">
+                                <div class="price">
+                                    <span>15 840</span>
+                                    <a href="#" class="btn btn-info btn-buy">Купить</a>
+
+                                    <a href="#" class="price-extend">Быстрый заказ</a>
+                                    <a href="#" class="price-extend">В сравнение</a>
+                                    <a href="#" class="price-extend">В закладки</a>
+                                </div>
+                                <!--<div class="price-extend">-->
+                                <!---->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <div class="image-wrap"><img src="images/test-item.jpg" width="149" height="96"></div>
+                            <div class="tech-info">
+                                <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                                <div class="specs">
+                                    <span>Размер: евро</span>
+                                    <span>Ткань: сатин</span>
+                                </div>
+                                <div class="specs-extend">
+                                    <table>
+
+                                        <tr>
+                                            <td>Размер:</td>
+                                            <td>евро</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ткань:</td>
+                                            <td>сатин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пододеяльник:</td>
+                                            <td>200*220</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Простыня:</td>
+                                            <td>240*260</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="price-info">
+                                <div class="price">
+                                    <span>15 840</span>
+                                    <a href="#" class="btn btn-info btn-buy">Купить</a>
+
+                                    <a href="#" class="price-extend">Быстрый заказ</a>
+                                    <a href="#" class="price-extend">В сравнение</a>
+                                    <a href="#" class="price-extend">В закладки</a>
+                                </div>
+                                <!--<div class="price-extend">-->
+                                <!---->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <div class="image-wrap"><img src="images/test-item.jpg" width="149" height="96"></div>
+                            <div class="tech-info">
+                                <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                                <div class="specs">
+                                    <span>Размер: евро</span>
+                                    <span>Ткань: сатин</span>
+                                </div>
+                                <div class="specs-extend">
+                                    <table>
+
+                                        <tr>
+                                            <td>Размер:</td>
+                                            <td>евро</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ткань:</td>
+                                            <td>сатин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пододеяльник:</td>
+                                            <td>200*220</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Простыня:</td>
+                                            <td>240*260</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="price-info">
+                                <div class="price">
+                                    <span>15 840</span>
+                                    <a href="#" class="btn btn-info btn-buy">Купить</a>
+
+                                    <a href="#" class="price-extend">Быстрый заказ</a>
+                                    <a href="#" class="price-extend">В сравнение</a>
+                                    <a href="#" class="price-extend">В закладки</a>
+                                </div>
+                                <!--<div class="price-extend">-->
+                                <!---->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <div class="image-wrap"><img src="images/test-item.jpg" width="149" height="96"></div>
+                            <div class="tech-info">
+                                <span class="title" href="#">Постельное белье из ранфорса TAC RANFORCE BLOSSOM бело-розовое полутороспальное</span>
+                                <div class="specs">
+                                    <span>Размер: евро</span>
+                                    <span>Ткань: сатин</span>
+                                </div>
+                                <div class="specs-extend">
+                                    <table>
+
+                                        <tr>
+                                            <td>Размер:</td>
+                                            <td>евро</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ткань:</td>
+                                            <td>сатин</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пододеяльник:</td>
+                                            <td>200*220</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Простыня:</td>
+                                            <td>240*260</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наволочка:</td>
+                                            <td>50*70 (2шт)<br/>
+                                                70*70 (2шт)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="price-info">
+                                <div class="price">
+                                    <span>15 840</span>
+                                    <a href="#" class="btn btn-info btn-buy">Купить</a>
+
+                                    <a href="#" class="price-extend">Быстрый заказ</a>
+                                    <a href="#" class="price-extend">В сравнение</a>
+                                    <a href="#" class="price-extend">В закладки</a>
+                                </div>
+                                <!--<div class="price-extend">-->
+                                <!---->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagi">
+                    <nav>
+                        <ul class="pagination">
+
+                        <li class="previous disabled"><a href="#">Первая страница</a></li>
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">Предыдущая</span>
+                            </a>
+                        </li>
+                        <li class="page disabled"><a href="#">1</a></li>
+                        <li class="page"><a href="#">2</a></li>
+                        <li class="page"><a href="#">3</a></li>
+                        <li class="page"><a href="#">4</a></li>
+                        <li class="page"><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">Следующая</span>
+                            </a>
+                        </li>
+                        <li class="next"><a href="#">Последняя страница</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- content -->
+        <div class="row footer">
+            <div class="container">
+                <div class="col-md-4">
+                    <img src="images/logotype-footer.png" width="220" height="115">
+                </div>
+                <div class="col-md-8">
+                    <div class="left-side">
+                        <div class="contacts">
+                            <a href="#">8 800<span>322 22 33</span></a>
+                            <a href="mailto:info@uts.ru">info@uts.ru</a>
+                        </div>
+                        <div class="social">
+                            <div class="socialfacebook">
+                                <a href="#" alt="vk"></a>
+                            </div>
+                            <div class="socialtwitter">
+                                <a href="#" title="fb"></a>
+                            </div>
+                            <div class="socialvkontakte">
+                                <a href="#" title="tv"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="heading">О компании</li>
+                            <li><a href="#">Пресс-центр</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Реквизиты</a></li>
+                            <li><a href="#">О компании</a></li>
+                        </ul>
+                        <ul>
+                            <li class="heading">Помощь</li>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Помощь</a></li>
+                        </ul>
+                        <ul>
+                            <li class="heading">Обратная связь</li>
+                            <li><a href="#">Зарабатывайте с нами</a></li>
+                            <li><a href="#">Продавайте Ваши товары</a></li>
+                            <li><a href="#">Зарабатывайте на партнерской программе</a></li>
+                            <li><a href="#">Размещайте рекламу</a></li>
+                            <li><a href="#">Открывайте пункты выдачи заказов</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-block">
+        <div class="container">
+            <div class="left-side">
+                <span class="to-top"></span>
+                <a href="#">Обратная связь</a>
+            </div>
+            <div class="widgets">
+                <div class="compare">
+                    <p>В сравнение</p>
+                    <span class="badge">0</span>
+                </div>
+                <div class="bookmarks">
+                    <p>Закладки</p>
+                    <span class="badge">2</span>
+                </div>
+                <div class="cart">
+                    <p>Корзина</p>
+                    <span class="badge">0</span>
+                    <i>88 540</i>
+                    <a href="#" class="btn btn-transparent">оформить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="js/carousel.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(function () {
+            $("#slider").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ 75, 300 ],
+                slide: function(event, ui) {
+                    $("#amount .left").text(ui.values[0]);
+                    $("#amount .right").text(ui.values[1]);
+                }
+            });
+            $("#amount .left").text($("#slider").slider("values", 0));
+            $("#amount .right").text($("#slider").slider("values", 1));
+        });
+    </script>
+</body>
+</html>

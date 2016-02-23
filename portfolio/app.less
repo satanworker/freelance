@@ -1,0 +1,45 @@
+.row {
+  &.personal {
+    padding: 20px 0 0 0;
+    text-align: left;
+    font-size: 1.1em;
+    color: inherit;
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+  .page-header {
+    margin: 20px 0 20px;
+  }
+  .col-md-7 {
+    a {
+      img {
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        z-index: 1;
+      }
+      &:hover {
+         img {
+             -ms-transform: scale(1.02); /* IE 9 */
+              -webkit-transform: scale(1.02); /* Safari */
+              transform: scale(1.02);
+         }
+      }
+    }
+  }
+}
+footer {
+    p {
+      display: inline-block;
+      img {
+        width: 24px;
+        height: 24px;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      &.num {
+        float: right;
+      }
+    }
+  }

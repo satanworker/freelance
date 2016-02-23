@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.ru</title>
+</head>
+<body>
+<p>test</p>
+<script>
+    (function(){
+        var number = 1;
+        var counter = 0;
+        while(counter < 10) {
+            number *= 2;
+            counter += 1;
+        }
+        console.log(number);
+        //foTest
+        var doTest = 0;
+        do {
+            doTest += 1;
+        } while(doTest <= 11);
+        console.log('doTest', doTest);
+        //forTest
+        var forTest = 1;
+        for(var forCounter = 0; forCounter < 10; forCounter++) {
+             forTest *= 2;
+        }
+        console.log('forTest', forTest);
+        //break test
+        for(var current = 20; current++;) {
+            if(current % 90 == 0) {
+                break;
+            }
+        }
+        console.log('beakTest', current);
+        //tasks #
+        var hashTag= '#';
+        var hashBlob = '#';
+        for(var hash = 0; hash <= 7; hash++) {
+            console.log(hashTag);
+            hashTag+=hashBlob;
+        }
+        //tasks fuzzBizz
+        var fuzzBizz = [];
+        for(var counter = 1; counter <= 100; counter++) {
+            if(counter % 3 == 0 && counter % 5 == 0) {
+                fuzzBizz.push('fuzzBizz');
+            }
+            else {
+                fuzzBizz.push(counter);
+            }
+        }
+        console.log(fuzzBizz);
+        //checks Table
+        var checksArray = '';
+        var dimensions = 8;
+        for(var checks = 0; checks < dimensions*dimensions; checks++) {
+            if (checks % (dimensions+1) == 0) {
+                checksArray += '\n'
+            }
+            else {
+                if (checks % 2) {
+                 checksArray += '#';   
+                }   
+                else {
+                    checksArray += ' ';
+                }
+            }
+        };
+        console.log(checksArray);
+        //bisibility areas
+        var x =  'inside';
+        function changeX () {
+            x = 'insideX';
+        };
+        changeX();
+        console.log(x);
+        //landscape
+        function landscape () {
+            var result = '';
+            function flat (size) {
+              for(var count=0; count < size; count++) {
+                  result+='_';
+              };
+            };
+              var mountain = function (size) {
+                  result += '/'
+                for(var count = 0; count < size; count++) {
+                    result+='"';
+                }  
+                result+='\\';
+              };
+                flat(3);
+                mountain(4);
+                flat(6);
+                mountain(1);
+                flat(1);               
+                return result;
+        };
+        console.log(landscape());
+    })();
+</script>
+</body>
+</html>

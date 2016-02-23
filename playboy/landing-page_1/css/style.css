@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "HelveticaNeuelight";
+    src: url("../fonts/HelveticaNeueCyr-Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "HelveticaNeuelight", sans-serif;   
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clearfix {
+    overflow:auto;
+    zoom:1;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    padding-bottom:10px;
+    width: 320px;
+    background: #2d2d2d;
+    color: white;
+}
+
+header {
+    position:relative;
+    padding-top:10px;
+    background:black;
+    height:30px;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Helios Cond Light", arial;
+    font-weight: normal;
+    font-size: 20px;
+    text-align:center;
+}
+
+header .age{
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    font-family: "Helios Cond Light", arial;
+    font-weight: normal;
+    font-size: 24px;
+}
+header h1 span {
+    color: #f9ea00;
+}
+
+.video {
+    position:relative;
+    margin-top: 10px;
+    width: 290px;
+    height: 124px;
+    background: url("../img/big-girls.jpg") no-repeat;
+    background-size: 100%;
+    box-shadow: 0 0 10px 2px black;
+}
+
+.btn-big {
+    display:block;
+    position:absolute;
+    top: 38px;
+    left: 75px;
+    width: 130px;
+    height: 60px;
+    background: url("../img/btn-big.png") no-repeat;
+    background-size:100%;
+}
+
+.btn-small {
+     display:block;
+    position:absolute;
+    top:30px;
+    left:30px;
+    width: 70px;
+    height: 35px;
+    background: url("../img/btn-big.png") no-repeat;
+    background-size:100%;
+}
+
+
+.video:after {
+    content: "";
+    position: absolute;
+    bottom:-15px;
+    height: 12px;
+    width: 100%;
+    background: url("../img/bottom-bar.png") no-repeat;
+    background-size: 100%;
+}
+
+.video-title {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.middle p {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.middle img{
+    vertical-align: top;
+}
+.small-block p {
+    margin-bottom: 0;
+}
+
+.video-small,
+.video-small2{
+    position:relative;
+    margin-top: 10px;
+    width: 130px;
+    height: 71px;
+    background: url("../img/girl-small.jpg") no-repeat;
+    background-size: 170%;
+    background-position: -20px -45px;
+
+    
+}
+
+.video-small2 {
+    background: url("../img/girl2-small.jpg") no-repeat;
+    background-size: 150%;
+    background-position: -25px -30px;
+}
+
+.video-title-small {
+    font-size: 13px;
+    margin-top: 10px;    
+}
+
+.small-block {
+    float: left;
+    margin-left: 5px;
+}
+
+.right {
+    margin-left: 20px;
+}
+
+footer p {
+    font-size: 11px;
+    color: #a2a2a2;
+    text-align: justify;
+    line-height: 10px;
+}
+footer a {
+    color: #a2a2a2;
+}
+
+
+

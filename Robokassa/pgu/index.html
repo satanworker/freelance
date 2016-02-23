@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Изменять в зависимости от оплаты (оплата картой)</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="new.css">
+    <link media="all" rel="stylesheet" href="multiple-select.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.multiple.select.js"> </script>
+</head>
+<body>
+    <div class="wrapper succes">
+        <div class="header">
+            <div class="left">
+                <img src="img/robokassa.svg" alt="robokassa" />
+            </div><!--left-->
+            <div class="right">
+                <p class="payment"> Оплата счёта <span>банковской картой</span></p>
+                <p class="add"> По всем вопросам, касающихся оплаты, пожалуйста, обращайтесь <a href="#"> в нашу службу поддержки</a></p>
+            </div><!--right-->
+        </div><!--header-->
+        <div class="main index">
+            <div class="left">
+                <div class="waveback">
+                    <p class="light-start">
+                        Назначение платежа:
+                    </p>
+                    <p class="dark">
+                        Плата за пользование парковочными местами.<br /> НДС не облагается
+                    </p>
+                    <p class="light">
+                        Сумма платежа:
+                    </p>
+                    <p class="dark">
+                        <span> 200 рублей 00 копеек  </span>
+                    </p>
+                    <p class="light">
+                        Получатель платежа:
+                    </p>
+                    <p class="dark">
+                        УФК по г. Москва <br />
+                        (ГКУ АМПП л/с 04732215740)
+                    </p>
+                    <p class="light-other">
+                        <img src="img/arrow.svg" alt="arrow" />
+                        <span> Прочие данные получателя </span>
+                    </p><!--other data-->
+                    <div class="sub-menu">
+                        <p class="light">
+                            ИНН получателя платежа:
+                        </p>
+                        <p class="dark">
+                            7714887870
+                        </p>
+                        <p class="light">
+                            КПП получателя платежа:
+                        </p>
+                        <p class="dark">
+                            771401001
+                        </p>
+                        <p class="light">
+                            БИК банка получателя платежа:
+                        </p>
+                        <p class="dark">
+                            044583001
+                        </p>
+                        <p class="light">
+                            Банк получателя платежа:
+                        </p>
+                        <p class="dark">
+                            Отделение 1 Московского ГТУ
+                            Банка России, г. Москва 705
+                        </p>
+                        <p class="light">
+                            Счет получателя платежа:
+                        </p>
+                        <p class="dark">
+                            40101810800000010041
+                        </p>
+                        <p class="light">
+                            ОКАТО получателя платежа:
+                        </p>
+                        <p class="dark end">
+                            45334000
+                        </p>
+                    </div><!--ither div wrap-->
+                    <p class="light">
+                        Код бюджетной классификации:
+                    </p>
+                    <p class="dark">
+                        78011105091029000120
+                    </p>
+                    <img src="img/george.svg" alt="george" />
+                </div><!--waveback-->
+                <img src="img/wave.svg" alt="wave" />
+                <p class="alert">
+                    Внимание!
+                </p>
+                <p class="dark">
+                    Перевод денежных средств
+                    сервисом ROBOKASSA
+                    осуществляется на следующий
+                    рабочий день после совершения
+                    платежа!
+                </p>
+            </div><!--left-->
+            <div class="right">
+                <p class="first-dark">
+                    Укажите<span> данные банковской карты</span>
+                </p>
+                <form method="post" action="#">
+                    <fieldset class="fieldset-normal">
+                        <div class="odd">
+                            <input type="text" class="input" placeholder="Номер карты" name="card" required  />
+                            <label for="card" class="normal">
+                                Номер карты
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                            <label for="card" class="wrong non-displayed">
+                                Номер карты<span> не существует</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-normal">
+                        <div class="odd bordered">
+                            <input id="f" type="text" class="input" placeholder="Срок действия" name="duration" required />
+                            <label for="duration" class="normal">
+                                Срок действия
+                            </label>
+                            <label for="duration" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                        </div>
+                        <div class="common">
+                            <p class="control-p" >   <span id="arrow-first">    <a href="#">  <img src="img/arrow_widget.svg"> </a> </span> <span> <img src="img/arrow_widget.svg"> </span>
+                            <div class="numbers">
+                            </div><!--numbers-->
+                            <div class="years">
+                            </div><!--years-->
+                            <p class="control-p">   <span> <img src="img/arrow_widget_down.svg"> </span> <span> <img src="img/arrow_widget_down.svg"> </span>
+                        </div><!--common-->
+                        <div class="odd">
+                            <input type="text" class="input" placeholder="Имя держателя карты (как на карте, если есть)" name="cardname" required />
+                            <label for="name" class="normal">
+                                Имя держателя карты (как на карте, если есть)
+                            </label>
+                            <label for="name" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                            <label for="name" class="wrong non-displayed">
+                                Имя держателя карты (как на карте, если есть)  <span>латинскими буквами</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-normal lastinput">
+                        <div class="odd cvc">
+                            <input type="text" class="input" placeholder="CVC" name="CVC" required />
+                            <label for="CVC" class="normal">
+                                CVC
+                            </label>
+                            <label for="CVC" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <p class="dark">
+                        <span>Имя плательщика </span> (как в паспорте гражданина РФ)
+                    </p>
+                    <fieldset class="fieldset-normal lastinput">
+                        <div class="odd bordered">
+                            <input type="text" class="input" placeholder="Фамилия" name="Surname" required />
+                            <label for="surname" class="normal">
+                                Фамилия
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                            <label for="card" class="wrong non-displayed">
+                                Фамилия <span>только кириллицей </span>
+                            </label>
+                        </div>
+                        <div class="odd bordered">
+                            <input type="text" class="input" placeholder="Имя" name="Name" required />
+                            <label for="name" class="normal">
+                                Имя
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                            <label for="card" class="wrong non-displayed">
+                                Имя <span>только кириллицей </span>
+                            </label>
+                        </div>
+                        <div class="odd">
+
+                            <input type="text" class="input" placeholder="Отчество" name="Patronymic" required />
+                            <label for="Patronymic" class="normal">
+                                Отчество
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                            <label for="card" class="wrong non-displayed">
+                                Отчество <span>только кириллицей </span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <p class="dark">
+                        <span>
+                            Адрес плательщика
+                        </span>
+                    </p>
+                    <fieldset class="fieldset-normal">
+                        <div class="odd bordered">
+                            <input type="text" class="input" placeholder="Индекс" name="index" required />
+                            <label for="index" class="normal ">
+                                Индекс
+                            </label>
+
+
+                        </div>
+                        <div class="odd  bordered">
+                            <input type="text" class="input" placeholder="Страна" name="country" required />
+                            <label for="country" class="normal">
+                                Страна
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                        </div>
+                        <div class="odd">
+
+                            <input type="text" class="input" placeholder="Город" name="city" required />
+                            <label for="city" class="normal">
+                                Город
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-normal">
+                        <div class="odd  bordered">
+                            <input type="text" class="input" placeholder="Улица" name="street" required />
+                            <label for="street" class="normal">
+                                Улица
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span>Обязательно укажите</span>
+                            </label>
+                        </div>
+                        <div class="odd bordered">
+
+                            <input type="text" class="input" placeholder="Дом" name="home" required />
+                            <label for="home" class="normal">
+                                Дом
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span> укажите</span>
+                            </label>
+                        </div>
+                        <div class="odd bordered">
+
+                            <input type="text" class="input" placeholder="Стр." name="building" required />
+                            <label for="city" class="normal">
+                                Строение
+                            </label>
+                        </div>
+                        <div class="odd bordered">
+
+                            <input type="text" class="input" placeholder="Корпус" name="housing" required />
+                            <label for="housing" class="normal">
+                                Корпус
+                            </label>
+                        </div>
+                        <div class="odd">
+
+                            <input type="text" class="input" placeholder="Кв." name="appartment" required />
+                            <label for="appartment" class="normal">
+                                Квартира
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-normal lastinput changed">
+                        <div class="odd">
+                            <input type="text" class="input" placeholder="Электронная почта (username@domain.ru)" name="mail" required />
+                            <label for="mail" class="normal">
+                                Электронная почта (username@domain.ru)
+                            </label>
+                            <label for="card" class="empty non-displayed">
+                                <span> Обязательно укажите</span>
+                            </label>
+                            <label for="card" class="wrong non-displayed">
+                                Электронная почта <span> а где собака?</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <p class="light changed">
+                        Комиссия за операцию: <b> 4 рубля 00 копеек </b>
+                    </p>
+                    <p class="dono">
+                        Итого к оплате: <b>204 рубля 00 копеек</b>
+                    </p>
+                    <input type="submit" value="Оплатить" />
+                    <p class=" without">
+                        <a href="#" class="light">
+                            Вернуться без оплаты
+                        </a>
+                    </p>
+                </form>
+            </div><!--right-->
+        </div><!--for main menu-->
+    </div><!--wrapper-->
+    <div class="success non-displayed">
+
+        <img src="img/success.svg" alt="success" />
+
+        <p class="dark">
+            Всё получилось!
+        </p>
+
+
+        <p class="download">
+            <a href="#"> <img src="img/download.svg" alt="download" />  <span>Cкачать квитанцию </span></a>
+            <a href="#"><span> Вернуться на сайт </span></a>
+        </p>
+
+    </div><!--succes-->
+    <div class="preload non-displayed">
+
+        <div class="preloader">
+
+        </div><!--diov for preloader-->
+
+        <p class="dark">
+            Произвожу оплату счёта
+        </p>
+    </div><!--preloader-->
+    <div class="fail non-displayed">
+
+        <img src="img/fail.svg" alt="success">
+
+        <p class="dark">
+            Увы... Что-то пошло не так.<br />
+            Оплата не удалась
+        </p>
+
+
+        <p class="download">
+            <a href="#"> <img src="img/repeat.svg" alt="repeat" />  <span>Попробовать ещё раз </span></a>
+            <a href="#"><span> Вернуться на сайт </span></a>
+        </p>
+
+    </div><!--fail-->
+    <div class="footer">
+        <!-- <img src="img/ocean.svg" alt="ocean" />-->
+        <p>
+            <img src="img/ocean.svg" alt="океан банк" />
+            <br />
+            © 2014 <a href="#"> ОКЕАН БАНК (ЗАО) </a>
+        </p>
+        <p class="additional non-displayed">
+            <span class="light"> Внимание </span> <br />
+            Перевод денежных средств сервисом ROBOKASSA осуществляется на следующий
+            рабочий день после совершения платежа!
+        </p>
+
+        <p class="local"> <a href="#"> Тарифы банка по локальной карте </a></p>
+    </div><!--footer-->
+    <select class="select-first">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="07">06</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <select class="select-second">
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+    </select>
+</body>
+</html>

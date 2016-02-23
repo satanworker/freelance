@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>finance</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.custom-scrollbar.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="RTL">
+<div class="body-blob opened">
+<div class="container-fluid-blob LK">
+  <div class="row header">
+          <div class="container">
+          <div class="center">
+              <div class="language">
+                  <div class="lang_current">
+                      <a href="#">
+                          <img src="images/flag_test.png" alt="" />
+                          <span>Language 1</span>
+                      </a>
+                  </div>
+                  <div class="lang_hidden">
+                      <a href="#">
+                          <img src="images/flag_test.png" alt="" />
+                          <span>Language 1</span>
+                      </a>
+                  </div><!-- / hidden -->
+              </div>
+              <a href="#" class="message"></a>
+              <a href="#" class="chat active"></a>
+          </div>
+              <div class="right">
+                  <ul class="drop-ul hasScroll">
+                      <li><a href="#" class="button orange drop">Deposit</a></li>
+                      <li class="dropable" id="scroll-button">
+                          <ul>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inside-link">Ver №1</a>
+                              </li>
+                          </ul><!-- / dropable -->
+                      </li>
+                  </ul>
+                  <a href="#" class="button blue">Withdraw</a>
+              </div>
+              <a href="#" class="logo">
+                  <img src="images/logo.png" alt="logo" />
+              </a>
+      </div>
+  </div><!--/ header -->
+    <div class="row common">
+        <div class="container">
+            <h1 class="blue-lined">Earnings Calendar</h1>
+            <div class="col-xs-5 right-content">
+                <div class="shadowed">
+                    <div class="clearfix">
+                    <a href="#" class="button flat">Indices</a>
+                    <a href="#" class="button flat">Commodities</a>
+                    <a href="#" class="button flat">Forex</a>
+                    <a href="#" class="button flat active">Bonds</a>
+                    </div>
+                    <div class="col-xs-9">
+                        <img src="images/grap.png" alt="" />
+                        <p class="justify">
+                        <span class="time">11:00</span>
+                        <span class="time">12:00</span>
+                        <span class="time">13:00</span>
+                        <span class="time">14:00</span>
+                        <span class="time">15:00</span>
+                        <span class="time">16:00</span>
+                        </p>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="button flat active">20,40.00</a>
+                        <a href="#" class="button flat">20,40.00</a>
+                        <a href="#" class="button flat">20,40.00</a>
+                    </div>
+                    <div class="scroll" id="scroll-shadowed">
+                        <table>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+                            <tr>
+                                <td><span class="up">-47.80</span></td>
+                                <td><span class="down">-1.11%</span></td>
+                                <td>4,275.70</td>
+                                <td>S&P 500 Futures</td>
+                            </tr>
+
+                        </table>
+                    </div><!-- / scroll -->
+                </div><!-- / shadow -->
+            </div><!-- / right -->
+            <div class="col-xs-7 left-content">
+                <a href="#" class="button flat active">Economic Calendar</a>
+                <a href="#" class="button flat">HolidayCalendar</a>
+                <a href="#" class="button flat">EarningsCalendar</a>
+                <div class="col-xs-12 border">
+                    <a href="#" class="button blue">Filter</a>
+                    <a href="#" class="button flat active">Yesterday</a>
+                    <a href="#" class="button flat">Today</a>
+                    <a href="#" class="button flat">Tomorrow</a>
+                    <input type="text" class="normal-input success" value="03.25.2015 - 03.25.2015"/>
+                    <div class="button flat active">Wednesday, March 25, 2015</div>
+                </div>
+                <div class="col-xs-12 table">
+                    <table>
+                        <tr class="first">
+                            <td>Period End</td>
+                            <td>Imp</td>
+                            <td>Prev</td>
+                            <td>Forecast</td>
+                            <td>EPS</td>
+                            <td>Company</td>
+                            <td>Symbol</td>
+                        </tr>
+                        <tr>
+                            <td>
+                               02/2015
+                            </td>
+                            <td ><img src="images/graphic.png" alt="" /> </td>
+                            <td>0.14</td>
+                            <td>0.14</td>
+                            <td colspan="2">Aura Minerals Inc.</td>
+                            <td> <img src="images/flag_canada.png" alt="" /> AEN</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div><!--/ col-xs-7 left -->
+        </div>
+    </div><!-- / common row -->
+
+    <div class="row footer">
+        <div class="container">
+            <div class="col-xs-3">
+                <a href="#" class="in"></a>
+                <a href="#" class="youtube"></a>
+                <a href="#" class="chrome"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="twitter"></a>
+            </div>
+            <div class="col-xs-5">
+                <p><a href="mailto:support@icmcapital.co.uk">support@icmcapital.co.uk</a><span>+44 207 634 9770</span></p>
+            </div>
+            <div class="col-xs-4">
+                <p><span>© Copyright ICM Capital</span>  Ltd 2011-2015 - All rights reserved.</p>
+            </div>
+        </div>
+    </div><!-- / footer -->
+</div><!--container-fluid-->
+    <div class="navigation-test">
+        <ul>
+            <li class="personal">
+                <a href="#" class="nav-button closed">
+                    <img src="images/button_nav.png" alt="" />
+                </a>
+                <a href="#" class="nav-button opened">
+                    <span class="image">
+                        <img src="images/face.png" alt="" />
+                    </span>
+                    <span class="text">
+                        Jack Nick
+                    </span>
+                </a>
+            </li>
+            <li class="drop-ul active">
+                <a href="#" class="">
+                    <span class="image">
+                        <img src="images/menu.png" alt="" />
+                    </span>
+                    <span class="text"> Profile</span>
+                </a>
+            </li>
+            <li class="dropable">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li  class="active"><a href="#">Account</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" class="download">
+            <img src="images/download.png" alt=""/>
+            MT4 ICM CAPITAL
+        </a><!--/ download -->
+    </div>
+</div><!-- / body -blob -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

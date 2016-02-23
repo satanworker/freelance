@@ -1,0 +1,33 @@
+ <div class="container-fluid">
+        <div class="header">
+                <a href="#" class="menu_toggle"></a>
+                <div class="search">
+                    <form action="#">
+                        <input type="image" src="images/zoom.png" class="zoom"/>
+                        <input type="text" class='search_text' placeholder="Поиск...">
+                    </form>
+                </div><!-- / search -->
+        </div><!-- / header -->
+        <div class="previews">
+            <div class="title">
+                <p class="top">
+                    {{magazine.name}}
+                    <a href="#" class="back">Назад</a>
+                </p>
+                <p class="bottom">
+                    {{magazine.issue}}
+                    <a href="#" class="all">См. ранние выпуски</a>
+                </p>
+            </div><!-- / title -->
+            <div class="preview">
+                <div class="blob">
+                    <img ng-repeat="page in magazine.pages | limitTo:4" ng-src="{{page}}">
+                </div>
+                <a href="#/view/{{magazine.id}}" class="flat gray">Читать</a>
+            </div>
+            <div class="description_bottom">
+                <p class="title">Gentlemen's Quarterly:</p>
+                <p class="description">искусство быть мужчиной.</p>
+            </div>
+        </div><!-- / category -->
+</div><!-- / main -->

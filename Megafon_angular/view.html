@@ -1,0 +1,28 @@
+ <div class="container-fluid">
+        <div class="view">
+            <div class="top_header">
+                <a href="#" class="back">Назад</a>
+                <a href="#" class="bookmark"></a>
+                <a href="#" class="added_menu"></a>
+            </div>
+            <div class="small_previews">
+                <a href="" ng-repeat="page in magazine.pages" ng-click="currentChange($index)">
+                    <img ng-src="{{page}}" alt="" />
+                    <p class="page">{{$index + 1}}</p>
+                </a>
+            </div>
+            <div class="big_view">
+                <img src="" ng-src="{{magazine.pages[current]}}" alt="" />
+            </div>
+            <a href="" class="arrows left"  ng-click="currentChange(current - 1)"></a>
+            <a href="" class="arrows right" ng-click="currentChange(current + 1)"></a>
+            <div class="status_bar">
+                <p class="top">{{magazine.name +' ' + magazine.issue}}</p>
+                <div class="line">
+                    <div class="line_big"></div>
+                    <div class="line_small"></div>
+                </div><!-- / line -->
+                <p class="pages">{{current + 1}} из {{magazine.pages.length}}</p>
+            </div>
+        </div>
+</div><!-- / main -->

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Wikidrone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row  header">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="images/logo.png">
+            </div>
+            <div class="col-md-6 padding">
+                <p>Звоните: <b>+7 495 954-32-32 </b> <a class="btn">Обратный звонок</a> </p>
+                <p>Пишите: <a><b>letsfly@wikidron.ru</b></a> </p>
+            </div>
+            <div class="col-md-2 padding">
+                <p>Ваша корзина:</p>
+                <p><img src="images/basket.png" alt="корзина"> <span class="green">3 товара</span> (186 000<span class="glyphicon glyphicon-ruble"></span>)</p>
+            </div>
+        </div>
+    </div><!--header-->
+    <div class="row navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Для бизнеса</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <form name="search" action="#">
+                <input type="search" placeholder="Поиск по товарам">
+                <input type="submit" class="search-button" value="">
+            </form>
+        </div><!--navigation container-->
+    </div><!--navigation-->
+
+    <div class="row basket">
+        <div class="container">
+            <div class="col-md-12">
+                <b>Ваша корзина:</b>
+            </div>
+
+<table>
+    <tr>
+                    <td class="image">
+                       <a href="#"><img src="images/copter-basket.png"></a>
+                    </td>
+                    <td class="text">
+                        <b> БПЛА воздушный патруль<br />
+                            Описание на две строчки
+                            Описание на две строчки
+                        </b>
+                    </td>
+                    <td class="input">
+                        <input type="number" min="0" class="number numb-value"/>
+                    </td>
+                    <td>
+                        <b>150 000<span class="ruble">Р</span> </b>
+                    </td>
+                    <td class="delete-button">
+                        <p>
+                            <a>
+                                <img src="images/redcross.png" alt="удалить">
+                                Удалить
+                            </a>
+                        </p>
+                    </td>
+    </tr>
+    <tr>
+        <td class="image">
+            <a href="#"><img src="images/copter-basket.png"></a>
+        </td>
+        <td class="text">
+            <b> БПЛА воздушный патруль<br />
+                Описание на две строчки
+                Описание на две строчки
+            </b>
+        </td>
+        <td class="input">
+            <input type="number" min="0" class="number numb-value"/>
+        </td>
+        <td>
+            <b>150 000<span class="ruble">Р</span> </b>
+        </td>
+        <td class="delete-button">
+            <p>
+                <a>
+                    <img src="images/redcross.png" alt="удалить">
+                    Удалить
+                </a>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="image">
+            <a href="#"><img src="images/copter-basket.png"></a>
+        </td>
+        <td class="text">
+            <b> БПЛА воздушный патруль<br />
+                Описание на две строчки
+                Описание на две строчки
+            </b>
+        </td>
+        <td class="input">
+            <input type="number" min="0" class="number numb-value"/>
+        </td>
+        <td>
+            <b>150 000<span class="ruble">Р</span> </b>
+        </td>
+        <td class="delete-button">
+            <p>
+                <a>
+                    <img src="images/redcross.png" alt="удалить">
+                    Удалить
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+
+            <div class="row basket-last">
+                <div class="container">
+                    <div class="col-md-4 col-md-offset-8">
+                        <p>Итого: <b>183 324<span class="ruble">Р</span> </b> </p>
+                    </div>
+                </div><!--container-->
+            </div><!--row basket-last-->
+            <div class="row form">
+                <div class="container">
+                    <div class="col-md-7">
+                        <form name="form1" method="post" action="">
+                            <p class="choose">1. Выберите способ оплаты:</p>
+                            <p>
+                                <label>
+                                    <input type="radio" name="RadioGroup" value="radio" />
+                                    Наличными при получении</label>
+                                <br />
+                                <label>
+                                    <input type="radio" name="RadioGroup" value="radio" />
+                                    Оплата по карте при получении <img src="images/cards.png"></label>
+                                <br />
+                                <label>
+                                    <input type="radio" name="RadioGroup" value="radio" />
+                                    Оплата по счёту</label>
+                                <br />
+                                <label>
+                                    <input type="radio" name="RadioGroup" value="radio" />
+                                    Покупка в кредит</label>
+                                <br />
+                            </p>
+                            <p class="choose">2.Выберите способ доставки</p>
+                            <label>
+                                <input type="radio" name="RadioGroup1" value="radio" />
+                                Доставка курьером(Москва + МО)</label>
+                            <br />
+                            <label>
+                                <input type="radio" name="RadioGroup1" value="radio" />
+                                Доставка EMS Почта России</label>
+                            <br />
+                            <label>
+                                <input type="radio" name="RadioGroup1" value="radio" />
+                                Доставка Почтой России</label>
+                            <br />
+                            <label>
+                                <input type="radio" name="RadioGroup1" value="radio" />
+                                Доставка Транспортной Компанией</label>
+                            <br />
+                            <p class="choose">3.Укажите адрес доставки и контакное лицо</p>
+
+                            <label class="text">
+                                Адрес <textarea type="text" name="adress"> </textarea>
+                            </label>
+                            <br />
+                            <label class="text">
+                                ФИО <input type="text" name="name">
+                            </label>
+                            <br />
+                            <label class="text">
+                                Эл.почта <input type="text" name="mail">
+                            </label>
+                            <br />
+                            <label class="text">
+                                Телефон <input type="text" name="phone">
+                            </label>
+                            <p class="choose">4.Примечание к заказу</p>
+                            <textarea type="text" name="addition"></textarea>
+                            <br />
+                           <a href="#" class="booking"> <input type="submit" class="booking" value="Оформить заказ"></a>
+                        </form>
+
+                    </div><!--left side-->
+                    <div class="col-md-5">
+                        <div class="advert">
+                            <p> Это место хорошо подойдёт под акции, сопутсвующие товары, каку-то информацию,
+                                и прочее, что поможет посетителю в оформлении заказа</p>
+                        </div>
+                    </div><!--right side-->
+                </div>
+            </div><!--form-row-->
+        </div><!--row content-container-->
+    </div><!--row content-->
+    <div class="row footer">
+        <div class="container">
+            <p class="social">
+                <a href="#"><img src="images/vk.png" alt="vk"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/google.png" alt="google"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            </p>
+            <p>
+                <a href="#"> Магазин </a>/
+                <a href="#"> О компании </a>/
+                <a href="#"> Доставка и оплата </a>/
+                <a href="#"> Услуги </a>/
+                <a href="#"> Для бизнеса </a>/
+                <a href="#"> Контакты </a>
+            </p>
+            <img src="images/footer-logo.png" alt="wikidrone" class="logo">
+            <p class="logo">
+                © 2014 <b>Wikidrone.ru</b>, все права защищены.
+            </p>
+            <p>
+                +7 495 954-32-32, <a href="#">letsfly@wikidron.ru</a>
+            </p>
+
+            <div class="footer-line"></div>
+            <p class="long-text">Вы решили приобрести квадрокоптер или гексакоптер и не знаете с чего начать?
+                Вам непонятны слова "мозги" или полетные контроллеры, регуляторы оборотов или как выбирать моторы для мультикоптера?
+                Или где найти недорогую аппаратуру управления мульткоптером? Мы поможем вам выбрать оптимальный, недорогой,
+                но точно летающий аппарат, в рамках вашего бюджета, и в полной комплектации. Мы так же поможем подобрать зарядное устройство для lipo или life аккумуляторов.
+                Что такое мультикоптер? Мультикоптер - это летальный аппарат с несколькими двигателями, как правило их называют роторами.
+                Управление моторами в таком аппарате осуществляется специальной электронной платой, которая собирает сигналы с многочисленных датчиков.
+                Как правило датчики размещены на самой плате контроллера, а иногда являются подключаемыми.
+                Основная плата (или иначе - "мозги" мультикоптера) умеет автоматически контролировать скорость вращения любого мотора, подстраиваясь под положение аппарата в воздухе,
+                под изменение условий внешней среды или сигналов управления. Встречаются и "безмозглые" мультикоптеры, но для реальных полетов они не подходят. В зависимости от количества роторов,
+                мультикоптеры получают приставку к названию: три-, квадро-, гекса-, окта-, дека- и т. д.
+            </p>
+        </div><!--footer container-->
+    </div><!--footer-row-->
+</div><!--container common-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+<!--
+  <form id="form1" name="form1" method="post" action="">
+        <p>
+            <label>
+                <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0" />
+                Radio</label>
+            <br />
+            <label>
+                <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1" />
+                Radio</label>
+            <br />
+        </p>
+    </form>
+
+
+<div class=container-fluid>
+    <div class=row head>
+        <div class=container>
+            <div class=col-md-12></div>
+        </div
+    </div>
+    <div class=row menu></div>
+    <div class=row content></div>
+    <div class=row footer></div>
+</div>
+
+.row {
+    &.head {}
+    &.menu {}
+    &.selector {}
+}
+
+<div class=container-fluid menu>
+
+</div>
+<div class=container content>
+
+</div>
+-->

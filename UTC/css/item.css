@@ -1,0 +1,328 @@
+.rating {
+  display: inline-block;
+}
+.yandex-share {
+  display: inline-block;
+  width: 90%;
+  text-align: right;
+}
+.yandex-share .b-share__handle {
+  padding-top: 0 !important;
+}
+.item-card h1 {
+  font-size: 21px;
+  color: #333333;
+  font-weight: 400;
+}
+.item-card .articul {
+  font-size: 15px;
+  color: #8c8c8c;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 8px;
+}
+.social-panel {
+  margin-bottom: 11px;
+}
+.item-panel {
+  border-top: 1px solid #d4d2d3;
+  border-bottom: 1px solid #d4d2d3;
+  background: #ececec;
+  margin-bottom: 25px;
+}
+.item-panel .nav-pills li[role="to-catalog"] {
+  float: right;
+}
+.item-panel .nav-pills li[role="to-catalog"] a {
+  text-decoration: none;
+}
+.item-panel .nav-pills li[role="overview"] a {
+  font-size: 12.5px;
+  color: #505050;
+  font-weight: 900;
+  text-decoration: none;
+}
+.item-panel .nav-pills li a {
+  font-size: 12.5px;
+  color: #505050;
+  font-weight: 100;
+  text-decoration: underline;
+}
+.item-panel .nav-pills li a:hover {
+  text-decoration: none;
+}
+.photo-prices:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.photo-block {
+  width: 565px;
+  float: left;
+}
+.photo-block img {
+  border-radius: 4px;
+}
+.photo-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 35px 0 0 0;
+}
+.photo-block ul li {
+  float: left;
+  margin-right: 25px;
+}
+.photo-block ul li:last-of-type {
+  margin-right: 0;
+}
+.price-block {
+  margin-left: calc(565px + 44px);
+  margin-left: -webkit-calc(565px + 44px);
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+}
+.price-block div.price {
+  padding: 19px 28px 19px 28px;
+}
+.price-block div.price .top .left {
+  width: 140px;
+  float: left;
+}
+.price-block div.price .top .left a:not(.btn) {
+  font-size: 11px;
+  color: #008bd5;
+  text-decoration: none;
+  display: block;
+}
+.price-block div.price .top .left a:not(.btn) span {
+  border-bottom: 1px dashed;
+}
+.price-block div.price .top .left a:not(.btn):hover span {
+  border: none;
+}
+.price-block div.price .top .left a:not(.btn):last-of-type {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+.price-block div.price .top .left a.btn {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 100;
+  text-transform: none;
+  display: block;
+}
+.price-block div.price .top .left span.price {
+  font-size: 33px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #333333;
+}
+.price-block div.price .top .left p {
+  background: #e9fbe1;
+  font-size: 12px;
+  font-weight: 100;
+  color: #36771f;
+  text-align: center;
+}
+.price-block div.price .top .right {
+  margin-left: calc(140px + 25px);
+  margin-left: -webkit-calc(140px + 25px);
+}
+.price-block div.price .top .right a {
+  color: #272727;
+  font-size: 12px;
+  line-height: 18px;
+}
+.price-block div.price .top .right a span {
+  border-bottom: 1px dashed;
+}
+.price-block div.price .top:after {
+  content: '';
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+}
+.price-block div.price .middle > div {
+  background: #deefff;
+  border-radius: 4px;
+  padding: 14px 10px;
+}
+.price-block div.price .middle .address span {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  display: block;
+  margin-bottom: 13px;
+}
+.price-block div.price .middle .address span a {
+  font-size: 14px;
+  color: #048bd5;
+  text-decoration: underline;
+  font-weight: 900;
+}
+.price-block div.price .middle .address span a:hover {
+  text-decoration: none;
+}
+.price-block div.price .middle .address p {
+  font-size: 12px;
+  color: black;
+  line-height: 14px;
+}
+.price-block div.price .middle .address p a {
+  line-height: 14px;
+  color: #048bd5;
+  font-size: 12px;
+  display: block;
+  text-decoration: underline;
+}
+.price-block div.price .middle .address p a:hover {
+  text-decoration: none;
+}
+.price-block div.price .bottom a {
+  font-size: 12px;
+  color: #048bd5;
+  text-decoration: underline;
+  display: block;
+}
+.price-block div.price .bottom a:hover {
+  text-decoration: none;
+}
+.description-parameters .col-md-4 {
+  width: calc(33.33333333333333% - 5px);
+  width: -webkit-calc(33.33333333333333% - 5px);
+}
+.description-parameters .col-md-4.acs {
+  width: calc(33.33333333333333% - 5px);
+  width: -webkit-calc(33.33333333333333% - 5px);
+}
+.description-parameters p {
+  font-size: 12.5px;
+  color: #333333;
+  font-weight: 400;
+}
+.reviews span {
+  font-size: 12.5px;
+  color: #aa4d9f;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.reviews span ~ div {
+  margin-top: 17px;
+}
+.reviews p {
+  clear: both;
+  font-size: 12.5px;
+  color: #333333;
+  font-weight: 400;
+}
+.reviews a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #048bd5;
+  padding-right: 30px;
+}
+.reviews a:last-of-type {
+  padding-right: 0;
+}
+.reviews a:hover {
+  text-decoration: none;
+}
+.parameters dl dt {
+  font-size: 12px;
+  color: #767676;
+  font-weight: 100;
+  width: 50%;
+  float: left;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 28px;
+}
+.parameters dl dd {
+  font-size: 12.5px;
+  color: #242424;
+  font-weight: 400;
+  width: 50%;
+  float: left;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 28px;
+}
+.parameters a {
+  font-size: 12.5px;
+  text-decoration: underline;
+  display: block;
+  clear: both;
+  padding-top: 48px;
+}
+.parameters a:hover {
+  text-decoration: none;
+}
+.accessories .item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  width: 222px;
+  height: 260px;
+  position: relative;
+  padding: 18px;
+}
+.accessories .item a.strike-price {
+  background: #00afdc;
+  background: -moz-linear-gradient(top, #00afdc 0%, #0080c7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00afdc), color-stop(100%, #0080c7));
+  background: -webkit-linear-gradient(top, #00afdc 0%, #0080c7 100%);
+  background: -o-linear-gradient(top, #00afdc 0%, #0080c7 100%);
+  background: -ms-linear-gradient(top, #00afdc 0%, #0080c7 100%);
+  background: linear-gradient(to bottom, #00afdc 0%, #0080c7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00afdc', endColorstr='#0080c7', GradientType=0);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  width: 148px;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+}
+.accessories .item a.strike-price span.strike {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.accessories .item a.strike-price:after {
+  display: none;
+}
+.accessories .item span {
+  font-size: 13px;
+  font-weight: 900;
+  color: #048bd5;
+  display: block;
+  margin-bottom: 9px;
+}
+.accessories .item a {
+  position: relative;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #747474;
+  color: #747474;
+  border-radius: 4px;
+  display: block;
+  width: 159px;
+  line-height: 28px;
+  text-indent: 9px;
+}
+.accessories .item a:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-left: 4px solid #747474;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+}

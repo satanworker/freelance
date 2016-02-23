@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  src: url(../font/HelveticaNeueCyr-Medium.otf);
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  src: url(../font/HelveticaNeueCyr-Bold.otf);
+}
+.container-fluid {
+  background: url(../images/back.png) no-repeat;
+  width: 480px;
+  margin: 0 auto;
+}

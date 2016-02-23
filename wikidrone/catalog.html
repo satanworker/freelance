@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Wikidrone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row  header">
+        <div class="container">
+            <div class="col-md-4 col-lg-4 col-xs-4">
+               <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-6 padding">
+                <p>Звоните: <b>+7 495 954-32-32 </b> <a class="btn">Обратный звонок</a> </p>
+                <p>Пишите: <a><b>letsfly@wikidron.ru</b></a> </p>
+            </div>
+            <div class="col-md-2 padding">
+                <p>Ваша корзина:</p>
+                <p><img src="images/basket.png" alt="корзина"> <span>пока пусто</span></p>
+            </div>
+        </div>
+    </div><!--header-->
+    <div class="row navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li  class="active"><a href="#">Магазин</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Для бизнеса</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <form name="search" action="#">
+                <input type="search" placeholder="Поиск по товарам">
+                <input type="submit" class="search-button" value="">
+            </form>
+        </div><!--navigation container-->
+    </div><!--navigation-->
+
+    <div class="row catalog">
+        <div class="container">
+            <div class="col-md-3">
+                <ul class="first-ul">
+                    <li>
+                        <a href="#"><span id="copter"></span>Мультикоптеры <span class="arrow"></span> </a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><span id="plane"></span> Планеры <span class="arrow"></span> </a>
+                    </li>
+                    <li class="sub-li">
+                        <ul>
+                            <li><img src="images/sub-arrow-right.png">
+                                <a href="#">С камерой, FPV</a>
+                            </li>
+                            <li>
+                                <img src="images/sub-arrow-right.png">
+                                <a href="#">Комплекты для сборки</a>
+                            </li>
+                            <li class="active">
+                                <img src="images/sub-arrow-right.png">
+                                <a href="#"> Дополнительное оборудование</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span id="joystick"></span>
+                            Симуляторы полёта</a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="camera"></span>
+                            Видеооборудование<span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="key"></span>
+                            Комплектующие <span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="electric"></span>
+                            Электроника <span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="wifi"></span>
+                            Радиоппаратура <span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="battery"></span>
+                            Питание <span class="arrow"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="phone"></span>
+                            Наземное оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="case"></span>
+                            Чехлы и кейсы</a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="headphones"></span>
+                            Аксессуары</a>
+                    </li>
+                </ul>
+                <div class="compare">
+                    <b class="first">Сравнение товаров</b>
+                    <p><b>Heli 3000 RC</b> квадрокоптер,<a href="#"><img src="images/compare-cross.png"></a>
+                        название которого идёт в
+                        три строки</p>
+                    <p><b>Heli 3000 RC</b> квадрокоптер,<a href="#"><img src="images/compare-cross.png"></a>
+                        название которого идёт в
+                        три строки</p>
+                    <p><b>Heli 3000 RC</b> квадрокоптер,<a href="#"><img src="images/compare-cross.png"></a>
+                        название которого идёт в
+                        три строки</p>
+                    <a href="#" class="button" id="compare" data-toggle="modal" data-target=".bs-example-modal-lg">Сравнить товары</a>
+                </div>
+                <div class="watched">
+                    <b class="first-b">Недавно проcмотренные:</b>
+                    <div class="item-watched">
+                        <img src="images/item-drone.png" alt="drone"><br />
+                        <b>Heli 3000 RC</b>
+                        <p>квадрокоптер</p>
+                        <b class="green">146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                    </div>
+                    <div class="item-watched">
+                        <img src="images/item-drone.png" alt="drone"><br />
+                        <b>Heli 3000 RC</b>
+                        <p>квадрокоптер</p>
+                        <b class="green">146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                    </div>
+                    <div class="item-watched">
+                        <img src="images/item-drone.png" alt="drone"><br />
+                        <b>Heli 3000 RC</b>
+                        <p>квадрокоптер</p>
+                        <b class="green">146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                    </div>
+                </div><!--watched-->
+                <div class="payment">
+                    <p>Способы оплаты:</p>
+                    <a href="#">
+                        <img src="images/green.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/visa.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/credit.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/check.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/percent.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12 info">
+                        <p class="breadcrumbs">
+                            <a href="#">Магазин</a><img src="images/bread.png">
+                            <a href="#">Планеры</a><img src="images/bread.png">
+                            <a href="#" class="active">Дополнительное оборудование</a>
+                        </p>
+                        </div>
+                    </div>
+                <div class="row checkbox">
+                    <div class="col-md-12">
+                        <form>
+                            <label>
+                                <input type="checkbox">
+                               <div class="align-catalog">
+                               </div>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <div class="dji-catalog active">
+                                </div>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <div class="spectrum-catalog">
+                                </div>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <div class="jets-catalog">
+                                </div>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <div class="eflite-catalog">
+                                </div>
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                <div class="hangar-catalog">
+                                </div>
+                            </label>
+                        </form>
+                        </div>
+                    </div><!--row for labels-->
+                    <div class="row">
+                        <div class="col-md-12 slider-col">
+                            <p>
+                            <div id="slider">
+
+                            </div>
+                                    <span class="amount">
+                                        10 250
+                                    </span>
+                             -<span class="amount">
+                                        174 700
+                                    </span>
+                            <span class="glyphicon glyphicon-ruble"></span>
+                            </p>
+                        </div>
+                    </div>
+                <div class="row product">
+                    <div class="col-md-4">
+                        <div class="item active">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-star.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <span class="lined">
+                                    6 489<span class="glyphicon glyphicon-ruble"></span>
+                                </span>
+                                    <span class="new-price">
+                                        6 489<span class="glyphicon glyphicon-ruble"></span>
+                                    </span>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-brilliant.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-present.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row product">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="advert">
+                                    <p>
+                                        <img src="images/advert-finger.png">
+                                        Новинка
+                                    </p>
+                                </div>
+                                <img src="images/advert-drone.png">
+                                <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                                </p>
+                                <p class="price">
+                                    <span class="lined">
+                                        6 489<span class="glyphicon glyphicon-ruble"></span>
+                                    </span>
+                                        <span class="new-price">
+                                            6 489<span class="glyphicon glyphicon-ruble"></span>
+                                        </span>
+                                </p>
+                                <p class="bottom">
+                                    <b>В корзину</b>
+                                    <span>Сравнить </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="advert">
+                                    <p>
+                                        <img src="images/advert-ruble.png">
+                                        Новинка
+                                    </p>
+                                </div>
+                                <img src="images/advert-drone.png">
+                                <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                                </p>
+                                <p class="price">
+                                    <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                                </p>
+                                <p class="bottom">
+                                    <b>В корзину</b>
+                                    <span>Сравнить </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="advert">
+                                    <p>
+                                        <img src="images/advert-percent.png">
+                                        Новинка
+                                    </p>
+                                </div>
+                                <img src="images/advert-drone.png">
+                                <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                                </p>
+                                <p class="price">
+                                    <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                                </p>
+                                <p class="bottom">
+                                    <b>В корзину</b>
+                                    <span>Сравнить </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <img src="images/advert-drone.png">
+                                <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                                </p>
+                                <p class="price">
+                                        <span class="lined">
+                                            6 489<span class="glyphicon glyphicon-ruble"></span>
+                                        </span>
+                                            <span class="new-price">
+                                                6 489<span class="glyphicon glyphicon-ruble"></span>
+                                            </span>
+                                </p>
+                                <p class="bottom">
+                                    <b>В корзину</b>
+                                    <span>Сравнить </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <img src="images/advert-drone.png">
+                                <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                                </p>
+                                <p class="price">
+                                    <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                                </p>
+                                <p class="bottom">
+                                    <b>В корзину</b>
+                                    <span>Сравнить </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <img src="images/advert-drone.png">
+                                <p> <b>Heli 3000 RC</b></p>
+                                <p>Квадрокоптер
+                                </p>
+                                <p class="price">
+                                    <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                                </p>
+                                <p class="bottom">
+                                    <b>В корзину</b>
+                                    <span>Сравнить </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row product">
+                    <div class="col-md-4">
+                        <div class="item">
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                            <span>
+                                                6 489<span class="glyphicon glyphicon-ruble"></span>
+                                            </span>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col-md-4">
+                        <div class="item active">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-star.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <span class="lined">
+                                    6 489<span class="glyphicon glyphicon-ruble"></span>
+                                </span>
+                                    <span class="new-price">
+                                        6 489<span class="glyphicon glyphicon-ruble"></span>
+                                    </span>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-brilliant.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-present.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col-md-4">
+                        <div class="item active">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-star.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <span class="lined">
+                                    6 489<span class="glyphicon glyphicon-ruble"></span>
+                                </span>
+                                    <span class="new-price">
+                                        6 489<span class="glyphicon glyphicon-ruble"></span>
+                                    </span>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-brilliant.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-present.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col-md-4">
+                        <div class="item active">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-star.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <span class="lined">
+                                    6 489<span class="glyphicon glyphicon-ruble"></span>
+                                </span>
+                                    <span class="new-price">
+                                        6 489<span class="glyphicon glyphicon-ruble"></span>
+                                    </span>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-brilliant.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-present.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product">
+                    <div class="col-md-4">
+                        <div class="item active">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-star.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <span class="lined">
+                                    6 489<span class="glyphicon glyphicon-ruble"></span>
+                                </span>
+                                    <span class="new-price">
+                                        6 489<span class="glyphicon glyphicon-ruble"></span>
+                                    </span>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-brilliant.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="advert">
+                                <p>
+                                    <img src="images/advert-present.png">
+                                    Новинка
+                                </p>
+                            </div>
+                            <img src="images/advert-drone.png">
+                            <p> <b>Heli 3000 RC</b></p>
+                            <p>Квадрокоптер
+                            </p>
+                            <p class="price">
+                                <b>146 489<span class="glyphicon glyphicon-ruble"></span></b>
+                            </p>
+                            <p class="bottom">
+                                <b>В корзину</b>
+                                <span>Сравнить </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--right side-->
+        </div><!--content catalog-->
+    </div><!--row catalog-->
+
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <p class="first">
+                    <b>
+                        Сравнение товаров
+                    </b>
+                  <a href="#" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                <table class="table-item">
+                    <tr>
+                        <td>
+                            <img src="images/drone-table.png">
+                        </td>
+                        <td>
+                            <img src="images/drone-table.png">
+                        </td>
+                        <td>
+                            <img src="images/drone-table.png">
+                        </td>
+                        <td>
+                            <img src="images/drone-table.png">
+                        </td>
+                        <td>
+                            <img src="images/drone-table.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>
+                                БПЛА Воздушный патруль
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <b>
+                                    БПЛА Воздушный патруль
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <b>
+                                    БПЛА Воздушный патруль
+                                </b>
+
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <b>
+                                    БПЛА Воздушный патруль
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <b>
+                                    БПЛА Воздушный патруль
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <p><b>6489<span class="glyphicon glyphicon-ruble"></span></b></p>
+                        </td>
+                        <td>
+                            <p><b>6489<span class="glyphicon glyphicon-ruble"></span></b></p>
+                        </td>
+                        <td>
+                            <p><b>6489<span class="glyphicon glyphicon-ruble"></span></b></p>
+                        </td>
+                        <td>
+                            <p><b>6489<span class="glyphicon glyphicon-ruble"></span></b></p>
+                        </td>
+                        <td>
+                            <p><b>6489<span class="glyphicon glyphicon-ruble"></span></b></p>
+                        </td>
+                    </tr>
+                    <tr class="bold">
+                        <td>
+                            <b>Коптер</b>
+                        </td>
+                        <td>
+                            <b>Коптер</b>
+                        </td>
+                        <td>
+                            <b>Коптер</b>
+                        </td>
+                        <td>
+                            <b>Коптер</b>
+                        </td>
+                        <td>
+                            <b>Коптер</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Аккумулятор — DJI 5200mAh LiPo</p>
+                        </td>
+                        <td>
+                            <p>Аккумулятор — DJI 5200mAh LiPo</p>
+                        </td>
+                        <td>
+                            <p>Аккумулятор — DJI 5200mAh LiPo</p>
+                        </td>
+                        <td>
+                            <p>Аккумулятор — DJI 5200mAh LiPo</p>
+                        </td>
+                        <td>
+                            <p>Аккумулятор — DJI 5200mAh LiPo</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Вес (с батареей <br/>и пропеллерами) — 1242 грамма</p>
+                        </td>
+                        <td>
+                            <p>Вес (с батареей <br/> и пропеллерами) — 1242 грамма</p>
+                        </td>
+                        <td>
+                            <p>Вес (с батареей <br/>и пропеллерами) — 1242 грамма</p>
+                        </td>
+                        <td>
+                            <p>Вес (с батареей <br/>и пропеллерами) — 1242 грамма</p>
+                        </td>
+                        <td>
+                            <p>Вес (с батареей <br/>и пропеллерами) — 1242 грамма</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Точность висения —<br />
+                                Вертикальная: 0.8м;<br />
+                                Горизонтальная: 2.5м<br />
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Точность висения —<br />
+                                Вертикальная: 0.8м;<br />
+                                Горизонтальная: 2.5м<br />
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Точность висения —<br />
+                                Вертикальная: 0.8м;<br />
+                                Горизонтальная: 2.5м<br />
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Точность висения —<br />
+                                Вертикальная: 0.8м;<br />
+                                Горизонтальная: 2.5м<br />
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Точность висения —<br />
+                                Вертикальная: 0.8м;<br />
+                                Горизонтальная: 2.5м<br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Максимальная скорость <br />
+                                вращения — 200°/сек
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Максимальная скорость <br />
+                                вращения — 200°/сек
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Максимальная скорость <br />
+                                вращения — 200°/сек
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Максимальная скорость <br />
+                                вращения — 200°/сек
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Максимальная скорость <br />
+                                вращения — 200°/сек
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Максимальный угол наклона — 35°</p>
+
+                        </td>
+                        <td>
+                            <p>Максимальный угол наклона — 35°</p>
+
+                        </td>
+                        <td>
+                            <p>Максимальный угол наклона — 35°</p>
+
+                        </td>
+                        <td>
+                            <p>Максимальный угол наклона — 35°</p>
+
+                        </td>
+                        <td>
+                            <p>Максимальный угол наклона — 35°</p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Максимальная скорость полета — 15м/сек (Не Рекомендуется!)</p>
+                        </td>
+                        <td>
+                            <p>Максимальная скорость полета — 15м/сек (Не Рекомендуется!)</p>
+                        </td>
+                        <td>
+                            <p>Максимальная скорость полета — 15м/сек (Не Рекомендуется!)</p>
+                        </td>
+                        <td>
+                            <p>Максимальная скорость полета — 15м/сек (Не Рекомендуется!)</p>
+                        </td>
+                        <td>
+                            <p>Максимальная скорость полета — 15м/сек (Не Рекомендуется!)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Диагональное расстояние между моторами — 350мм</p></td>
+                        <td><p>Диагональное расстояние между моторами — 350мм</p></td>
+                        <td><p>Диагональное расстояние между моторами — 350мм</p></td>
+                        <td><p>Диагональное расстояние между моторами — 350мм</p></td>
+                        <td><p>Диагональное расстояние между моторами — 350мм</p></td>
+                    </tr>
+                    <tr class="bold">
+                        <td>
+                            <b>Подвес</b>
+                        </td>
+                        <td>
+                            <b>Подвес</b>
+                        </td>
+                        <td>
+                            <b>Подвес</b>
+                        </td>
+                        <td>
+                            <b>Подвес</b>
+                        </td>
+                        <td>
+                            <b>Подвес</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Рабочий ток — Статический: 750мА; Динамический: 900мА</p>
+                        </td>
+                        <td>
+                            <p>Рабочий ток — Статический: 750мА; Динамический: 900мА</p>
+                        </td>
+                        <td>
+                            <p>Рабочий ток — Статический: 750мА; Динамический: 900мА</p>
+                        </td>
+                        <td>
+                            <p>Рабочий ток — Статический: 750мА; Динамический: 900мА</p>
+                        </td>
+                        <td>
+                            <p>Рабочий ток — Статический: 750мА; Динамический: 900мА</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Точность управления — ±0.03°</p>
+                        </td>
+                        <td>
+                            <p>Точность управления — ±0.03°</p>
+                        </td>
+                        <td>
+                            <p>Точность управления — ±0.03°</p>
+                        </td>
+                        <td>
+                            <p>Точность управления — ±0.03°</p>
+                        </td>
+                        <td>
+                            <p>Точность управления — ±0.03°</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p> Контролируемый диапазон —
+                                Наклон: −90° — 0°</p>
+                        </td>
+                        <td>
+                            <p> Контролируемый диапазон —
+                                Наклон: −90° — 0°</p>
+                        </td>
+                        <td>
+                            <p> Контролируемый диапазон —
+                                Наклон: −90° — 0°</p>
+                        </td>
+                        <td>
+                            <p> Контролируемый диапазон —
+                                Наклон: −90° — 0°</p>
+                        </td>
+                        <td>
+                            <p> Контролируемый диапазон —
+                                Наклон: −90° — 0°</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Максимальная угловая скорость — Наклон: 90°/сек</p>
+                        </td>
+                        <td>
+                            <p>Максимальная угловая скорость — Наклон: 90°/сек</p>
+                        </td>
+                        <td>
+                            <p>Максимальная угловая скорость — Наклон: 90°/сек</p>
+                        </td>
+                        <td>
+                            <p>Максимальная угловая скорость — Наклон: 90°/сек</p>
+                        </td>
+                        <td>
+                            <p>Максимальная угловая скорость — Наклон: 90°/сек</p>
+                        </td>
+                    </tr>
+                    <tr class="bold">
+                        <td>
+                            <b>Камера</b>
+                        </td>
+                        <td>
+                            <b>Камера</b>
+                        </td>
+                        <td>
+                            <b>Камера</b>
+                        </td>
+                        <td>
+                            <b>Камера</b>
+                        </td>
+                        <td>
+                            <b>Камера</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Рабочая температура — 0°С — 40°С</p>
+                        </td>
+                        <td>
+                            <p>Рабочая температура — 0°С — 40°С</p>
+                        </td>
+                        <td>
+                            <p>Рабочая температура — 0°С — 40°С</p>
+                        </td>
+                        <td>
+                            <p>Рабочая температура — 0°С — 40°С</p>
+                        </td>
+                        <td>
+                            <p>Рабочая температура — 0°С — 40°С</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Размер сенсора — 1/2.3</p>
+                        </td>
+                        <td>
+                            <p>Размер сенсора — 1/2.3</p>
+                        </td>
+                        <td>
+                            <p>Размер сенсора — 1/2.3</p>
+                        </td>
+                        <td>
+                            <p>Размер сенсора — 1/2.3</p>
+                        </td>
+                        <td>
+                            <p>Размер сенсора — 1/2.3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Количество эффективных пикселей — 14 Мегапикселей
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Количество эффективных пикселей — 14 Мегапикселей
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Количество эффективных пикселей — 14 Мегапикселей
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Количество эффективных пикселей — 14 Мегапикселей
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Количество эффективных пикселей — 14 Мегапикселей
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Разрешение — 4384×3288
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Разрешение — 4384×3288
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Разрешение — 4384×3288
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Разрешение — 4384×3288
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Разрешение — 4384×3288
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Запись HD — 1080p/30fps и 720p/60fps
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Запись HD — 1080p/30fps и 720p/60fps
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Запись HD — 1080p/30fps и 720p/60fps
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Запись HD — 1080p/30fps и 720p/60fps
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Запись HD — 1080p/30fps и 720p/60fps
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Угол зрения записи — 110° / 85°
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Угол зрения записи — 110° / 85°
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Угол зрения записи — 110° / 85°
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Угол зрения записи — 110° / 85°
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Угол зрения записи — 110° / 85°
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+             <p class="close-modal"> <a href="#" data-dismiss="modal" aria-label="Close">
+                    Закрыть
+                </a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="container">
+            <p class="social">
+                <a href="#"><img src="images/vk.png" alt="vk"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/google.png" alt="google"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            </p>
+            <p>
+                <a href="#"> Магазин </a>/
+                <a href="#"> О компании </a>/
+                <a href="#"> Доставка и оплата </a>/
+                <a href="#"> Услуги </a>/
+                <a href="#"> Для бизнеса </a>/
+                <a href="#"> Контакты </a>
+            </p>
+            <img src="images/footer-logo.png" alt="wikidrone" class="logo">
+            <p class="logo">
+                © 2014 <b>Wikidrone.ru</b>, все права защищены.
+            </p>
+            <p>
+                +7 495 954-32-32, <a href="#">letsfly@wikidron.ru</a>
+            </p>
+
+            <div class="footer-line"></div>
+            <p class="long-text">Вы решили приобрести квадрокоптер или гексакоптер и не знаете с чего начать?
+                Вам непонятны слова "мозги" или полетные контроллеры, регуляторы оборотов или как выбирать моторы для мультикоптера?
+                Или где найти недорогую аппаратуру управления мульткоптером? Мы поможем вам выбрать оптимальный, недорогой,
+                но точно летающий аппарат, в рамках вашего бюджета, и в полной комплектации. Мы так же поможем подобрать зарядное устройство для lipo или life аккумуляторов.
+                Что такое мультикоптер? Мультикоптер - это летальный аппарат с несколькими двигателями, как правило их называют роторами.
+                Управление моторами в таком аппарате осуществляется специальной электронной платой, которая собирает сигналы с многочисленных датчиков.
+                Как правило датчики размещены на самой плате контроллера, а иногда являются подключаемыми.
+                Основная плата (или иначе - "мозги" мультикоптера) умеет автоматически контролировать скорость вращения любого мотора, подстраиваясь под положение аппарата в воздухе,
+                под изменение условий внешней среды или сигналов управления. Встречаются и "безмозглые" мультикоптеры, но для реальных полетов они не подходят. В зависимости от количества роторов,
+                мультикоптеры получают приставку к названию: три-, квадро-, гекса-, окта-, дека- и т. д.
+            </p>
+        </div><!--footer container-->
+    </div><!--footer-row-->
+</div><!--container fluid-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/modal.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#slider").slider({
+        range: true,
+        values: [0, 100]
+    });
+});
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>

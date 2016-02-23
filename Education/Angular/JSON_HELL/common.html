@@ -1,0 +1,13 @@
+ <div class="c">
+        <div>
+            <input type="text" ng-model="query">
+            {{query}}
+        </div>
+        <p ng-repeat="phone in phones | filter:query | orderBy: orderProp">
+            {{phone.name}}
+            <br />
+            <a href="#/mag/{{phone.name}}" ng-repeat="page in phone.pages">
+                <img ng-src="{{page}}" />
+            </a>
+        </p>
+</div>

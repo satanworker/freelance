@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оптимизация заряда батареи</title>
+    <meta name="viewport" content="width=480" scale="1">
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="top">
+            <div class="left">
+                <h1>
+                    Оптимизация памяти
+                    <br />
+                    Уровень заряда батареи
+                </h1>
+            </div><!-- / left -->
+            <div class="right">
+                <span class="bold" id="updateable">68%</span>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="line"></div>
+            <img src="images/android_test.png" alt="" class="android"/>
+        </div><!-- / middle -->
+        <div class="bottom">
+            <a href="#" class="optimize">Оптимизировать</a>
+            <a href="#" class="cancel">Отменить</a>
+        </div>
+    </div><!-- / container fluid -->
+    <script type="text/javascript">
+        var loopTimeout = function(i, max, interval, func) {
+            if (i > max) {
+                return;
+            }
+
+            // Call the function
+            func(i);
+
+            i++;
+
+            // "loop"
+            setTimeout(function () {
+                loopTimeout(i, max, interval, func);
+            }, interval);
+        };
+        window.onload = function() {
+            loopTimeout(0, 68,11, function(i){
+                document.getElementById('updateable').textContent = i + '%';
+            });
+            document.getElementsByClassName('container-fluid')[0].className += ' animated';
+        };
+    </script>
+</body>
+</html>

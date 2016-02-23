@@ -1,0 +1,118 @@
+body {
+  background: #2d3e50;
+  margin: 0;
+  div {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  font-family: Arial, "Helvetica Neue";
+  .container_fluid {
+    width: 320px;
+    margin: 0 auto;
+    //padding: 0 25px;
+    .header {
+      padding-top: 7px;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .left {
+        float: left;
+        img {
+          width: 127px;
+        }
+      }
+      .right {
+        width: 190px;
+        background: #fff;
+        height: 75px;
+        float: right;
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 19px;
+          padding-left: 15px;
+          text-transform: uppercase;
+          margin-toP: 21px;
+          color: #2d3e50;
+          float: right;
+          b {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    .disclaimer {
+      color: #fff;
+      font-size: 9px;
+      margin-bottom: 17px;
+      padding: 0 17px;
+      margin-top: 17px;
+      a {
+        color: #fff;
+      }
+    }
+    .content {
+      background: url("content_carousel.png") no-repeat;
+      height: 189px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 32px;
+      text-align: center;
+      background-size: 100%;
+      .watch {
+        display: block;
+        color: #fff;
+        font-size: 26px;
+        text-decoration: none;
+        background: url("button_watch.png") no-repeat;
+        margin: 0 auto;
+        width: 233px;
+        height: 100px;
+        padding-left: 62px;
+        padding-top: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-size: 100%;
+      }
+      .discard {
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        background: #2d3e50;
+        padding: 5px 12px;
+      }
+    }
+    .title {
+      padding: 0px 24px;
+      p {
+        color: #fff;
+        margin: 0;
+      }
+      .bold {
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .normal {
+        font-size: 13px;
+        font-weight: 300;
+      }
+    }
+  }
+  //container fluid
+  .footer {
+    font-size: 9px;
+    color: #fff;
+    padding: 7px 24px;
+    a {
+      color: #fff;
+    }
+  }
+}

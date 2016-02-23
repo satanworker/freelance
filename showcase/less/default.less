@@ -1,0 +1,315 @@
+@import "app-vars.less";
+
+// column params (2, 10)
+.col-md-2 {
+	min-width: 240px;
+	padding-right: 17px;
+	width: ~"calc(16.66666667% - 107.490px)";
+	width: ~"-webkit-calc(16.66666667% - 107.490px)";
+}
+.col-md-offset-2 {
+    margin-left: ~"calc(16.66666667% - 107.490px)";
+    margin-left: ~"-webkit-calc(16.66666667% - 107.490px)";
+
+}
+.col-md-10 {
+	width: ~"calc(100% - 255px)";
+	width: ~"-webkit-calc(100% - 255px)";
+	padding-right: 0;
+	padding-left: 24px;
+}
+
+
+.btn {
+    padding: 9px 17px;
+    &.btn-default {
+        background: @BtnGray;
+        border: none;
+        color: @BtnGrayText;
+        font-size: 16px;
+        font-weight: 300;
+        &:hover {
+            border: none;
+
+        }
+    }
+    &.btn-info {
+        background: @BtnBlue;
+        border-color: @BtnBlue;
+        color: @BtnBlueText;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &.btn-blue {
+        background: @blue;
+        color: white;
+        border-radius: 2px;
+    }
+    &.extra-large {
+        font-size: 32px;
+        font-weight: 300;
+    }
+    &.medium {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+&.old-price {
+	color: @GrayText;
+	position: relative;
+	display: inline-block;
+	&:before {
+		content: "";
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		top: ~"calc(50% - 1px)";
+		top: ~"-webkit-calc(50% - 1px)";
+		background: #E52620;
+		transform: rotate(-10deg);
+	}
+}
+
+//container
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.tags {
+    width: 145px;
+    text-align: right;
+    margin: 90px 0 0 auto;
+    span {
+        color: #0070CD;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+.shares {
+    p {
+        font-weight: 300;
+        color: @GrayText;
+    }
+    margin-top: 50px;
+    text-align: right;
+    .sprite:nth-child(5) {
+        margin-left: 10px;
+    }
+    .sprite {
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+// def tags
+h2,
+h3 {
+	font-size: 32px;
+	font-weight: 300;
+}
+
+//breadcrumbs
+ol {
+	&.breadcrumb {
+		background: transparent;
+		padding-top: 37px;
+		margin-bottom: 15px;
+		padding-bottom: 0;
+		padding-left: 0;
+		a {
+			font-size: 16px;
+			font-weight: 300;
+			color: @GrayText;
+		}
+		& ~ h3 {
+			margin-top: 0;
+			margin-bottom: 23px;
+		}
+	}
+}
+
+.pagi {
+	text-align: center;
+	.btn {
+		display: inline-block;
+		vertical-align: text-top;
+		background: white;
+		border: 1px solid rgb(221, 221, 221);
+//		padding-top: 8px;
+//		padding-bottom: 8px;
+		margin-left: 15px;
+		margin-right: 15px;
+		&:hover {
+			border: 1px solid #0971CE;
+            background: rgba(0, 112, 205, 0.15);
+            color: #0971CE;
+		}
+	}
+	nav {
+		display: inline-block;
+		vertical-align: text-top;
+		font-weight: 300;
+		font-size: 16px;
+		color: @GrayText;
+		.first {
+			background: url("../images/pagi-arrow.png") no-repeat center;
+			width: 10px;
+			height: 22px;
+			display: block;
+			margin: 0 auto;
+		}
+		.last {
+			background: url("../images/pagi-arrow.png") no-repeat center;
+			width: 10px;
+			height: 22px;
+			display: block;
+			transform: rotate(180deg);
+			margin: 0 auto;
+		}
+	}
+	.pagination {
+		margin-top: 0;
+		li > a {
+			padding-top: 9px;
+			padding-bottom: 9px;
+		}
+		li {
+			a {
+				width: 40px;
+			}
+			&:first-of-type,
+			&:last-of-type {
+				a {
+					width: 80px;
+				}
+			}
+		}
+		a:hover {
+			box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+            background-color: rgba(0, 112, 205, 0.15);
+		}
+	}
+}
+
+// left widget col-md-2
+.col-md-2 {
+    .short-navi {
+        //margin-right: 22px;
+        margin-top: 37px;
+        margin-bottom: 18px;
+        a {
+            font-size: 16px;
+            font-weight: 300;
+            color: @AlmostBlack;
+            //padding-left: 20px;
+            position: relative;
+            float: right;
+            &:before {
+                content: "";
+                background: url("../images/link-arrow.svg") no-repeat left center;
+                width: 8px;
+                height: 16px;
+                float: left;
+                -webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);
+                margin-top: 3px;
+                margin-right: 10px;
+            }
+        }
+        &:after {
+            clear: both;
+            content: "";
+            width: 100%;
+            height: 1px;
+            display: block;
+        }
+    }
+    .widget {
+        &.check-settings {
+            padding-right: 30px;
+        }
+        input {
+            float: left;
+            & ~ p {
+                margin-left: 22px;
+            }
+        }
+        margin-top: 11px;
+        //padding-right: 24px;
+        &.white-text {
+            margin-top: 50px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 900;
+            font-style: italic;
+            color: #21202C;
+            text-align: right;
+            margin-top: 0;
+            margin-bottom: 14px;
+        }
+        p {
+            font-size: 11px;
+            font-weight: 300;
+            color: @AlmostBlack;
+        }
+        a {
+            color: @blue;
+            display: block;
+            text-align: right;
+            font-size: 11px;
+            line-height: 14px;
+            font-weight: 300;
+            &:hover {
+                text-decoration: none;
+            }
+            span {
+                display: block;
+                i {
+                    color: inherit;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+        &.white-text {
+            h3 {
+                color: white;
+            }
+        }
+        &.colored-shadowed {
+            //background: purple;
+            .dmd {
+                width: 100%;
+                height: 1px;
+                //margin-bottom: 10px;
+                clear: both;
+            }
+            h3 {
+                display: inline;
+                float: right;
+                background: white;
+                //background: rgb(213, 0, 0);
+                padding: 4px 4px 7px 7px;
+                margin-bottom: 6px;
+                position: relative;
+                &:after {
+                    content: "";
+                    background: url("../images/shadow-black.png") no-repeat;
+                    width: 100%;
+                    height: 6px;
+                    position: absolute;
+                    bottom: -6px;
+                    left: 0;
+                }
+            }
+            a {
+                display: inline-block;
+                padding: 4px 4px 7px 7px;
+                float: right;
+                background: white;
+            }
+        }
+    }
+}

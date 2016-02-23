@@ -1,0 +1,119 @@
+@import "app-vars.less";
+
+// search form input
+@media all and (max-width: 1280px) {
+	form[role="search"] input[type="text"] {
+		width: ~"calc(100% - 40px)";
+		width: ~"-webkit-calc(100% - 40px)";
+	}
+}
+
+// right menu, text
+@media all and (max-width: 1140px) {
+    .row.head {
+        .container {
+            .col-md-3 {
+                width: ~"calc(25% + 130px)";
+                width: ~"-webkit-calc(25% + 130px)";
+            }
+        }
+    }
+	.navbar-right {
+		a {
+			span {
+				display: none;
+			}
+		}
+	}
+
+	// footer group links
+	dl {
+		&:nth-child(3) {clear: both;}
+		&:first-of-type,
+		&:nth-child(2),
+		&:nth-child(3),
+		&:last-of-type {
+			transition: 1s all ease;
+			width: 50% !important;
+		}
+	}
+}
+// right menu, <li> position
+//@media all and (max-width: 1280px) {
+//
+//}
+
+//
+.item {
+//	&:first-of-type {background: red !important;}
+//	&:nth-child(2) {background: yellow !important;}
+//	&:nth-child(3) {background: olive !important;}
+//	&:nth-child(4) {background: blue !important;}
+//	&:nth-child(5) {background: green !important;}
+}
+
+// search box
+form[role="search"] input[type="text"] {
+    width: 84%;
+}
+
+// just items on main page
+// 2 items
+@media all and (min-width: 1000px) and (max-width: 1235px)  {
+	.item {
+		&:first-of-type,
+		&:nth-child(2) {
+			h4 {
+                color: white !important;
+                background: @blue;
+            }
+		}
+	}
+}
+
+//3 items
+@media all and (min-width: 1236px) and (max-width: 1555px) {
+	.item {
+		&:first-of-type,
+		&:nth-child(2),
+		&:nth-child(3) {
+            h4 {
+                color: white !important;
+                background: @blue;
+            }
+		}
+	}
+}
+
+//4 items
+@media all and (min-width: 1556px) and (max-width: 1876px) {
+	.item {
+		&:first-of-type,
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4)
+	 	{
+            h4 {
+                color: white !important;
+                background: @blue;
+            }
+		}
+	}
+}
+
+//5 items
+@media all and (min-width: 1876px) {
+    .item {
+        &:first-of-type,
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+            //&:nth-child(5) {
+        {
+            h4 {
+                color: white !important;
+                background: @blue;
+            }
+        }
+    }
+}

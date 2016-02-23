@@ -1,0 +1,38 @@
+.row.sub-menu ul {
+    list-style: none;
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 0 1em;
+    padding: 0;
+    margin-bottom: 0;
+}
+.row.sub-menu li {
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+.row.sub-menu li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    align-self: center;
+    -webkit-align-self: center;
+    -ms-align-self: center;
+    -moz-align-self: center;
+}
+body p::selection {
+    color: #fff; /* Цвет текста */
+    background: red; /* Цвет фона */
+}

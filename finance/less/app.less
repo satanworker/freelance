@@ -1,0 +1,1265 @@
+@font-face {
+font-family: "Museo Sans Curl";
+font-weight: 700;
+  src: url(../font/MuseoSansCyrl_700.otf);
+}
+@font-face {
+  font-family: "Museo Sans Curl";
+  font-weight: 300;
+  src: url(../font/MuseoSansCyrl_300.otf);
+}
+@font-face {
+  font-family: "Museo Sans Curl";
+  font-weight: 500;
+  src: url(../font/MuseoSansCyrl_500.otf);
+}
+@font-face {
+  font-family: "Museo Sans Curl";
+  font-weight: 900;
+  src: url(../font/MuseoSansCyrl_900.otf);
+}
+/////////////////new scroll
+/*
+== malihu jquery custom scrollbar plugin ==
+Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
+*/
+
+
+
+/*
+CONTENTS:
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited).
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar.
+	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars.
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars.
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
+*/
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+1. BASIC STYLE
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+.mCustomScrollbar{ -ms-touch-action: none; touch-action: none; /* MSPointer events - direct all pointer events to js */ }
+.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action{ -ms-touch-action: auto; touch-action: auto; }
+
+.mCustomScrollBox{ /* contains plugin's markup */
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+
+.mCSB_container{ /* contains the original content */
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+2. VERTICAL SCROLLBAR
+y-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; } /* non-visible scrollbar */
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container{ /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-left: 0; } /* RTL direction/left-side scrollbar */
+
+.mCSB_scrollTools{ /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mCSB_outside + .mCSB_scrollTools{ right: -26px; } /* scrollbar position: outside */
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0;
+}
+
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ left: -26px; } /* RTL direction/left-side scrollbar (scrollbar position: outside) */
+
+.mCSB_scrollTools .mCSB_draggerContainer{ /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+.mCSB_scrollTools a + .mCSB_draggerContainer{ margin: 20px 0; }
+
+.mCSB_scrollTools .mCSB_draggerRail{
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px;
+}
+
+.mCSB_scrollTools .mCSB_dragger{ /* the draggable element */
+  cursor: pointer;
+  width: 100%;
+  height: 20px; /* minimum dragger height */
+  z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ /* the dragger element */
+  position: relative;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px;
+  text-align: center;
+}
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{ width: 12px; /* auto-expanded scrollbar */ }
+
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{ width: 8px; /* auto-expanded scrollbar */ }
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown{ bottom: 0; }
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+3. HORIZONTAL SCROLLBAR
+x-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+.mCSB_horizontal.mCSB_outside > .mCSB_container{ min-height: 100%; }
+
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden{ margin-bottom: 0; } /* non-visible scrollbar */
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+  width: auto;
+  height: 16px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal{ bottom: -26px; } /* scrollbar position: outside */
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer{ margin: 0 20px; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{
+  width: 100%;
+  height: 2px;
+  margin: 7px 0;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
+  width: 30px; /* minimum dragger width */
+  height: 100%;
+  left: 0;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{
+  height: 12px; /* auto-expanded scrollbar */
+  margin: 2px auto;
+}
+
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{
+  height: 8px; /* auto-expanded scrollbar */
+  margin: 4px 0;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft{ left: 0; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{ right: 0; }
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+4. VERTICAL AND HORIZONTAL SCROLLBARS
+yx-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+.mCSB_container_wrapper{
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.mCSB_container_wrapper > .mCSB_container{
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical{ bottom: 20px; }
+
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal{ right: 20px; }
+
+/* non-visible horizontal scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical{ bottom: 0; }
+
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal{ right: 0; }
+
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal{ left: 20px; }
+
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal{ left: 0; }
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper{ /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container{
+  padding-right: 0;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container{
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden{
+  margin-right: 0; /* non-visible scrollbar */
+  margin-left: 0;
+}
+
+/* non-visible horizontal scrollbar */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden{ margin-bottom: 0; }
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------
+6.1 THEMES
+----------------------------------------
+*/
+
+/* default theme ("light") */
+
+.mCSB_scrollTools{ opacity: 0.75; filter: "alpha(opacity=75)"; -ms-filter: "alpha(opacity=75)"; }
+
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools{ opacity: 0; filter: "alpha(opacity=0)"; -ms-filter: "alpha(opacity=0)"; }
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight{
+  background-repeat: no-repeat;
+  opacity: 0.4; filter: "alpha(opacity=40)"; -ms-filter: "alpha(opacity=40)";
+}
+
+.mCSB_scrollTools .mCSB_buttonUp{
+  background-position: 0 0;
+  /*
+  sprites locations
+  light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
+  dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
+  */
+}
+
+.mCSB_scrollTools .mCSB_buttonDown{
+  background-position: 0 -20px;
+  /*
+  sprites locations
+  light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
+  dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
+  */
+}
+
+.mCSB_scrollTools .mCSB_buttonLeft{
+  background-position: 0 -40px;
+  /*
+  sprites locations
+  light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
+  dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
+  */
+}
+
+.mCSB_scrollTools .mCSB_buttonRight{
+  background-position: 0 -56px;
+  /*
+  sprites locations
+  light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
+  dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
+  */
+}
+
+/* theme: "dark" */
+
+/* ---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+
+.row {
+  font-family: "Museo Sans Curl", Arial;
+  a:hover {
+    text-decoration: none;
+  }
+  &.header {
+    height: 80px;
+    line-height: 80px;
+    box-shadow: 0 3px 13px rgba(0,0,0,0.2);
+    .right {
+      padding-right: 11px;
+      float: right;
+      font-weight: 700;
+      border-right: 1px solid #DADADA;
+      border-left:  1px solid #DADADA;
+      text-align: center;
+      .mCSB_dragger {
+        min-height: 40px !important;
+        height: 40px !important;
+      }
+      //scroll inside container
+      .mCSB_dragger_bar {
+        border-radius: 5px;
+        background: #FF8E00 !important;
+        border: 1px solid #D1D1D1 !important;
+        opacity: 1;
+        width: 11px !important;
+        height: 40px !important;
+      }
+      .mCSB_draggerRail {
+        width: 11px;
+        background: #F2F2F2;
+        border-radius: 5px;
+        z-index: 12;
+      }
+      div.scroll-bar.vertical {
+        width: 11px;
+        .thumb {
+          border-radius: 5px;
+          background: #FF8E00;
+          border: 1px solid #D1D1D1;
+          opacity: 1;
+        }
+      }
+      .button {
+        padding: 0 17px;
+        display: inline-block;
+        border-radius: 5px;
+        height: inherit;
+        line-height: 35px;
+        color: #FFF;
+        border: 2px solid transparent;
+        font-size: 15px;
+        &.orange {
+          color: #FF8E00;
+          border-color: #FF8E00;
+          margin: 0 10px;
+        }
+        &.blue {
+          margin-left: 10px;
+          color: #0099E6;
+          border-color: #0099E6;
+          &:hover {
+            background: #0099E6;
+            color: #FFFFFF;
+          }
+        }
+      }
+      .drop-ul {
+        display: inline-block;
+        position: relative;
+        list-style-type: none;
+        line-height: 35px;
+        padding: 0;
+        a.button {
+          &:after {
+            content: '';
+            width: 11px;
+            height: 7px;
+            display: inline-block;
+            background: url(../images/triangle_or.png) no-repeat;
+            margin-left: 3px;
+          }
+        }
+        &.active {
+          .dropable {
+            display: block;
+          }
+          a.button {
+            background: #FF8E00;
+            color: #FFFFFF;
+            &:after {
+              background: url(../images/triangle_white.png) no-repeat;
+            }
+          }
+        }
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        .dropable {
+          &:before {
+            content: '';
+            width: 26px;
+            height: 28px;
+            display: block;
+            position: absolute;
+            top: -8px;
+            left: 17px;
+            background: url(../images/triangle.png) no-repeat;
+            z-index: 11;
+          }
+          .overview {
+            width: 100%;
+          }
+          padding: 5px 0 0 0;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin-top: 22px;
+          position: absolute;
+          width: 155px;
+          height: 166px;
+          left: 10px;
+          border: 1px solid #DEDEDE;
+          background: #FFFFFF;
+          z-index: 12;
+          border-radius: 5px;
+          display: none;
+          box-shadow: 0 3px 13px rgba(0,0,0,0.2);
+          ul {
+            height: 100%;
+            overflow: auto;
+            padding-left: 8px;
+            padding-right: 14px;
+          }
+          li {
+            line-height: 31px;
+            font-weight: 300;
+            text-align: left;
+            a {
+              display: inline-block;
+              line-height: 31px;
+              color: #B4B4B4;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              padding-left: 5px;
+              width: 100%;
+              &:hover {
+                background: #F2F2F2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .center {
+      padding-right: 0;
+      float: right;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 20px;
+      position: relative;
+      padding-right: 60px;
+      div.language {
+        position: absolute;
+        right: 0;
+        padding: 5px;
+        background: #FFFFFF;
+        font-weight: 300;
+        z-index: 12;
+        top: 5px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        .lang_current {
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            width: 11px;
+            height: 7px;
+            position: absolute;
+            background: url(../images/lang_triangle.png) no-repeat;
+            right: 16px;
+            bottom: -3px;
+          }
+        }
+        &:hover {
+          width: 100%;
+          border: 1px solid #DEDEDE;
+          left: -1px;
+          .lang_current:after {
+            right: 15px;
+            display: none;
+          }
+          a {
+            padding-right: 4px;
+          }
+          span {
+            display: inline-block;
+          }
+          .lang_hidden {
+            display: block;
+          }
+        }
+        .lang_hidden {
+          display: none;
+        }
+        a {
+          display: block;
+          text-align: right;
+          color: #B4B4B4;
+          line-height: 55px;
+          padding-right: 5px;
+          &:hover {
+            background: #F2F2F2;
+          }
+          span {
+            display: none;
+            margin-right: 10px;
+          }
+        }
+      }
+      a {
+        &.message, &.chat {
+          display: inline-block;
+          width: 33px;
+          height: 32px;
+          background: url(../images/sprite_1.png) no-repeat;
+          vertical-align: middle;
+        }
+        &.message {
+          background-position:-2px -6px;
+            &:hover {
+              background-position:-2px -52px;
+          }
+        }
+        &.chat {
+          background-position: -95px -6px;
+          margin-left: 8px;
+          &:hover {
+            background-position: -95px -52px;
+          }
+        }
+        &.language {
+
+        }
+      }
+    }
+  }
+  &.common {
+    padding-bottom: 20px;
+    h1 {
+      font-weight: 500;
+      font-size: 35px;
+      &.blue-lined {
+        position: relative;
+        margin-bottom: 20px;
+        &:after {
+          content: '';
+          width: 59px;
+          height: 2px;
+          background: #0099E6;
+          display: block;
+          margin-top: 27px;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+    .left-content {
+      padding-left: 0;
+      .button {
+        padding: 0 17px;
+        display: inline-block;
+        border-radius: 5px;
+        height: inherit;
+        line-height: 35px;
+        font-size: 15px;
+        color: #3B3B3B;
+        border: 2px solid transparent;
+        &:hover, &.active {
+          background: #F2F2F2;
+        }
+        &.blue {
+          margin-left: 10px;
+          color: #0099E6;
+          border-color: #0099E6;
+          &:hover {
+            background: #0099E6;
+            color: #FFFFFF;
+          }
+        }
+      }
+      div.button {
+        display: block;
+        text-align: center;
+        margin-top: 11px;
+      }
+      .border {
+        border-top: 1px solid #F2F2F2;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 15px;
+        margin-top: 15px;
+        a {
+          margin: 3px 7px 19px 7px;
+          &:first-of-type {
+            margin: 3px 7px 19px 0px;
+          }
+        }
+      }
+    }
+    .right-content {
+      padding: 0 20px 0 0;
+      .mCustomScrollBox {
+        padding-right: 20px;
+      }
+      table {
+        width: 100%;
+        td {
+          padding: 8px 0;
+          &:first-of-type {
+            font-weight: 900;
+          }
+          &:nth-of-type(2) {
+            font-weight: 300;
+          }
+          span {
+            &.up {
+              font-weight: 900;
+              color: #00AA44;
+            }
+            &.down {
+              font-weight: 900;
+              color: #D11D00;
+            }
+          }
+        }
+      }
+      .shadowed {
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 3px 13px rgba(0,0,0,0.2);
+        .scroll {
+          clear: both;
+          max-height: 308px;
+          overflow: auto;
+          .mCSB_scrollTools {
+            width: 20px;
+          }
+          .mCSB_dragger_bar {
+            border-radius: 100%;
+            background: #FFFFFF;
+            width: 20px;
+            opacity: 1;
+            border: 5px solid #D1D1D1;
+          }
+          .mCSB_draggerRail {
+            width: 10px;
+            background: #F2F2F2;
+            border-radius: 5px;
+            z-index: 12;
+          }
+        }
+      }
+      .button {
+        padding: 0 17px;
+        display: inline-block;
+        border-radius: 5px;
+        height: inherit;
+        line-height: 35px;
+        font-size: 15px;
+        color: #3B3B3B;
+        border: 2px solid transparent;
+        &:hover, &.active {
+          background: #F2F2F2;
+        }
+      }
+      .col-xs-9 {
+        padding: 23px 0 0 0;
+        .justify {
+          text-align: justify;
+          span {
+            display: inline-block;
+          }
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .col-xs-3 {
+        padding: 23px 0 0 10px;
+        a {
+          padding: 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .table {
+    padding: 20px 0 0 0;
+    table {
+      width: 100%;
+      td {
+        padding: 20px 0;
+      }
+      tr.first {
+        border-bottom: 1px solid #F2F2F2;
+        td {
+          padding-bottom: 15px;
+        }
+      }
+      td {
+        text-align: center;
+        &:first-of-type {
+          width: 13%;
+        }
+      }
+    }
+  }
+  &.footer {
+    border-top: 1px solid #DCDCDC;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .container {
+      padding: 0;
+    }
+    .col-xs-4 {
+      padding-top: 10px;
+      p {
+        color: #CCCCCC;
+        font-weight: 500;
+        margin: 0;
+        span {
+          font-weight: 900;
+        }
+      }
+    }
+    .col-xs-5 {
+      font-weight: 500;
+      border-left: 1px solid #DCDCDC;
+      a {
+        color: #0099E6;
+      }
+      span {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+    .col-xs-3 {
+      padding-top: 7px;
+      text-align: right;
+      a {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        background: url(../images/sprite_2.png) no-repeat;
+        margin: 0 3px;
+        &.in {
+          background-position: 1px 1px;
+          &:hover {
+            background-position: 1px -79px;
+          }
+        }
+        &.youtube {
+          background-position: -82px 1px;
+          &:hover {
+            background-position: -82px -79px;
+          }
+        }
+        &.chrome {
+          background-position: -155px 1px;
+          &:hover {
+            background-position: -155px -79px;
+          }
+        }
+        &.facebook {
+          background-position: -228px 1px;
+          &:hover {
+            background-position: -228px -79px;
+          }
+        }
+        &.twitter {
+          background-position: -290px 1px;
+          &:hover {
+            background-position: -291px -82px;
+          }
+        }
+      }
+    }
+  }
+}
+//row_end
+.container {
+  width: 100%;
+}
+html {
+  height: 100%;
+}
+.body-blob{
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+.container-fluid-blob {
+  padding-right: 83px;
+  height: 100%;
+  padding-bottom: 49px;
+  -webkit-transition: padding-right 0.3s ease-in-out;
+  -moz-transition: padding-right 0.3s ease-in-out;
+  -ms-transition: padding-right 0.3s ease-in-out;
+  -o-transition: padding-right 0.3s ease-in-out;
+  transition: padding-right 0.3s ease-in-out;
+  .row {
+    margin: 0;
+  }
+}
+.body-blob {
+  position: relative;
+  margin: 0 auto;
+  .footer {
+    width: ~"-webit-calc(100% - 83px)";
+    width: ~"-ms-calc(100% - 83px)";
+    width: ~"-moz-calc(100% - 83px)";
+    width: ~"calc(100% - 83px)";
+  }
+  &.opened {
+    .container-fluid-blob {
+      padding-right: 198px;
+    }
+    .footer {
+      width: ~"-webit-calc(100% - 198px)";
+      width: ~"-ms-calc(100% - 198px)";
+      width: ~"-moz-calc(100% - 198px)";
+      width: ~"calc(100% - 198px)";
+    }
+    .navigation-test {
+      width: 198px;
+      padding: 0;
+       a {
+         &.download {
+           font-size: 15px;
+           padding: 5px;
+         }
+       }
+      ul {
+        margin: 0;
+      }
+      li {
+        text-align: left;
+        padding: 0 13px;
+        &.drop-ul {
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 11px;
+            height: 12px;
+            background: url(../images/arrows_sprite.png) no-repeat;
+            right: 13px;
+            top: 21px;
+            background-position: 0px -38px;
+          }
+          &.active {
+            background: #1F1F1F;
+            box-shadow: inset 0 8px 5px black;
+            &:after {
+             width: 15px;
+              background-position: 0 0;
+            }
+            a {
+              color: #FFFFFF;
+            }
+            & + .dropable {
+              display: block;
+              padding: 0;
+              li.active {
+                background: #1F1F1F;
+                a {
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+        &.personal {
+          height: 80px;
+          line-height: 80px;
+          padding: 0 13px;
+          background: #0099E6;
+          .closed {
+            display: none;
+          }
+          a.opened {
+            border: none;
+            font-weight: 900;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            &:after {
+              content: '';
+              width: 7px;
+              height: 11px;
+              background: url(../images/arr_face.png) no-repeat;
+              background-size: cover;
+              display: inline-block;
+              margin-left: 5px;
+            }
+          }
+        }
+        a {
+          font-size: 14px;
+          line-height: 52px;
+          display: inline-block;
+          width: 100%;
+          border-bottom: 1px solid rgba(34,124,143,0.17);
+          img {
+            margin-right: 10px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.navigation-test {
+  min-height: 100%;
+  width: 83px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #3B3B3B;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  a {
+    font-size: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #E5E5E5;
+    line-height: 52px;
+    &.download {
+      display: block;
+      margin: 10px 13px 0 13px;
+      border: 2px solid #FF8E00;
+      font-weight: 700;
+      color: #FF8E00;
+      text-align: center;
+      border-radius: 5px;
+      line-height: 100%;
+      padding: 10px 5px;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      img {
+        display: block;
+        margin: 0 auto 5px auto;
+      }
+    }
+    &.opened {
+      display: none;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      text-align: center;
+      opacity: 1;
+      &.drop-ul {
+        position: relative;
+        & + .dropable {
+            display: none;
+              a {
+                text-transform: none;
+              }
+          }
+      }
+    }
+  }
+}
+//
+input {
+  &.normal-input {
+    display: inline-block;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 17px;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    margin: 3px 0;
+    &:focus {
+      box-shadow: 0 0 4px #00C6FF;
+      border-color: #0099E6;
+    }
+    &.success {
+      border-color: #0099E6;
+    }
+    &.alert {
+      box-shadow: 0 0 4px #FF6F6F;
+      border-color: #FF6F6F;
+    }
+    &:disabled {
+      background: #F2F2F2;
+      border-color: #D1D1D1;
+    }
+  }
+}
+//LK RTL
+body.RTL {
+  text-align: right;
+  .container-fluid-blob {
+    -webkit-transition: padding-left 0.3s ease-in-out;
+    -moz-transition: padding-left 0.3s ease-in-out;
+    -ms-transition: padding-left 0.3s ease-in-out;
+    -o-transition: padding-left 0.3s ease-in-out;
+    transition: padding-left 0.3s ease-in-out;
+  }
+  .body-blob {
+    &.opened {
+      .container-fluid-blob {
+        padding-left: 198px;
+        padding-right: 0;
+      }
+      .navigation-test {
+        span {
+          &.image {
+            float: right;
+            img {
+              margin-right: 0;
+              margin-left: 10px;
+            }
+          }
+        }
+        .nav-button {
+          &.opened {
+            &:after {
+              display: none !important;
+            }
+            &:before {
+              content: '';
+              width: 7px;
+              height: 11px;
+              background: url(../images/arr_face_rtl.png) no-repeat;
+              background-size: cover;
+              display: inline-block;
+              margin-left: 5px;
+            }
+          }
+        }
+        li.drop-ul:after {
+          left: 13px !important;
+        }
+      }
+    }
+    .container-fluid-blob {
+      padding-left: 83px;
+      padding-right: 0;
+    }
+    .navigation-test {
+      left: 0;
+      a {
+        text-align: right;
+      }
+    }
+  }
+  .row {
+    &.header {
+      .right {
+        float: left;
+        .drop-ul .dropable li a {
+          text-align: right;
+          padding-left: 0;
+          padding-right: 5px;
+        }
+      }
+      .logo {
+        float: right;
+      }
+      .center {
+        padding-right: 20px;
+        padding-left: 60px;
+        float: left;
+        div.language {
+          left: 0;
+          right: inherit;
+          padding: 5px;
+          .lang_current {
+            &:after {
+              left: 16px;
+            }
+          }
+          a {
+            text-align: left;
+            padding-right: 0;
+            padding-left: 5px;
+            span {
+              margin-right: 0;
+              margin-left: 10px;
+            }
+          }
+          &:hover {
+            left: initial;
+            right: -1px;
+            a {
+              padding-left: 4px;
+            }
+            .lang_current {
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.footer {
+      .col-xs-5 {
+        border: none;
+      }
+      .col-xs-4 {
+        border-left: 1px solid #DCDCDC;
+      }
+      .col-xs-3 {
+        text-align: left;
+      }
+    }
+    &.common {
+      table {
+        td {
+          text-align: center;
+        }
+      }
+      h1.blue-lined {
+        &:after {
+          right: 0;
+        }
+      }
+      .col-xs-5 {
+        .mCustomScrollBox {
+          padding-right: 20px;
+        }
+        table {
+          td {
+            &:last-of-type {
+              font-weight: 900;
+            }
+            &:nth-last-of-type(2) {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

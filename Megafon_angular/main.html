@@ -1,0 +1,48 @@
+ <div class="container-fluid main">
+        <div class="header">
+                <a href="#" class="menu_toggle"></a>
+                <div class="search">
+                    <form action="#">
+                        <input type="image" src="images/zoom.png" class="zoom"/>
+                        <input type="text" class='search_text' placeholder="Поиск...">
+                    </form>
+                </div><!-- / search -->
+        </div><!-- / header -->
+        <div class="menu">
+            <a href="#" class="menu_item active">Новинки</a>
+            <a href="#" class="menu_item">Бесплатные</a>
+            <a href="#" class="menu_item">Популярные</a>
+            <a href="#" class="menu_item">Категории</a>
+        </div><!-- /menu -->
+        <div class="subscribe">
+            <img src="images/banner.png" alt="" />
+            <a href="#" class="button flat">Подписаться</a>
+            <p class="description">
+                Кликнув на кнопку “Подписаться”, Вы соглашаетесь с
+                <br />
+                условиями подписки на доступ ко всему каталогу.
+                <br />
+                Стоимость ХХ руб. в день.
+            </p>
+        </div><!-- / subscribe -->
+        <div class="magazines">
+            <div class="half" ng-repeat="magazine in magazines">
+                <a href="#/preview/{{magazine.id}}">
+                    <img ng-src="{{magazine.pages[0]}}" alt="" />
+                    <p class="title">{{magazine.name}}</p>
+                    <p class="date">{{magazine.issue}}</p>
+                </a>
+            </div><!-- / one magazine -->
+        </div><!-- / magazines-->
+        <div class="footer">
+            <p class="support">
+                <span class="support_title">Служба поддержки</span>
+                <span class="phone">8 (800) 123 45 67</span>
+            </p>
+            <p class="disclaimer">
+                Мегафон Киоск 2015
+                <br />
+                Сайт разработан Weblink Digital
+            </p>
+        </div><!-- / footer -->
+    </div><!-- / main -->

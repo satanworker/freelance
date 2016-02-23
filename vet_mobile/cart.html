@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ветаптека Главная</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Include the compiled Ratchet JS -->
+    <!--<script src="js/ratchet.js"></script>-->
+    <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <!-- touchSwipe library -->
+        <!--<script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>-->
+        
+        <!-- Slider Javascript file -->
+        <!--<script src="js/jquery.slideandswipe.min.js"></script>-->
+    <!--<script>-->
+            <!--$(document).ready(function() {-->
+                <!--$('.nav').slideAndSwipe();-->
+            <!--});-->
+        <!--</script>-->
+  </head>
+  <body>
+  <nav class="nav" id="nav">
+    <ul class="table-view">
+      <li class="table-view-cell media">
+        <a href="index.html">
+          <span class="petrov-i cades"></span>
+          <div class="media-body">
+            Главная
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a>
+          <span class="petrov-i pill"></span>
+          <div class="media-body">
+            Лекарства
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a>
+          <span class="petrov-i house"></span>
+          <div class="media-body">
+            Аксессуары
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a>
+          <span class="petrov-i drop"></span>
+          <div class="media-body">
+            Гигиена
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a>
+          <span class="petrov-i tennis"></span>
+          <div class="media-body">
+            Игрушки
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a>
+          <span class="petrov-i wallet"></span>
+          <div class="media-body">
+            Доставка и оплата
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a>
+          <span class="petrov-i newspaper"></span>
+          <div class="media-body">
+            Условия приобретения
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a href="contacts.html">
+          <span class="petrov-i phone"></span>
+          <div class="media-body">
+            Контакты
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a href="lk.html">
+          <span class="petrov-i users"></span>
+          <div class="media-body">
+            Личный кабинет
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a href="lk.html">
+          <span class="petrov-i tv"></span>
+          <div class="media-body">
+            Полная версия сайта
+          </div>
+        </a>
+      </li>
+      <li class="table-view-cell media">
+        <a href="lk.html">
+          <span class="petrov-i cart"></span>
+          <div class="media-body">
+            Корзина
+        w    <span class="badge">1</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav" id="navButton">
+      <a class="icon icon-bars pull-left ssm-open-nav"></a>
+      <a class="icon fa fa-shopping-cart pull-right active">
+        <span class="badge">1</span>
+      </a>
+      <div class="title">Дежурная ветеринарная аптека</div>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <div class="phones clearfix">
+          <a href="" class="phone">
+            <span class="fa fa-phone"></span>
+            <div class="phone-title">Ветаптека</div>
+            <div class="phone-itself">+7 (495) 555-55-55</div>
+          </a><a href="" class="phone">
+          <span class="fa fa-phone"></span>
+          <div class="phone-title">Ветклиника</div>
+          <div class="phone-itself">+7 (495) 555-55-55</div>
+        </a>
+        </div>
+        <div class="search">
+          <form action="" class="content-padded search-form">
+
+            <div class="search-wrap">
+              <input type="search" placeholder="Найти лекарства для животных">
+              <button class="btn btn-search" type="submit"><span class="icon icon-search"></span></button>
+            </div>
+            <div class="search-example">Например, <span>наполнитель Катсан</span></div>
+
+          </form>
+      </div>
+      <hr />
+      <ul class="content-padded breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li>Корзина</li>
+      </ul>
+
+      <div class="content-padded itemCart">
+      <div class="preview">
+        <img src="http://placehold.it/42x42" />
+      </div><!-- / preview item -->
+        <div class="right-side">
+        <p>
+          <b>Стронгхолд 15 мг для собак и кошек
+          менее 2.5 кг</b> капли на холку от ушных,
+          подкожных клещей, блох и гельминтиов
+          пипетка № 3
+        </p>
+          <p class="price">
+            11 000
+            <!-- rouble-->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 6.4 8.3" enable-background="new 0 0 6.4 8.3" xml:space="preserve">
+            <g>
+                <path d="M2.9,5H2.4l-0.2,1h1.9L3.9,7H2L1.7,8.3H0.3L0.6,7H0l0.2-1.1h0.6L1,5H0.4l0.2-1.1h0.6l0.8-3.7c0,0,1-0.2,1.9-0.2
+                    c1.9,0,2.4,1,2.4,1.8C6.4,4,4.9,5,2.9,5z M4.9,2c0-0.6-0.3-0.9-1-0.9c-0.2,0-0.5,0-0.6,0.1L2.7,3.9h0.4C4.2,3.9,4.9,3.3,4.9,2z"/>
+            </g>
+            </svg>
+          </p>
+        </div><!-- / right side -->
+        <div class="bottom">
+          <div class="preview">
+            <p>Кол-во</p>
+          </div><!-- / preview bottom-->
+          <div class="right-side">
+            <input type="number" value="1" data-min="0"/>
+            <a href="#" class="delete">Удалить</a>
+          </div><!-- / right side -->
+        </div><!-- / bottom -->
+      </div><!-- / item -->
+      <div class="content-padded itemCart">
+        <div class="preview">
+          <img src="http://placehold.it/42x42" />
+        </div><!-- / preview item -->
+        <div class="right-side">
+          <p>
+            <b>Стронгхолд 15 мг для собак и кошек
+              менее 2.5 кг</b> капли на холку от ушных,
+            подкожных клещей, блох и гельминтиов
+            пипетка № 3
+          </p>
+          <p class="price">
+            11 000
+            <!-- rouble-->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 6.4 8.3" enable-background="new 0 0 6.4 8.3" xml:space="preserve">
+            <g>
+                <path d="M2.9,5H2.4l-0.2,1h1.9L3.9,7H2L1.7,8.3H0.3L0.6,7H0l0.2-1.1h0.6L1,5H0.4l0.2-1.1h0.6l0.8-3.7c0,0,1-0.2,1.9-0.2
+                    c1.9,0,2.4,1,2.4,1.8C6.4,4,4.9,5,2.9,5z M4.9,2c0-0.6-0.3-0.9-1-0.9c-0.2,0-0.5,0-0.6,0.1L2.7,3.9h0.4C4.2,3.9,4.9,3.3,4.9,2z"/>
+            </g>
+            </svg>
+          </p>
+        </div><!-- / right side -->
+        <div class="bottom">
+          <div class="preview">
+            <p>Кол-во</p>
+          </div><!-- / preview bottom-->
+          <div class="right-side">
+            <input type="number" value="1" data-min="0"/>
+            <a href="#" class="delete">Удалить</a>
+          </div><!-- / right side -->
+        </div><!-- / bottom -->
+      </div><!-- / item -->
+
+      <div class="amount">
+      <p>итого: <span>69 000</span>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 6.4 8.3" enable-background="new 0 0 6.4 8.3" xml:space="preserve">
+            <g>
+                <path d="M2.9,5H2.4l-0.2,1h1.9L3.9,7H2L1.7,8.3H0.3L0.6,7H0l0.2-1.1h0.6L1,5H0.4l0.2-1.1h0.6l0.8-3.7c0,0,1-0.2,1.9-0.2
+                    c1.9,0,2.4,1,2.4,1.8C6.4,4,4.9,5,2.9,5z M4.9,2c0-0.6-0.3-0.9-1-0.9c-0.2,0-0.5,0-0.6,0.1L2.7,3.9h0.4C4.2,3.9,4.9,3.3,4.9,2z"/>
+            </g>
+            </svg>
+      </p>
+        <a href="#" class="btn btn-block btn-positive">
+          К оформлению
+          <i class="fa fa-long-arrow-right"></i>
+        </a>
+      </div><!-- / amount -->
+
+      <hr />
+      <footer class="page-footer content-padded">
+      Уточнить наличие товара и узнать другую информацию:
+      <div class="footer-phones"><a href="">+7 495 612–32–32</a> / <a href="">+7 495 612–32–32</a></div>
+
+      ©2014–2015 <strong>Дежурная Ветеринарная аптека.</strong><br/>
+      Все права защищены. Лицензия ПИ 77-5870 от 30.11.2000 г.
+      </footer>
+    </div>
+  <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
