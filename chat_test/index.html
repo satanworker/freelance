@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+</head>
+<body>
+<form id="publish">
+    <input type="text" placeholder="text" name="message" />
+    <input type="submit" value="отправить" />
+</form>
+<ul id="messages">
+
+</ul>
+<script>
+publish.onsubmit = function() {
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('POST', '/publish', true);
+
+    xhr.send(JSON.stringify({message: this.elements.message.value}));
+
+    this.elements.message.value = '';
+
+    return false;
+};
+
+subscribe();
+
+function subscribe() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', '/subscribe', true);
+    xhr.setRequestHeader("Content-type","text/plain");
+
+    xhr.onload = function() {
+        console.log('xhr onload', this.responseText);
+        var li = document.createElement('li');
+        li.textContent = this.responseText;
+
+        messages.appendChild(li);
+
+        subscribe();
+
+    };
+    xhr.onerror = xhr.onabort = function() {
+        console.log('xhr onload', this.responseText);
+        setTimeout(subscribe, 500);
+    };
+    xhr.send('');
+    console.log('xhr send');
+}
+</script>
+</body>
+</html>
