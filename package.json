@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/satanworker/freelance/issues"
   },
-  "homepage": "https://github.com/satanworker/freelance#readme"
+  "homepage": "https://github.com/satanworker/freelance#readme",
+  "devDependencies": {
+    "flickity": "^1.1.2"
+  }
 }

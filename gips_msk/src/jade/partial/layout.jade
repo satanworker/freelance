@@ -1,6 +1,6 @@
 //
    Created by dmitry on 23.02.16.
--var header_links = [['#', 'Преимущества'], ['#', 'Портфолио'], ['#', 'Прайс-лист']]
+-var header_links = [['#href', 'Преимущества'], ['#', 'Портфолио'], ['#', 'Прайс-лист']]
 include text.jade
 doctype html
 html
@@ -8,9 +8,9 @@ html
         title= pageTitle
         meta(charset='UTF-8')
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        link(href='css/app.css')
+        link(rel="stylesheet" href="css/app.css")
     body
-        section.container-fluid
+        div.container-fluid
             header.row.header
                 a(href="/").logo
                     img(src="img/logo.png")

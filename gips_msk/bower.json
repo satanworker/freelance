@@ -1,0 +1,18 @@
+{
+  "name": "gips_msk",
+  "description": "sd",
+  "main": "index.js",
+  "authors": [
+    "satanworker@gmail.com <bugaga12>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/satanworker/freelance",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
