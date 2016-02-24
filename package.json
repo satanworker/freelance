@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/satanworker/freelance#readme",
   "devDependencies": {
+    "bl": "^1.1.2",
     "flickity": "^1.1.2"
   }
 }
