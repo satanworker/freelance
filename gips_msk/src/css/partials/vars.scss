@@ -1,0 +1,19 @@
+@import "utility-belt";
+$main_color: #489cde;
+$button_color: #ff3366;
+@mixin button_style {
+  width: 90%;
+  max-width: 406px;
+  letter-spacing: .07em;
+  display: block;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  @include ghostVerticalAlign();
+  text-transform: uppercase ;
+  background: #f36;
+  font-weight: 400;
+  font-size: 20px
+}

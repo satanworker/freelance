@@ -2,21 +2,28 @@ extends partial/layout
 block content
     section.row.first
         div.container
-            h1.main_header= head_link
-            span.budge Светло
-            span.budge красиво
-            span.budge Современно
+            h1.main_header Ремонт быстро и качественно, <br /> настоящими профессионалами своего дела
+            p.budge_container
+                span.budge Светло
+                span.budge красиво
+                span.budge Современно
             a(href='#').button.rounded Получить консультацию
     //row.first
     div.row.carousel
         div.container
-            div.gallery.js-flickity
+            div.gallery#materials_carousel
                 div.gallery-cell
                     div.left_text
                         h2.bordered Работаем по технологии кнауф
                         p.text Здесь описание относящиеся к картинке, при смене картинки, меняется и описание.
                     div.right_image
-                        img(src="img/knauf_test.png" alt="Работаем по технологии кнауф")
+                        img(src="img/gallery_test.png" alt="Работаем по технологии кнауф")
+                div.gallery-cell
+                    div.left_text
+                        h2.bordered Работаем по технологии кнауф
+                        p.text Здесь описание относящиеся к картинке, при смене картинки, меняется и описание.
+                    div.right_image
+                        img(src="img/gallery_test.png" alt="Работаем по технологии кнауф")
     //row.carousel
     section.row.advantages
         div.container

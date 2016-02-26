@@ -12,14 +12,14 @@ html
     body
         div.container-fluid
             header.row.header
-                a(href="/").logo
-                    img(src="img/logo.png")
-                nav.menu
-                    for link in header_links
-                        a(href=link[0])=link[1]
-                    a(href="tel:").menu_link.tel
-                        span +7(928)
-                        | 975-99-75
+                div.container
+                    a(href="/").logo
+                        img(src="img/logo_test.png")
+                    nav.menu
+                        for link in header_links
+                            a(href=link[0])=link[1]
+                        a(href="tel:").menu_link.tel
+                            span +7(928) 975-99-75
             block content
         //container-fluid
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
