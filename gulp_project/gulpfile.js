@@ -9,7 +9,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     jade = require('gulp-jade'),
-    svgmin = require('gulp-svgmin'),
     prefixer = require('gulp-autoprefixer');
 
 //paths
@@ -89,7 +88,6 @@ gulp.task('img:build', function() {
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(svgmin())
         .pipe(gulp.dest(path.build.img))
 });
 gulp.task('font:build', function() {

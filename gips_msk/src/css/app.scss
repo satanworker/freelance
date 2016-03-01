@@ -13,6 +13,24 @@ h1, h2, h3, h4 {
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.bordered {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  &:after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    background: $main_color;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 a {
   color: inherit;
@@ -62,8 +80,15 @@ a {
     color: #fff;
     text-align: center;
     font-family: 'Lato', Arial;
-    height: 710px;
+    height: 810px;
     padding-bottom: 300px;
+    .main_header {
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+    .budge_container {
+      margin-bottom: 40px;
+    }
     .container {
       position: relative;
       z-index: 2;
@@ -144,6 +169,9 @@ a {
         max-width: 307px;
         float: left;
         color: #000;
+        .text {
+          color: #9a9a9a;
+        }
       }
       .right_image {
         width: 50%;
