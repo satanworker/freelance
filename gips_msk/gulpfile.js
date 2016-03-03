@@ -89,7 +89,6 @@ gulp.task('img:build', function() {
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(svgmin())
         .pipe(gulp.dest(path.build.img))
 });
 gulp.task('font:build', function() {

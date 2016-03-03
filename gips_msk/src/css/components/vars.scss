@@ -2,6 +2,7 @@
 $main_color: #489cde;
 $button_color: #ff3366;
 @mixin button_style {
+  font-family: 'Lato', Arial;
   width: 90%;
   max-width: 406px;
   letter-spacing: .07em;
@@ -16,4 +17,7 @@ $button_color: #ff3366;
   background: #f36;
   font-weight: 400;
   font-size: 20px
+}
+@mixin oblique {
+  transform: skewY(12deg);
 }

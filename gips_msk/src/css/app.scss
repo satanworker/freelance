@@ -1,8 +1,8 @@
-@import "partials/bootstrap.css";
-@import "partials/flickity.css";
-@import "partials/font";
-@import "partials/vars";
-@import "partials/utility-belt";
+@import "components/bootstrap.css";
+@import "components/flickity.css";
+@import "components/font";
+@import "components/vars";
+@import "components/utility-belt";
 
 body {
   font-family: 'PT Serif', sans-serif;
@@ -131,7 +131,7 @@ a {
       height: 100%;
       right: 0;
       bottom: 0;
-      @include radial-gradient(rgba(#142d47, 0.4), rgba(#0b0b0c, 0.4));
+      @include radial-gradient(rgba(#142d47, 0.7), rgba(#0b0b0c, 0));
       z-index: 1;
     }
   }
@@ -142,6 +142,12 @@ a {
     background: #fff;
     z-index: 2;
     color: red;
+    .knauf {
+      width: 71px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 42px;
+    }
     .gallery {
       margin-top: 50px;
       .flickity-page-dots {
@@ -194,9 +200,45 @@ a {
       height: 360px;
       top: -220px;
       z-index: 2;
-      transform: skewY(8deg)
+      transform: skewY(12deg);
     }
   }
   //.carousel
+  &.advantages {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    h3 {
+      font-weight: 400;
+      margin: 20px 0 13px 0;
+    }
+    .eco_img, .time {
+      width: 60px;
+      height: 60px;
+    }
+    .button {
+      display: block;
+      margin: 0 auto;
+      clear: both;
+    }
+    h2 {
+      margin: 40px 0;
+    }
+    .container {
+      position: relative;
+      z-index: 3;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      height: 240px;
+      background: #f8f8f8;
+      top: 138px;
+      left: 0;
+      @include oblique;
+    }
+  }
+  //.advantages
 }
 //.row
