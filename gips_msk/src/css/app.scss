@@ -80,8 +80,8 @@ a {
     color: #fff;
     text-align: center;
     font-family: 'Lato', Arial;
-    height: 810px;
-    padding-bottom: 300px;
+    padding-bottom: 40px;
+    min-height: 700px;
     .main_header {
       margin-top: 60px;
       margin-bottom: 40px;
@@ -187,27 +187,83 @@ a {
     }
     .container {
       position: relative;
-      margin-top: -$margin_top;
       z-index: 3;
       color: #fff;
     }
-    &:after {
-      content: '';
-      left: 0;
-      width: 100%;
-      position: absolute;
-      background: #fff;
-      height: 360px;
-      top: -220px;
-      z-index: 2;
-      transform: skewY(12deg);
-    }
+    //&:after {
+    //  content: '';
+    //  left: 0;
+    //  width: 100%;
+    //  position: absolute;
+    //  background: #fff;
+    //  height: 360px;
+    //  top: -220px;
+    //  z-index: 2;
+    //  transform: skewY(12deg);
+    //}
   }
   //.carousel
   &.advantages {
     position: relative;
     z-index: 2;
     text-align: center;
+    .rouble {
+      height: 60px;
+      width: 47px;
+      path {
+        fill: #000;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
+      }
+    }
+    .col-md-4 {
+      margin-bottom: 40px;
+    }
+    .blob {
+      background: transparent;
+      padding: 20px 20px;
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+      box-shadow: none;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -50px;
+        height: 150px;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        @include oblique;
+        z-index: 1;
+        transition: background .25s ease;
+      }
+      .blob_inner {
+        position: relative;
+        z-index: 2;
+      }
+      &:hover {
+        @include card(4);;
+        transform: translateY(-10px)  scale(1.02);
+        background: $main_color;
+        color: #fff;
+        path {
+          fill: #fff;
+        }
+        &:after {
+          background: $button_color;
+        }
+      }
+    }
     h3 {
       font-weight: 400;
       margin: 20px 0 13px 0;
@@ -228,6 +284,7 @@ a {
       position: relative;
       z-index: 3;
     }
+
     &:after {
       content: '';
       width: 100%;
@@ -240,5 +297,29 @@ a {
     }
   }
   //.advantages
+  &.portfolio {
+    position: relative;
+    margin-top: 80px;
+    .bordered {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      background: $main_color;
+      left: 0;
+      top: 120px;
+      width: 100%;
+      z-index: 1;
+      @include oblique;
+    }
+  }
 }
 //.row
