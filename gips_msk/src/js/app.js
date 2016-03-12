@@ -5,4 +5,7 @@ $(document).ready(function (){
         autoPlay: 3500,
         pauseAutoPlayOnHover: true
     });
+    $('.portfolio .main').flickity({
+        contain: true
+    });
 });
