@@ -3,18 +3,20 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Cтудия working title</title>
-    <link href="css/app.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <!-- TODO: don't forget to change bootstrap before launch -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/typed.js"></script>
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src="js/app.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container-fluid main">
@@ -67,19 +69,19 @@
                     </svg>
                 </a><!-- / logo -->
                 <nav class="menu_center">
-                    <a href="#" class="menu_link">Работы</a>
-                    <a href="#" class="menu_link">Услуги</a>
-                    <a href="#" class="menu_link">Отзывы</a>
+                    <a href="#" class="menu_link">Services</a>
+                    <a href="#" class="menu_link">Portfolio</a>
+                    <a href="#" class="menu_link">Testimonials</a>
                 </nav><!-- / menu center -->
                 <div class="right">
-                    <a href="#" class="button flat">Получить консультацию</a>
                     <a href="tel:88" class="tel">+7 (985) 890-42-42</a>
+                    <a href="#" class="normal_link">Get cosult</a>
                 </div>
             </header>
         </div><!-- / header -->
         <section class="row first">
             <div class="container">
-                <p class="title"><span>разработка интернет приложений <br /> и маркетинговых решений </span></p>
+                <p class="title"><span>Web-development <br />  solutions  for business</span></p>
                 <div class="underline_container">
                     <svg class="underline_path" width="186px" height="22px" viewBox="-4 0 186 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <path d="M0,4.8768025 C8.69922932,4.8768025 121.382104,2 168.792189,2 C216.202275,2 26.3856446,8.23981271 16.7336426,15.4152269 C9.77598573,19.2017481 98.4125824,15.4152269 139.865845,15.4152269" id="underlines-robots" transform="rotate(1)"></path>
@@ -87,6 +89,44 @@
                 </div>
             </div>
         </section><!-- / first -->
+        <section class="row steps padding">
+            <div class="container">
+                <h2>Successful project is</h2>
+                <div class="step prototyping">
+                    <div class="col-md-4 steps_title">
+                        UX/Prototyping
+                    </div>
+                    <div class="col-md-8 steps_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.</p>
+                    </div><!-- / steps description -->
+                </div><!-- / step -->
+                <div class="step design">
+                    <div class="col-md-4 steps_title">
+                        Design
+                    </div>
+                    <div class="col-md-8 steps_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.</p>
+                    </div><!-- / steps description -->
+                </div><!-- / step -->
+                <div class="step front">
+                    <div class="col-md-4 steps_title">
+                        Front-End
+                    </div>
+                    <div class="col-md-8 steps_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.</p>
+                    </div><!-- / steps description -->
+                </div><!-- / step -->
+            </div>
+        </section><!-- / steps -->
+        <section class="row node">
+            <div style="text-align:center">
+                <div class="slider" id="slider-range"></div>
+                <div class="slider" id="slider-test"></div>
+
+                <canvas id="canvasOne" width="900" height="520" ></canvas>
+                <p>HTML5 Canvas - Projecting 3D particles to a 2D canvas. &nbsp; &nbsp;<a href="http://www.rectangleworld.com">rectangleworld.com</a></p>
+            </div>
+        </section><!-- / node -->
     </div><!-- / main -->
 </body>
 </html>

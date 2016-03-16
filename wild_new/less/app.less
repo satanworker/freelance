@@ -1,22 +1,32 @@
 @font-face {
-  font-family: "Museo Sans Curl";
+  font-family: "Myriad Set Pro";
   font-weight: 700;
-  src: url(../font/MuseoSansCyrl_700.otf);
+  src: url(../font/myriad-set-pro_bold.ttf);
 }
 @font-face {
-  font-family: "Museo Sans Curl";
+  font-family: "Myriad Set Pro";
   font-weight: 300;
-  src: url(../font/MuseoSansCyrl_300.otf);
+  src: url(../font/myriad-set-pro_thin.ttf);
 }
 @font-face {
-  font-family: "Museo Sans Curl";
+  font-family: "Myriad Set Pro";
   font-weight: 500;
-  src: url(../font/MuseoSansCyrl_500.otf);
+  src: url(../font/myriad-set-pro_medium.ttf);
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  font-weight: 400;
+  src: url(../font/myriad-set-pro_text.ttf);
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  font-weight: 100;
+  src: url(../font/myriad-set-pro_ultralight.ttf);
 }
 @font-face {
   font-family: "Museo Sans Curl";
-  font-weight: 900;
-  src: url(../font/MuseoSansCyrl_900.otf);
+  font-weight: 600;
+  src: url(../font/myriad-set-pro_semibold.ttf);
 }
 // typing cursor
 .typed-cursor {
@@ -45,7 +55,28 @@
 }
 //>>>
 body {
-  font-family: "Museo Sans Curl", sans-serif;
+  font-family: "Myriad Set Pro", 'Helvetica Neue', sans-serif;
+}
+h2 {
+  font-size: 52px;
+  line-height: 1.0556;
+  font-weight: 200;
+  letter-spacing: -0.024em;
+  margin-bottom: 0;
+}
+p {
+  color: #333;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 300;
+  letter-spacing: normal
+}
+.sub_heading {
+  font-size: 42px;
+  line-height: 1.1429;
+  font-weight: 200;
+  letter-spacing: -0.01em;
 }
 img {
   max-width: 100%;
@@ -53,6 +84,9 @@ img {
 .container-fluid {
   a {
     color: inherit;
+    &.normal_link {
+      color: #08c
+    }
     &:hover, &:focus {
       text-decoration: none;
       color: inherit;
@@ -78,9 +112,15 @@ img {
     right: 0;
     margin: 0;
     z-index: 12;
-    color: #fff;
     text-align: center;
     padding: 15px 0 10px 0;
+    color: black;
+    .normal_link {
+      font-size: 24px;
+      line-height: 1.3375;
+      font-weight: 300;
+      letter-spacing: normal
+    }
     .container {
       position: relative;
       width: 100%;
@@ -92,6 +132,9 @@ img {
         height: 62px;
       }
       path {
+        fill: #000;
+      }
+      .st1 {
         fill: #fff;
       }
     }
@@ -105,7 +148,7 @@ img {
     }
     .tel {
       font-size: 17px;
-      font-weight: 500;
+      font-weight: 300;
       display: block;
       margin: 10px 0 0 0;
       letter-spacing: 0.05em;
@@ -128,31 +171,49 @@ img {
   }
   //.header
   &.first {
-    background: url('../img/main.png') no-repeat;
+    background: url('../img/test.jpeg') no-repeat;
     background-size: cover;
     min-height: 600px;
     position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background: #fff;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+    }
     .container {
       position: relative;
       z-index: 2;
     }
     .title {
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 700;
-      font-size: 30px;
+      color: black;
+      font-weight: 300;
+      font-size: 52px;
       letter-spacing: 0.25em;
-      text-align: left;
-      max-width: 890px;
       display: block;
       margin: 200px auto 0 auto;
       line-height: 58px;
-      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      span {
+        font-size: 72px;
+        line-height: 1.0556;
+        font-weight: 200;
+        letter-spacing: -0.014em;
+        margin-bottom: 0;
+        text-align: left;
+        display: inline-block
+      }
     }
     svg path {
       fill: none;
       stroke: transparent;
-      stroke: #fff;
+      stroke: #000;
       stroke-width: 4;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -195,19 +256,130 @@ img {
         }
       }
     //underline_container
-    &:after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      background-color: rgba(30, 45, 58, 0.85098);
-      top: 0;
-      left: 0;
-      position: absolute;
+    //&:after {
+    //  content: '';
+    //  width: 100%;
+    //  height: 100%;
+    //  background-color: rgba(30, 45, 58, 0.85098);
+    //  top: 0;
+    //  left: 0;
+    //  position: absolute;
+    //  display: block;
+    //  z-index: 1;
+    //}
+  }
+  &.steps {
+    .step {
+      margin: 60px 0;
+      position: relative;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background:  #DEDEDE;
+      }
+      &:last-of-type {
+        &:before {
+          display: none;
+        }
+      }
+      .col-md-4 {
+        background-color: #f8f8f8;
+      }
+      .steps_title {
+        font-size: 32px;
+        line-height: 1.0556;
+        font-weight: 200;
+        letter-spacing: -0.004em;
+        margin-bottom: 0;
+        text-align: center
+      }
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .col-md-8 {
+        padding: 0 40px;
+        display: table;
+        height: 182px;
+        p {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      &.prototyping {
+        .col-md-4 {
+          padding-top: 13px;
+          height: 182px;
+          background-image: url('../img/dima.svg');
+        }
+        .col-md-8 {
+          padding: 0 40px;
+          display: table;
+          height: 182px;
+          p {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      &.design {
+        .col-md-4 {
+          background-image: url('../img/design_try.jpg');
+          padding-top: 13px;
+          height: 182px;
+          background-size: cover;
+          color: #fff;
+          text-align: left
+        }
+      }
+      &.front {
+        .col-md-4 {
+          background-image: url('../img/mockups.png');
+          padding-top: 13px;
+          height: 182px;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: right bottom;
+          color: black;
+          text-align: left;
+        }
+      }
+      &:nth-of-type(even) {
+        .col-md-4 {
+          float: right;
+        }
+      }
+    }
+    //step
+  }
+  &.node {
+    background: black;
+    canvas {
+      height: 700px;
       display: block;
-      z-index: 1;
+      width: 100%;
     }
   }
+  &.padding {
+    padding: 20px 0;
+  }
 }
+
+
+.slider{
+  width:500px;
+  background: rgba(0,90,50,0.7);
+}
+
+
+
 @media all and (min-width: 1020px) {
   .row {
     &.header {
