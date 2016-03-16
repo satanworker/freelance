@@ -3,10 +3,13 @@
 @import "components/font";
 @import "components/vars";
 @import "components/utility-belt";
-
+html {
+  height: 100%;
+}
 body {
   font-family: 'PT Serif', sans-serif;
   font-size: 16px;
+  height: 100%;
 }
 h1, h2, h3, h4 {
   font-family: 'Lato', Arial;
@@ -14,6 +17,9 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
+}
+.container-fluid {
+  overflow: hidden;
 }
 .bordered {
   position: relative;
@@ -81,7 +87,7 @@ a {
     text-align: center;
     font-family: 'Lato', Arial;
     padding-bottom: 40px;
-    min-height: 700px;
+    min-height: 500px;
     .main_header {
       margin-top: 60px;
       margin-bottom: 40px;
@@ -131,7 +137,7 @@ a {
       height: 100%;
       right: 0;
       bottom: 0;
-      @include radial-gradient(rgba(#142d47, 0.7), rgba(#0b0b0c, 0));
+      @include radial-gradient(rgba(#142d47, 0.4), rgba(#0b0b0c, 0));
       z-index: 1;
     }
   }
@@ -300,9 +306,28 @@ a {
   &.portfolio {
     position: relative;
     margin-top: 80px;
+    padding-bottom: 80px;
     .bordered {
       text-align: center;
       margin-bottom: 80px;
+    }
+    .inner {
+      margin-bottom: 25px;
+      text-align: center;
+      color: #fff;
+      &:after {
+        background: #fff;
+      }
+    }
+    .gallery-cell {
+      margin: 0 10px;
+      width: 66%;
+      img {
+        width: 100%;
+      }
+    }
+    .dot {
+      background: #fff;
     }
     .container {
       position: relative;
@@ -312,7 +337,7 @@ a {
       content: '';
       display: block;
       position: absolute;
-      height: 100%;
+      height: 150%;
       background: $main_color;
       left: 0;
       top: 120px;
