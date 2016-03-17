@@ -8,10 +8,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src="js/app.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -118,15 +115,56 @@
                 </div><!-- / step -->
             </div>
         </section><!-- / steps -->
-        <section class="row node">
-            <div style="text-align:center">
-                <div class="slider" id="slider-range"></div>
-                <div class="slider" id="slider-test"></div>
-
-                <canvas id="canvasOne" width="900" height="520" ></canvas>
-                <p>HTML5 Canvas - Projecting 3D particles to a 2D canvas. &nbsp; &nbsp;<a href="http://www.rectangleworld.com">rectangleworld.com</a></p>
+        <section class="row node video_scroll">
+            <div class="video_text">
+                <h2>Awesome project is</h2>
+                <p class="sub_heading active" data-target="#fast_text">Fast</p>
+                <p class="sub_heading" data-target="#responsive_text">Responsive</p>
+                <p class="sub_heading"  data-target="#progressive_text">Progressive</p>
+                <div class="text_description active" id="fast_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.
+                </div>
+                <div class="text_description" id="responsive_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis.
+                </div>
+                <div class="text_description" id="progressive_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.
+                </div>
             </div>
+            <video>
+                <source src="img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section><!-- / node -->
+        <section class="row steps padding">
+            <div class="container">
+                <h2>Successful project is</h2>
+                <div class="step prototyping">
+                    <div class="col-md-4 steps_title">
+                        UX/Prototyping
+                    </div>
+                    <div class="col-md-8 steps_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.</p>
+                    </div><!-- / steps description -->
+                </div><!-- / step -->
+                <div class="step design">
+                    <div class="col-md-4 steps_title">
+                        Design
+                    </div>
+                    <div class="col-md-8 steps_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.</p>
+                    </div><!-- / steps description -->
+                </div><!-- / step -->
+                <div class="step front">
+                    <div class="col-md-4 steps_title">
+                        Front-End
+                    </div>
+                    <div class="col-md-8 steps_description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit lacinia ex sit amet cursus. Fusce interdum ultricies tellus in porta. Duis posuere enim vitae diam malesuada malesuada at a nunc. Donec semper lacinia sem, ut ornare felis. Vivamus massa ligula, venenatis in ante sed, fermentum imperdiet sapien.</p>
+                    </div><!-- / steps description -->
+                </div><!-- / step -->
+            </div>
+        </section><!-- / steps -->
     </div><!-- / main -->
 </body>
 </html>
