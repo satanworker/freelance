@@ -408,3 +408,37 @@ img {
 .row.padding {
   padding: 20px 0;
 }
+.row.portfolio {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+.row.portfolio a {
+  font-size: 18px;
+  line-height: 1.3375;
+  font-weight: 200;
+  letter-spacing: normal;
+  color: #08c;
+  display: block;
+}
+.row.portfolio .title {
+  font-size: 42px;
+  line-height: 1.1429;
+  font-weight: 200;
+  letter-spacing: normal;
+  margin-bottom: 0.15em;
+}
+.row.portfolio .blob {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.row.portfolio img {
+  width: 100%;
+}
+.title {
+  font-size: 28px;
+  line-height: 1.1429;
+  font-weight: 200;
+  letter-spacing: normal;
+  margin-bottom: 0.25em;
+  margin-top: 0.6429em;
+}
