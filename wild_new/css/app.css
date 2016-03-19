@@ -605,6 +605,34 @@ img {
 .row.contacts .text p span {
   font-weight: 400;
 }
+.row.footer {
+  background: #666;
+  padding: 10px;
+}
+.row.footer .col-xs-12 {
+  position: relative;
+}
+.row.footer p {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  letter-spacing: normal;
+}
+.row.footer .logo {
+  position: absolute;
+  width: 55px;
+  top: 0;
+  right: 0;
+}
+.row.footer .logo path {
+  fill: rgba(17, 17, 17, 0.56);
+}
+.row.footer .logo .st1 {
+  fill: #666;
+}
 .title {
   font-size: 28px;
   line-height: 1.1429;
