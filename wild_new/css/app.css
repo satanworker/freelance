@@ -606,7 +606,6 @@ img {
   font-weight: 400;
 }
 .row.footer {
-  background: rgba(139, 139, 139, 0.63);
   padding: 10px;
 }
 .row.footer .col-xs-12 {
@@ -617,7 +616,6 @@ img {
   font-size: 12px;
   line-height: 1.45;
   font-weight: 300;
-  color: #fff;
   margin: 0;
   letter-spacing: normal;
 }
