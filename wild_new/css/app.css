@@ -606,7 +606,7 @@ img {
   font-weight: 400;
 }
 .row.footer {
-  background: #666;
+  background: rgba(139, 139, 139, 0.63);
   padding: 10px;
 }
 .row.footer .col-xs-12 {
@@ -631,7 +631,7 @@ img {
   fill: rgba(17, 17, 17, 0.56);
 }
 .row.footer .logo .st1 {
-  fill: #666;
+  fill: #fff;
 }
 .title {
   font-size: 28px;
