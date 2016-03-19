@@ -184,6 +184,89 @@ img {
 .row.header .menu_center .menu_link.blue {
   color: #08c;
 }
+.row.header.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background: rgba(248, 248, 248, 0.92);
+  padding: 0;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: transform 0.25s ease;
+  -moz-transition: transform 0.25s ease;
+  -ms-transition: transform 0.25s ease;
+  -o-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+.row.header.fixed .menu_center {
+  margin-left: 0;
+}
+.row.header.fixed a {
+  color: black;
+  margin: 0;
+}
+.row.header.fixed a.tel {
+  margin-top: 8px;
+}
+.row.header.fixed a.logo {
+  margin: -4px 0 0 0;
+  height: 48px;
+  padding: 0 12px;
+  position: relative;
+}
+.row.header.fixed a.logo svg {
+  width: 33px;
+}
+.row.header.fixed a.logo svg path {
+  fill: rgba(0, 0, 0, 0.7);
+}
+.row.header.fixed a.logo:after {
+  content: '';
+  display: block;
+  height: 16px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  right: 0;
+  top: 19px;
+}
+.row.header.fixed .menu_link {
+  color: black;
+  margin: 0;
+  font-size: 15px;
+  padding: 0 12px;
+  position: relative;
+}
+.row.header.fixed .menu_link:after {
+  content: '';
+  display: block;
+  height: 11px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  right: 0;
+  top: 16%;
+}
+.row.header.fixed .menu_link.blue {
+  color: inherit;
+}
+.row.header.fixed .menu_link:last-of-type:after {
+  display: none;
+}
+.row.header.fixed .logo svg {
+  width: 30px;
+}
+.row.header.fixed.closed {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
 .row.first {
   background: url('../img/test.jpeg') no-repeat;
   background-size: cover;
@@ -446,6 +529,81 @@ img {
 }
 .row.portfolio img {
   width: 100%;
+}
+.row.contacts {
+  background: #f8f8f8;
+}
+.row.contacts h2 {
+  padding: 0 15px;
+  margin-top: 0;
+}
+.row.contacts .submit {
+  font-size: 23px;
+  line-height: 1.3375;
+  font-weight: 300;
+  color: #158cfb;
+  display: block;
+  text-align: right;
+  letter-spacing: 0.1em;
+  position: relative;
+  padding-right: 40px;
+  padding-top: 3px;
+}
+.row.contacts .submit:after {
+  content: '';
+  display: block;
+  bottom: 0;
+  margin: auto;
+  max-height: 32px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background: url(../img/submit.png) no-repeat;
+  background-size: cover;
+}
+.row.contacts input,
+.row.contacts textarea {
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  height: 44px;
+  font-family: inherit;
+  font-size: 18px;
+  white-space: nowrap;
+  line-height: 24px;
+  color: #333;
+  padding: 0 20px;
+  float: left;
+  margin: 5px 0;
+}
+.row.contacts input.half_input,
+.row.contacts textarea.half_input {
+  width: -webkit-calc(50% - 5px);
+  width: -ms-calc(50% - 5px);
+  width: -moz-calc(50% - 5px);
+  width: -o-calc(50% - 5px);
+  width: calc(50% - 5px);
+}
+.row.contacts input.half_input:nth-of-type(2),
+.row.contacts textarea.half_input:nth-of-type(2) {
+  float: right;
+}
+.row.contacts input.company_name,
+.row.contacts textarea.company_name {
+  width: 100%;
+  clear: both;
+  float: none;
+}
+.row.contacts textarea {
+  width: 100%;
+  clear: both;
+  float: none;
+  padding-top: 9px;
+  height: 200px;
+}
+.row.contacts .text p span {
+  font-weight: 400;
 }
 .title {
   font-size: 28px;
