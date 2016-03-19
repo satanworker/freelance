@@ -138,17 +138,17 @@ img {
 }
 .row.header .container {
   position: relative;
-  width: 100%;
 }
 .row.header .logo {
   float: left;
 }
 .row.header .logo svg {
-  width: 96px;
-  height: 62px;
+  width: 56px;
+  height: 36px;
+  margin-top: 9px;
 }
 .row.header .logo path {
-  fill: #000;
+  fill: rgba(0, 0, 0, 0.5);
 }
 .row.header .logo .st1 {
   fill: #fff;
@@ -165,7 +165,7 @@ img {
   font-size: 17px;
   font-weight: 300;
   display: block;
-  margin: 10px 0 0 0;
+  margin: 7px 0 0 0;
   letter-spacing: 0.05em;
   text-align: center;
 }
@@ -176,11 +176,13 @@ img {
   margin-top: 13px;
 }
 .row.header .menu_center .menu_link {
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 300;
   font-size: 17px;
   margin: 0 28px;
   letter-spacing: 0.25em;
+}
+.row.header .menu_center .menu_link.blue {
+  color: #08c;
 }
 .row.first {
   background: url('../img/test.jpeg') no-repeat;
@@ -409,8 +411,10 @@ img {
   padding: 20px 0;
 }
 .row.portfolio {
-  background: #f8f8f8;
   padding: 60px 0;
+}
+.row.portfolio .container {
+  position: relative;
 }
 .row.portfolio a {
   font-size: 18px;
@@ -418,18 +422,27 @@ img {
   font-weight: 200;
   letter-spacing: normal;
   color: #08c;
-  display: block;
+  display: inline-block;
+}
+.row.portfolio a.next {
+  margin-left: 20px;
 }
 .row.portfolio .title {
   font-size: 42px;
   line-height: 1.1429;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: normal;
   margin-bottom: 0.15em;
 }
 .row.portfolio .blob {
   max-width: 300px;
   margin: 0 auto;
+}
+.row.portfolio .blob_text {
+  position: absolute;
+  width: 300px;
+  top: 90px;
+  left: 80px;
 }
 .row.portfolio img {
   width: 100%;

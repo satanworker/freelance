@@ -123,16 +123,16 @@ img {
     }
     .container {
       position: relative;
-      width: 100%;
     }
     .logo {
       float: left;
       svg {
-        width: 96px;
-        height: 62px;
+        width: 56px;
+        height: 36px;
+        margin-top: 9px;
       }
       path {
-        fill: #000;
+        fill: rgba(0,0,0,0.5);
       }
       .st1 {
         fill: #fff;
@@ -150,7 +150,7 @@ img {
       font-size: 17px;
       font-weight: 300;
       display: block;
-      margin: 10px 0 0 0;
+      margin: 7px 0 0 0;
       letter-spacing: 0.05em;
       text-align: center;
     }
@@ -160,11 +160,13 @@ img {
       margin-left: 3%;
       margin-top: 13px;
       .menu_link {
-        font-weight: 400;
-        text-transform: uppercase;
+        font-weight: 300;
         font-size: 17px;
         margin: 0 28px;
-        letter-spacing: 0.25em
+        letter-spacing: 0.25em;
+        &.blue {
+          color: #08c;
+        }
       }
       //.menu_link
     }
@@ -430,26 +432,38 @@ img {
     padding: 20px 0;
   }
   &.portfolio {
-    background: #f8f8f8;
+    //background: #f8f8f8;
     padding: 60px 0;
+    .container {
+      position: relative;
+    }
     a {
       font-size: 18px;
       line-height: 1.3375;
       font-weight: 200;
       letter-spacing: normal;
       color: #08c;
-      display: block;
+      display: inline-block;
+      &.next {
+        margin-left: 20px;
+      }
     }
     .title {
       font-size: 42px;
       line-height: 1.1429;
-      font-weight: 200;
+      font-weight: 300;
       letter-spacing: normal;
       margin-bottom: 0.15em;
     }
     .blob {
       max-width: 300px;
       margin: 0 auto;
+    }
+    .blob_text {
+      position: absolute;
+      width: 300px;
+      top: 90px;
+      left: 80px;
     }
     img {
       width: 100%;
