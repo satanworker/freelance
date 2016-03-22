@@ -1,0 +1,8 @@
+@media all and (max-width: 991px) {
+  .row.header .menu_center {
+    display: none;
+  }
+  .row.header.fixed a.logo:after {
+    display: none;
+  }
+}

@@ -1,0 +1,83 @@
+@media all and (max-width: 720px) {
+  .title {
+    font-size: 32px;
+    margin: 0;
+  }
+  p {
+    font-size: 17px;
+  }
+  .row.first .title span {
+    font-size: 41px;
+  }
+  .row.steps h2 {
+    font-size: 36px;
+  }
+  .row.steps .step,
+  .row.steps .step.prototyping {
+    margin: 0;
+  }
+  .row.steps .step:nth-of-type(even) .col-md-4,
+  .row.steps .step.prototyping:nth-of-type(even) .col-md-4 {
+    display: block;
+    clear: both;
+    width: auto;
+    margin: 20px -15px;
+    float: none;
+  }
+  .row.steps .step .steps_title,
+  .row.steps .step.prototyping .steps_title {
+    width: auto;
+    margin: 20px -15px;
+    float: none;
+  }
+  .row.steps .step .col-md-8,
+  .row.steps .step.prototyping .col-md-8 {
+    padding: 0;
+    display: block;
+    height: auto;
+  }
+  .row.portfolio {
+    padding: 20px 0;
+  }
+  .row.portfolio .title {
+    font-size: 32px;
+  }
+  .row.portfolio p {
+    font-size: 17px;
+  }
+  .row.portfolio .blob_text {
+    display: block;
+    position: static;
+    width: auto;
+  }
+  .row.portfolio .blob_image {
+    margin-top: 10px;
+  }
+  .row.contacts h2 {
+    font-size: 36px;
+    padding: 0;
+  }
+  .row.contacts .col-xs-12 {
+    padding: 0;
+  }
+  .row.contacts .col-xs-12 input {
+    margin: 10px 0;
+  }
+  .row.contacts .col-xs-12 input.half_input {
+    width: 100%;
+    float: none;
+  }
+  .row.contacts .col-xs-12.text {
+    padding-top: 10px;
+  }
+  .row.footer {
+    padding: 5px 0;
+  }
+  .row.footer .logo {
+    width: 38px;
+    top: 4px;
+  }
+  .row.footer .col-xs-12 {
+    padding: 0;
+  }
+}
