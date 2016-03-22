@@ -6,6 +6,9 @@
   p {
     font-size: 17px;
   }
+  .row.first {
+    min-height: 500px;
+  }
   .row.first .title span {
     font-size: 41px;
   }
