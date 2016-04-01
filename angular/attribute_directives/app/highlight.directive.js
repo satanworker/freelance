@@ -20,7 +20,6 @@ System.register(['angular2/core'], function(exports_1) {
                 function HighlightDirective(el) {
                     this.el = el;
                     this._defaultColor = 'red';
-                    //el.nativeElement.style.backgroundColor = 'yellow';
                 }
                 Object.defineProperty(HighlightDirective.prototype, "defaultColor", {
                     set: function (colorName) {
@@ -29,6 +28,14 @@ System.register(['angular2/core'], function(exports_1) {
                     enumerable: true,
                     configurable: true
                 });
+                Object.defineProperty(HighlightDirective.prototype, "elementTest", {
+                    set: function (testParam) {
+                        console.log(testParam);
+                    },
+                    enumerable: true,
+                    configurable: true
+                });
+                ;
                 HighlightDirective.prototype.onSomeClick = function () {
                     this.el.nativeElement.style.color = 'red';
                 };
@@ -50,6 +57,11 @@ System.register(['angular2/core'], function(exports_1) {
                     __metadata('design:type', String), 
                     __metadata('design:paramtypes', [String])
                 ], HighlightDirective.prototype, "defaultColor", null);
+                __decorate([
+                    core_1.Input('testVar'), 
+                    __metadata('design:type', String), 
+                    __metadata('design:paramtypes', [String])
+                ], HighlightDirective.prototype, "elementTest", null);
                 HighlightDirective = __decorate([
                     core_1.Directive({
                         selector: '[myHighlight]',

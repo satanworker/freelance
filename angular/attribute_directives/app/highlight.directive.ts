@@ -17,11 +17,13 @@ export class HighlightDirective {
         this._defaultColor = colorName || this._defaultColor;
     }
 
+    @Input('testVar') set elementTest (testParam:string) {
+        console.log(testParam);
+    };
+
     private _defaultColor = 'red';
 
-    constructor(private el: ElementRef) {
-        //el.nativeElement.style.backgroundColor = 'yellow';
-    }
+    constructor(private el: ElementRef) {}
 
     onSomeClick() {
         this.el.nativeElement.style.color = 'red';
