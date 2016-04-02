@@ -11,6 +11,8 @@ import {Directive, ElementRef, Input} from 'angular2/core';
 
 export class HighlightDirective {
 
+
+
     @Input('myHighlight') highlightColor: string;
 
     @Input() set defaultColor(colorName:string) {
