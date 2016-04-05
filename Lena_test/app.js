@@ -12,6 +12,7 @@ var app = express();
 
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
+
 app.engine('.hbs', exphbs({defaultLayout: 'single', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
