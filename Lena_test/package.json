@@ -13,6 +13,7 @@
     "handlebars": "^4.0.5",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+    "nchart": "^1.0.1",
     "node-phantom": "^0.2.5",
     "phantom": "^2.0.10",
     "phantom-pdf": "^0.3.1",

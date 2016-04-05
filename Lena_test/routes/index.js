@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
       page.settings = {
         loadImages: true,
         localToRemoteUrlAccessEnabled: true,
-        javascriptEnabled: true,
+        javascriptEnabled: true, 
         loadPlugins: false
       };
       page.set('viewportSize', { width: 800, height: 600 });
